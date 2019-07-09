@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим Медяник](https://up.htmlacademy.ru/adaptive/17/user/1020667).
-* Наставник: Ксения Григорьева.
+* Наставник: [Ксения 🐙 Григорьева](https://up.htmlacademy.ru/adaptive/17/user/195458).
 
 ---
 

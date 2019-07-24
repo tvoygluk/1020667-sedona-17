@@ -1,20 +1,20 @@
 .main {
   background-color: $white;
+  text-transform: uppercase;
 }
 
 .main__title {
   margin: 0 auto;
   margin-bottom: 31px;
+  margin-top: 40px;
   padding: 0;
   width: 255px;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.44;
   letter-spacing: normal;
   text-align: center;
-  text-transform: uppercase;
   color: $black;
 }
 
@@ -32,4 +32,8 @@
   text-align: center;
   text-transform: uppercase;
   color: $gray--darkest;
+}
+
+.main__features-list {
+  margin-top: 10px;
 }

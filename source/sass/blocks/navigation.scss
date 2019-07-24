@@ -1,7 +1,6 @@
 .navigation__list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -9,17 +8,14 @@
   display: block;
   width: 320px;
   height: 55px;
-
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 2.22;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
   color: $white;
-
-  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2), inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
-  background-color: $base-color;
+  background-color: $color-main;
 }
-

@@ -1,13 +1,22 @@
-.copyright__text {
-  display: block;
+.discription {
+  padding: 0;
+  width: 255px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.86;
+  font-weight: normal;
+  line-height: 1.74;
   letter-spacing: normal;
   text-align: center;
-  color: $black;
   text-transform: uppercase;
+  color: $gray--darkest;
+
+  &--photo {
+    width: 271px;
+  }
+
+  &--form {
+    width: 277px;
+  }
 }

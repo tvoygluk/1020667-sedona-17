@@ -7,33 +7,16 @@
   margin: 0 auto;
   margin-bottom: 31px;
   margin-top: 40px;
-  padding: 0;
-  width: 255px;
-  font-size: 18px;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.44;
-  letter-spacing: normal;
-  text-align: center;
-  color: $black;
 }
 
-.main__features-reasons {
+.main__discription {
   margin: 0 auto;
-  padding: 0;
-  width: 255px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-stretch: normal;
-  font-weight: normal;
-  line-height: 1.74;
-  letter-spacing: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: $gray--darkest;
 }
 
 .main__features-list {
   margin-top: 10px;
+}
+
+.main__photo-card {
+  margin: 0 auto;
 }

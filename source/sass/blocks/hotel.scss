@@ -1,0 +1,27 @@
+.hotel__title {
+  font-size: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: center;
+  color: $black;
+}
+
+.hotel__notice {
+  margin: 0 auto;
+  width: 263px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: $gray--darkest;
+}
+
+.hotel__button {
+  margin: 0 auto;
+  padding: 16px 48px 16px 46px;
+}

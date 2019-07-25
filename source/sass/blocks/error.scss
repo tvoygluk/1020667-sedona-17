@@ -1,0 +1,18 @@
+.error {
+  @include modal;
+  height: 280px;
+}
+
+.error__title {
+  @include title;
+}
+
+.error__discription {
+  @include regular-text;
+}
+
+.error__button {
+  margin: 0 auto;
+  padding: 17px 78px;
+  font-size: 18px;
+}

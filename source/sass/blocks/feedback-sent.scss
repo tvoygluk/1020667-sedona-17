@@ -1,0 +1,25 @@
+.feedback-sent {
+  @include modal;
+  height: 323px;
+}
+
+.feedback-sent__title {
+  @include title;
+}
+
+.feedback-sent__discription {
+  @include regular-text;
+}
+
+.feedback-sent__button {
+  margin: 20px auto;
+  padding: 18px 75px 17px 75px;
+  font-size: 18px;
+}
+
+.feedback-sent__button-wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: $gray;
+}

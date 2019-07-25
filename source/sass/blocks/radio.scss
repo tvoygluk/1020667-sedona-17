@@ -1,1 +1,4 @@
-// qqq
+.radio__label {
+  @include form-text-black;
+  text-transform: none;
+}

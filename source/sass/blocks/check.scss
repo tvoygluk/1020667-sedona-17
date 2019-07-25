@@ -1,1 +1,4 @@
-// qqq
+.check__label {
+  @include form-text-black;
+  text-transform: none;
+}

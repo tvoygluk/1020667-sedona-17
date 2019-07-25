@@ -4,20 +4,19 @@
 }
 
 .main__title {
+  @include title;
   margin: 0 auto;
   margin-bottom: 31px;
   margin-top: 40px;
   padding: 0;
   width: 255px;
-
-  @include title;
 }
 
 .main__discription {
+  @include regular-text;
   margin: 0 auto;
   padding: 0;
   width: 255px;
-  @include regular-text;
 
   &--photo {
     width: 271px;

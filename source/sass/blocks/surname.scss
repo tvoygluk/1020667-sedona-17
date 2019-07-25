@@ -3,3 +3,12 @@
   text-align: left;
   line-height: 1.86;
 }
+
+.surname__input {
+  background-color: $gray;
+  border-width: 0;
+
+  &::placeholder {
+    @include form-text-black;
+  }
+}

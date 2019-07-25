@@ -5,8 +5,8 @@
 
 .photo-card__title,
 .photo-card__like-count {
-  margin: 0;
   @include regular-text;
+  margin: 0;
   font-family: "PT Sans Bold", "Arial", sans-serif;
   text-align: left;
   color: $black;

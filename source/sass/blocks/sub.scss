@@ -3,17 +3,17 @@
 }
 
 .sub__title {
+  @include title;
   margin: 0;
   padding: 0;
-  @include title;
   text-align: left;
 }
 
 .sub__text {
+  @include regular-text;
   width: 210px;
   margin: 0;
   padding: 0;
-  @include regular-text;
   text-align: left;
   line-height: 1.5;
 }

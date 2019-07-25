@@ -5,9 +5,9 @@
 }
 
 .hotel__notice {
+  @include regular-text;
   margin: 0 auto;
   width: 263px;
-  @include regular-text;
 }
 
 .hotel__button {

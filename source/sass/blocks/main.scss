@@ -7,10 +7,25 @@
   margin: 0 auto;
   margin-bottom: 31px;
   margin-top: 40px;
+  padding: 0;
+  width: 255px;
+
+  @include title;
 }
 
 .main__discription {
   margin: 0 auto;
+  padding: 0;
+  width: 255px;
+  @include regular-text;
+
+  &--photo {
+    width: 271px;
+  }
+
+  &--form {
+    width: 277px;
+  }
 }
 
 .main__features-list {

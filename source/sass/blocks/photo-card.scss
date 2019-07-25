@@ -3,35 +3,16 @@
   margin: 0 auto;
 }
 
-.photo-card__title {
+.photo-card__title,
+.photo-card__like-count {
   margin: 0;
-  font-size: 14px;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
+  @include regular-text;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   text-align: left;
   color: $black;
 }
 
 .photo-card__author {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
+  @include regular-text;
   text-align: left;
-  color: $gray--darkest;
-}
-
-.photo-card__like-count {
-  font-size: 14px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.71;
-  letter-spacing: normal;
-  text-align: left;
-  color: $black;
 }

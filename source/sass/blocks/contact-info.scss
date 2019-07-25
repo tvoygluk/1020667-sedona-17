@@ -1,0 +1,8 @@
+.contact-info {
+  border: 0;
+}
+
+.contact-info__title {
+  @include form-text-black;
+  text-align: center;
+}

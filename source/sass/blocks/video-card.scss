@@ -1,7 +1,13 @@
 .video-card__title {
   margin: 0 auto;
+  padding: 0;
+  width: 255px;
+  @include title;
 }
 
 .video-card__discription {
   margin: 0 auto;
+  padding: 0;
+  width: 255px;
+  @include regular-text;
 }

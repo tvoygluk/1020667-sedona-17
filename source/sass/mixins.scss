@@ -1,0 +1,32 @@
+@mixin form-text-black {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: $black;
+}
+
+@mixin regular-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: $gray--darkest;
+}
+
+@mixin title {
+  font-size: 18px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}

@@ -5,25 +5,15 @@
 .sub__title {
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
+  @include title;
   text-align: left;
-  line-height: 1.44;
-  color: $black;
 }
 
 .sub__text {
   width: 210px;
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
+  @include regular-text;
   text-align: left;
   line-height: 1.5;
-  color: $gray--darkest;
 }

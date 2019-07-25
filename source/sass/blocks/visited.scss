@@ -1,0 +1,8 @@
+.visited {
+  border: 0;
+}
+
+.visited__title {
+  @include form-text-black;
+  text-align: center;
+}

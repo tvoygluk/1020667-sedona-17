@@ -1,0 +1,8 @@
+.emotions {
+  border: 0;
+}
+
+.emotions__title {
+  @include form-text-black;
+  text-align: center;
+}

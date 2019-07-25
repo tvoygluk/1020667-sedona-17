@@ -1,0 +1,8 @@
+.impression {
+  border: 0;
+}
+
+.impression__title {
+  @include form-text-black;
+  text-align: center;
+}

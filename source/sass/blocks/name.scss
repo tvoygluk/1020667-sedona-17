@@ -1,7 +1,10 @@
 .name__label {
-  @include regular-text;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
   text-align: left;
-  line-height: 1.86;
+  color: $gray--darkest;
+  text-transform: uppercase;
 }
 
 .name__input {
@@ -9,6 +12,8 @@
   border-width: 0;
 
   &::placeholder {
-    @include form-text-black;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
   }
 }

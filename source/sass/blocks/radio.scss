@@ -1,4 +1,6 @@
 .radio__label {
-  @include form-text-black;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
   text-transform: none;
 }

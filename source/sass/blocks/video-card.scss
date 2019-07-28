@@ -1,13 +1,22 @@
 .video-card__title {
-  @include title;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
   margin: 0 auto;
   padding: 0;
-  width: 255px;
+  // width: 255px;
 }
 
 .video-card__discription {
-  @include regular-text;
   margin: 0 auto;
   padding: 0;
-  width: 255px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray--darkest;
+  text-align: center;
+  text-transform: uppercase;
+  // width: 255px;
 }

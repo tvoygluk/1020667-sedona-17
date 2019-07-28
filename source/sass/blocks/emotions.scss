@@ -3,17 +3,21 @@
 }
 
 .emotions__title {
-  @include form-text-black;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
   text-align: center;
 }
 
 .emotions__letter {
-  width: 279px;
-  height: 160px;
+  // width: 279px;
+  // height: 160px;
   border-width: 0;
   background-color: $gray;
 
   &::placeholder {
-    @include form-text-black;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
   }
 }

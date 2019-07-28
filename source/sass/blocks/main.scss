@@ -4,26 +4,35 @@
 }
 
 .main__title {
-  @include title;
+  // width: 255px;
   margin: 0 auto;
   margin-bottom: 31px;
   margin-top: 40px;
   padding: 0;
-  width: 255px;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .main__discription {
-  @include regular-text;
   margin: 0 auto;
   padding: 0;
-  width: 255px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray--darkest;
+  text-align: center;
+  text-transform: uppercase;
+  // width: 255px;
 
   &--photo {
-    width: 271px;
+    // width: 271px;
   }
 
   &--form {
-    width: 277px;
+    // width: 277px;
   }
 }
 

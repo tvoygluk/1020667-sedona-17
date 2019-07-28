@@ -1,7 +1,10 @@
 .e-mail__label {
-  @include regular-text;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
   text-align: left;
-  line-height: 1.86;
+  line-height: 26px;
+  color: $gray--darkest;
+  text-transform: uppercase;
 }
 
 .e-mail__input {
@@ -9,6 +12,8 @@
   border-width: 0;
 
   &::placeholder {
-    @include form-text-black;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
   }
 }

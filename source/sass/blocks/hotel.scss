@@ -1,13 +1,20 @@
 .hotel__title {
-  @include title;
   font-size: 21px;
-  line-height: 1.24;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+
 }
 
 .hotel__notice {
-  @include regular-text;
   margin: 0 auto;
-  width: 263px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray--darkest;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .hotel__button {

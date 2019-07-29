@@ -3,90 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона | Фото</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <nav class="header__nav navigation">
         <button class="navigation__close close-btn" type="button" aria-label="Закрыть меню">
-          <svg class="close-btn__icon"></svg>
+          <!-- <svg class="close-btn__icon"></svg> -->
         </button>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#">Главная</a>
+            <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li  class="navigation__item">
-            <a class="navigation__link" href="#">Фото и видео</a>
+            <a class="navigation__link">Фото и видео</a>
           </li>
           <li  class="navigation__item">
-            <a class="navigation__link" href="#">Форма отзыва</a>
+            <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
           <li  class="navigation__item">
-            <a class="navigation__link" href="#">Html academy</a>
+            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
           </li>
         </ul>
         <button class="navigation__menu open-btn" type="button" aria-label="Открыть меню">
-          <svg class="open-btn__icon"></svg>
+          <!-- <svg class="open-btn__icon"></svg> -->
         </button>
         <div class="navigation__logo logo">
-          <svg class="logo__triangle"></svg>
+          <!-- <svg class="logo__triangle"></svg>
           <svg class="logo__text"></svg>
-          <svg class="logo__mask"></svg>
+          <svg class="logo__mask"></svg> -->
         </div>
       </nav>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Седона</h1>
       <h2 class="main__title">Фото и видео</h2>
-      <p class="main__discription">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      <figure class="photo-card">
-        <img class="photo-card__the-photo" src="http://placehold.it/150x100" alt="неродные просторы" width="100" height="100">
+      <p class="main__discription main__discription--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <figure class="main__photo-card photo-card">
+        <img class="photo-card__the-photo" src="img/photo-sunset-mobile@1x.jpg" alt="неродные просторы" width="280" height="280">
         <figcaption class="photo-card__text">
           <h3 class="photo-card__title">Неродные просторы</h3>
           <span class="photo-card__author">Автор фото: Борис</span>
         </figcaption>
         <button class="photo-card__like-btn" aria-label="Нравится">
-          <svg class="photo-card__like-icon"></svg>
-          <span class="photo-card__like-count">1350</span>
+          <!-- <svg class="photo-card__like-icon"></svg> -->
         </button>
+        <span class="photo-card__like-count">1350</span>
       </figure>
-      <figure class="photo-card">
-        <img class="photo-card__the-photo" src="http://placehold.it/150x100" alt="Местная растительность" width="100" height="100">
+      <figure class="main__photo-card photo-card">
+        <img class="photo-card__the-photo" src="img/photo-cactus-mobile@1x.jpg" alt="Местная растительность" width="280" height="280">
         <figcaption class="photo-card__text">
           <h3 class="photo-card__title">Местная растительность</h3>
           <span class="photo-card__author">Автор фото: Сергей</span>
         </figcaption>
         <button class="photo-card__like-btn" aria-label="Нравится">
-          <svg class="photo-card__like-icon"></svg>
-          <span class="photo-card__like-count">143</span>
+          <!-- <svg class="photo-card__like-icon"></svg> -->
         </button>
+        <span class="photo-card__like-count">143</span>
       </figure>
-      <figure class="photo-card">
-        <img class="photo-card__the-photo" src="http://placehold.it/150x100" alt="Дорога на север" width="100" height="100">
+      <figure class="main__photo-card photo-card">
+        <img class="photo-card__the-photo" src="img/photo-roads-mobile@1x.jpg" alt="Дорога на север" width="280" height="280">
         <figcaption class="photo-card__text">
           <h3 class="photo-card__title">Дорога на север</h3>
           <span class="photo-card__author">Автор фото: Петр</span>
         </figcaption>
         <button class="photo-card__like-btn" aria-label="Нравится">
-          <svg class="photo-card__like-icon"></svg>
-          <span class="photo-card__like-count">96</span>
+          <!-- <svg class="photo-card__like-icon"></svg> -->
         </button>
+        <span class="photo-card__like-count">96</span>
       </figure>
-      <figure class="photo-card">
-        <img class="photo-card__the-photo" src="http://placehold.it/150x100" alt="Мост дьявола" width="100" height="100">
+      <figure class="main__photo-card photo-card">
+        <img class="photo-card__the-photo" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" width="280" height="280">
         <figcaption class="photo-card__text">
           <h3 class="photo-card__title">Мост дьявола</h3>
           <span class="photo-card__author">Автор фото: Антон</span>
         </figcaption>
         <button class="photo-card__like-btn" aria-label="Нравится">
-          <svg class="photo-card__like-icon"></svg>
-          <span class="photo-card__like-count">254</span>
+          <!-- <svg class="photo-card__like-icon"></svg> -->
         </button>
+        <span class="photo-card__like-count">254</span>
       </figure>
       <section class="video-card">
         <h2 class="visually-hidden">Видео о Седоне</h2>
         <h3 class="video-card__title">Все еще сомневаетесь?</h2>
         <p class="video-card__discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="video-card__the-video" width="400" height="300" controls="controls" poster="sedona-picture.jpg">
+        <video class="video-card__the-video" width="321" height="201" controls="controls" poster="img/video-mobile@1x.jpg">
           <source class="video-card__video-codecs" src="video/sedona.ogv" type='video/ogg; codecs="theora, vorbis"'>
           <source class="video-card__video-codecs" src="video/sedona.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
           <source class="video-card__video-codecs" src="video/sedona.webm" type='video/webm; codecs="vp8, vorbis"'>
@@ -98,23 +99,23 @@
       <ul class="socials">
         <li class="socials__item">
           <a class="socials__link socials__link--twitter" href="#">
-            <svg class="socials__logo socials__logo--twitter"></svg>
+            <!-- <svg class="socials__logo socials__logo--twitter"></svg> -->
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link socials__link--facebook" href="#">
-            <svg class="socials__logo socials__logo--facebook"></svg>
+            <!-- <svg class="socials__logo socials__logo--facebook"></svg> -->
           </a>
         </li>
         <li class="socials__item">
           <a class="socials__link socials__link--youtube" href="#">
-            <svg class="socials__logo socials__logo--youtube"></svg>
+            <!-- <svg class="socials__logo socials__logo--youtube"></svg> -->
           </a>
         </li>
       </ul>
       <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">Разработано</span>
-        <svg class="copyright__academy-logo"></svg>
+        <!-- <svg class="copyright__academy-logo"></svg> -->
       </a>
     </footer>
   </body>

@@ -1,0 +1,35 @@
+.feedback-sent {
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background-color: $white;
+  // height: 323px;
+}
+
+.feedback-sent__title {
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback-sent__discription {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray--darkest;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback-sent__button {
+  margin: 20px auto;
+  padding: 18px 75px 17px 75px;
+  font-size: 18px;
+}
+
+.feedback-sent__button-wrap {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: $gray;
+}

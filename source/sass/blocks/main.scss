@@ -1,0 +1,45 @@
+.main {
+  background-color: $white;
+  text-transform: uppercase;
+}
+
+.main__title {
+  // width: 255px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+  margin-top: 40px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main__discription {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray--darkest;
+  text-align: center;
+  text-transform: uppercase;
+  // width: 255px;
+
+  &--photo {
+    // width: 271px;
+  }
+
+  &--form {
+    // width: 277px;
+  }
+}
+
+.main__features-list {
+  margin-top: 10px;
+}
+
+.main__photo-card {
+  margin: 0 auto;
+}

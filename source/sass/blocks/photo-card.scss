@@ -1,0 +1,24 @@
+.photo-card__the-photo {
+  display: block;
+  margin: 0 auto;
+}
+
+.photo-card__title,
+.photo-card__like-count {
+  margin: 0;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: left;
+  color: $black;
+}
+
+.photo-card__author {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray--darkest;
+  text-align: left;
+  text-transform: uppercase;
+}

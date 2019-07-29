@@ -1,0 +1,19 @@
+.phone-number__label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+  color: $gray--darkest;
+  text-transform: uppercase;
+}
+
+.phone-number__input {
+  background-color: $gray;
+  border-width: 0;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+  }
+}

@@ -1,0 +1,27 @@
+.error {
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background-color: $white;
+}
+
+.error__title {
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.error__discription {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray--darkest;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.error__button {
+  margin: 0 auto;
+  padding: 17px 78px;
+  font-size: 18px;
+}

@@ -42,6 +42,21 @@
       <h2 class="main__title">Оставьте свой отзыв</h2>
       <p class="main__discription main__discription--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <form class="main__form feedback" method="POST" action="https://echo.htmlacademy.ru">
+        <fieldset class="feedback__impression impression">
+          <legend class="impression__title">Ваше общее впечатление:</legend>
+          <div class="impression__radio radio">
+            <input class="radio__input" id="impression-good" type="radio" name="impression" value="good" checked>
+            <label class="radio__label" for="impression-good">Скорее положительное</label>
+          </div>
+          <div class="impression__radio radio">
+            <input class="radio__input" id="impression-bad" type="radio" name="impression" value="bad">
+            <label class="radio__label" for="impression-bad">Скорее отрицательное</label>
+          </div>
+          <div class="impression__radio radio">
+            <input class="radio__input" id="impression-dont-know" type="radio" name="impression" value="dont-know">
+            <label class="radio__label" for="impression-dont-know">Затрудняюсь ответить</label>
+          </div>
+        </fieldset>
         <fieldset class="feedback__full-name full-name">
           <legend class="full-name__title">Представьтесь:</legend>
           <div class="full-name__wrap name">
@@ -59,47 +74,36 @@
         </fieldset>
         <fieldset class="feedback__contact-info contact-info">
           <legend class="contact-info__title">Контактная информация:</legend>
-          <div class="contact-info__wrap phone-number">
-            <label class="phone-number__label" for="contact-info-phone-number">Контактный телефон:</label>
-            <input class="phone-number__input phone-number__input--icon" id="contact-info-phone-number" type="text" name="phone-number" placeholder="Введите телефон" required>
-          </div>
-          <div class="contact-info__wrap e-mail">
-            <label class="e-mail__label" for="contact-info-e-mail">Электронная почта:</label>
-            <input class="e-mail__input e-mail__input--icon" id="contact-info-e-mail" type="text" name="e-mail" placeholder="Введите e-mail" required>
-          </div>
-        </fieldset>
-        <fieldset class="feedback__impression impression">
-          <legend class="impression__title">Ваше общее впечатление:</legend>
-          <div class="impression__radio radio">
-            <input class="radio__input" id="impression-good" type="radio" name="impression" value="good" checked>
-            <label class="radio__label" for="impression-good">Скорее положительное</label>
-          </div>
-          <div class="impression__radio radio">
-            <input class="radio__input" id="impression-bad" type="radio" name="impression" value="bad">
-            <label class="radio__label" for="impression-bad">Скорее отрицательное</label>
-          </div>
-          <div class="impression__radio radio">
-            <input class="radio__input" id="impression-dont-know" type="radio" name="impression" value="dont-know">
-            <label class="radio__label" for="impression-dont-know">Затрудняюсь ответить</label>
+          <div class="contact-info__out-wrap">
+            <div class="contact-info__wrap phone-number">
+              <label class="phone-number__label" for="contact-info-phone-number">Контактный телефон:</label>
+              <input class="phone-number__input phone-number__input--icon" id="contact-info-phone-number" type="text" name="phone-number" placeholder="Введите телефон" required>
+            </div>
+            <div class="contact-info__wrap e-mail">
+              <label class="e-mail__label" for="contact-info-e-mail">Электронная почта:</label>
+              <input class="e-mail__input e-mail__input--icon" id="contact-info-e-mail" type="text" name="e-mail" placeholder="Введите e-mail" required>
+            </div>
           </div>
         </fieldset>
         <fieldset class="feedback__visited visited">
           <legend class="visited__title">Посещенные достопримечательности:</legend>
-          <div class="visited__check check">
-            <input class="check__input" id="visited-devil" type="checkbox" name="visited" value="devil" checked>
-            <label class="check__label" for="visited-devil">Мост Дьявола</label>
-          </div>
-          <div class="visited__check check">
-            <input class="check__input" id="visited-bell" type="checkbox" name="visited" value="bell" checked>
-            <label class="check__label" for="visited-bell">Гора-Колокол</label>
-          </div>
-          <div class="visited__check check">
-            <input class="check__input" id="visited-slide" type="checkbox" name="visited" value="slide" checked>
-            <label class="check__label" for="visited-slide">Слайд-парк</label>
-          </div>
-          <div class="visited__check check">
-            <input class="check__input" id="visited-red" type="checkbox" name="visited" value="red">
-            <label class="check__label" for="visited-red">Красные скалы</label>
+          <div class="visited__out-wrap">
+            <div class="visited__check check">
+              <input class="check__input" id="visited-devil" type="checkbox" name="visited" value="devil" checked>
+              <label class="check__label" for="visited-devil">Мост Дьявола</label>
+            </div>
+            <div class="visited__check check">
+              <input class="check__input" id="visited-bell" type="checkbox" name="visited" value="bell" checked>
+              <label class="check__label" for="visited-bell">Гора-Колокол</label>
+            </div>
+            <div class="visited__check check">
+              <input class="check__input" id="visited-slide" type="checkbox" name="visited" value="slide" checked>
+              <label class="check__label" for="visited-slide">Слайд-парк</label>
+            </div>
+            <div class="visited__check check">
+              <input class="check__input" id="visited-red" type="checkbox" name="visited" value="red">
+              <label class="check__label" for="visited-red">Красные скалы</label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="feedback__emotions emotions">

@@ -27,13 +27,13 @@
   text-transform: uppercase;
   // width: 255px;
 
-  &--photo {
-    // width: 271px;
-  }
+  // &--photo {
+  //   width: 271px;
+  // }
 
-  &--form {
-    // width: 277px;
-  }
+  // &--form {
+  //   width: 277px;
+  // }
 }
 
 .main__features-list {
@@ -45,7 +45,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main__photo-section {
+  .main__photo-section { //todo: переделать?
     display: flex;
     flex-wrap: wrap;
     width: 648px;

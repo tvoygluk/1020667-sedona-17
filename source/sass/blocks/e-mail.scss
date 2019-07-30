@@ -17,3 +17,16 @@
     color: $black;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .e-mail {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .e-mail {
+    flex-direction: row;
+  }
+}

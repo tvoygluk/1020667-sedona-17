@@ -33,3 +33,10 @@
   align-content: center;
   background-color: $gray;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback-sent {
+    width: 400px;
+    height: 347px;
+  }
+}

@@ -43,3 +43,18 @@
 .main__photo-card {
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .main__photo-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__photo-section {
+    width: 1200px;
+  }
+}

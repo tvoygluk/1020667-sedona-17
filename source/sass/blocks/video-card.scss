@@ -20,3 +20,19 @@
   text-transform: uppercase;
   // width: 255px;
 }
+
+@media (min-width: $tablet-width) {
+  .video-card__the-video {
+    display: block;
+    width: 648px;
+    height: 499px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-card__the-video {
+    width: 800px;
+    height: 500px;
+  }
+}

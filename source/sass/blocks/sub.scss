@@ -23,3 +23,22 @@
   text-align: left;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .sub {
+    display: flex;
+
+    li {
+      width: 256px;
+      height: 256px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sub {
+    li {
+      width: 800px;
+    }
+  }
+}

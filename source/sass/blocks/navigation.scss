@@ -27,7 +27,6 @@
   }
 
   .navigation__item {
-    height: 56px; //временно
     background-color: $white;
     box-shadow: none;
   }
@@ -41,11 +40,5 @@
     line-height: 26px;
     text-align: center;
     color: $black;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .navigation__item {
-    // todo
   }
 }

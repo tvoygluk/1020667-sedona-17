@@ -29,16 +29,11 @@
     width: 324px;
     margin: 0;
 
-    .photo-card__the-photo {
-      height: 267px;
-    }
-
     &:nth-child(1) {
       width: 648px;
 
       .photo-card__the-photo {
         width: 100%;
-        height: 400px;
       }
     }
   }
@@ -47,19 +42,9 @@
 @media (min-width: $desktop-width) {
   .photo-card {
     width: 400px;
-    margin: 0;
-
-    .photo-card__the-photo {
-      height: 267px;
-    }
 
     &:nth-child(1) {
       width: 1200px;
-
-      .photo-card__the-photo {
-        width: 100%;
-        height: 400px;
-      }
     }
   }
 }

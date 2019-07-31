@@ -6,7 +6,6 @@
   text-transform: uppercase;
   margin: 0 auto;
   padding: 0;
-  // width: 255px;
 }
 
 .video-card__discription {
@@ -18,14 +17,12 @@
   color: $gray--darkest;
   text-align: center;
   text-transform: uppercase;
-  // width: 255px;
 }
 
 @media (min-width: $tablet-width) {
   .video-card__the-video {
     display: block;
     width: 648px;
-    height: 499px;
     margin: 0 auto;
   }
 }
@@ -33,6 +30,5 @@
 @media (min-width: $desktop-width) {
   .video-card__the-video {
     width: 800px;
-    height: 500px;
   }
 }

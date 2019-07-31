@@ -1,7 +1,6 @@
 .feedback-sent {
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: $white;
-  // height: 323px;
 }
 
 .feedback-sent__title {
@@ -37,6 +36,5 @@
 @media (min-width: $tablet-width) {
   .feedback-sent {
     width: 400px;
-    height: 347px;
   }
 }

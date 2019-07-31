@@ -45,7 +45,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main__photo-section { //todo: переделать?
+  .main__photo-section {
     display: flex;
     flex-wrap: wrap;
     width: 648px;

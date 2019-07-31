@@ -42,21 +42,6 @@
       <h2 class="main__title">Оставьте свой отзыв</h2>
       <p class="main__discription main__discription--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       <form class="main__form feedback" method="POST" action="https://echo.htmlacademy.ru">
-        <fieldset class="feedback__impression impression">
-          <legend class="impression__title">Ваше общее впечатление:</legend>
-          <div class="impression__radio radio">
-            <input class="radio__input" id="impression-good" type="radio" name="impression" value="good" checked>
-            <label class="radio__label" for="impression-good">Скорее положительное</label>
-          </div>
-          <div class="impression__radio radio">
-            <input class="radio__input" id="impression-bad" type="radio" name="impression" value="bad">
-            <label class="radio__label" for="impression-bad">Скорее отрицательное</label>
-          </div>
-          <div class="impression__radio radio">
-            <input class="radio__input" id="impression-dont-know" type="radio" name="impression" value="dont-know">
-            <label class="radio__label" for="impression-dont-know">Затрудняюсь ответить</label>
-          </div>
-        </fieldset>
         <fieldset class="feedback__full-name full-name">
           <legend class="full-name__title">Представьтесь:</legend>
           <div class="full-name__wrap name">
@@ -83,6 +68,21 @@
               <label class="e-mail__label" for="contact-info-e-mail">Электронная почта:</label>
               <input class="e-mail__input e-mail__input--icon" id="contact-info-e-mail" type="text" name="e-mail" placeholder="Введите e-mail" required>
             </div>
+          </div>
+        </fieldset>
+        <fieldset class="feedback__impression impression">
+          <legend class="impression__title">Ваше общее впечатление:</legend>
+          <div class="impression__radio radio">
+            <input class="radio__input" id="impression-good" type="radio" name="impression" value="good" checked>
+            <label class="radio__label" for="impression-good">Скорее положительное</label>
+          </div>
+          <div class="impression__radio radio">
+            <input class="radio__input" id="impression-bad" type="radio" name="impression" value="bad">
+            <label class="radio__label" for="impression-bad">Скорее отрицательное</label>
+          </div>
+          <div class="impression__radio radio">
+            <input class="radio__input" id="impression-dont-know" type="radio" name="impression" value="dont-know">
+            <label class="radio__label" for="impression-dont-know">Затрудняюсь ответить</label>
           </div>
         </fieldset>
         <fieldset class="feedback__visited visited">

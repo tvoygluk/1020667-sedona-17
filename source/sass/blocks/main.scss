@@ -37,11 +37,18 @@
 }
 
 .main__features-list {
+  position: relative;
   margin-top: 10px;
 }
 
 .main__photo-card {
   margin: 0 auto;
+}
+
+.main__decorations-triangle {
+  position: absolute;
+  top: 1px;
+  left: 0;
 }
 
 @media (min-width: $tablet-width) {

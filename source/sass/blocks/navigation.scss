@@ -49,10 +49,10 @@
 }
 
 .navigation__logo-triangle {
-  content: "";
   position: absolute;
   top: 0;
   left: 110px;
+  z-index: 5;
 }
 
 @media (min-width: $tablet-width) {

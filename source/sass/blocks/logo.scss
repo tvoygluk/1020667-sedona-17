@@ -1,3 +1,7 @@
+.logo {
+  position: relative;
+}
+
 .navigation__logo {
   height: 389px;
   background-color: $gray--darken;
@@ -5,4 +9,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.logo__mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

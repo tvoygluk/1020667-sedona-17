@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Седона | Отзыв</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -57,13 +59,15 @@
         </fieldset>
         <fieldset class="feedback__contact-info contact-info">
           <legend class="contact-info__title">Контактная информация:</legend>
-          <div class="contact-info__wrap phone-number">
-            <label class="phone-number__label" for="contact-info-phone-number">Контактный телефон:</label>
-            <input class="phone-number__input phone-number__input--icon" id="contact-info-phone-number" type="text" name="phone-number" placeholder="Введите телефон" required>
-          </div>
-          <div class="contact-info__wrap e-mail">
-            <label class="e-mail__label" for="contact-info-e-mail">Электронная почта:</label>
-            <input class="e-mail__input e-mail__input--icon" id="contact-info-e-mail" type="text" name="e-mail" placeholder="Введите e-mail" required>
+          <div class="contact-info__out-wrap">
+            <div class="contact-info__wrap phone-number">
+              <label class="phone-number__label" for="contact-info-phone-number">Контактный телефон:</label>
+              <input class="phone-number__input phone-number__input--icon" id="contact-info-phone-number" type="text" name="phone-number" placeholder="Введите телефон" required>
+            </div>
+            <div class="contact-info__wrap e-mail">
+              <label class="e-mail__label" for="contact-info-e-mail">Электронная почта:</label>
+              <input class="e-mail__input e-mail__input--icon" id="contact-info-e-mail" type="text" name="e-mail" placeholder="Введите e-mail" required>
+            </div>
           </div>
         </fieldset>
         <fieldset class="feedback__impression impression">
@@ -83,21 +87,23 @@
         </fieldset>
         <fieldset class="feedback__visited visited">
           <legend class="visited__title">Посещенные достопримечательности:</legend>
-          <div class="visited__check check">
-            <input class="check__input" id="visited-devil" type="checkbox" name="visited" value="devil" checked>
-            <label class="check__label" for="visited-devil">Мост Дьявола</label>
-          </div>
-          <div class="visited__check check">
-            <input class="check__input" id="visited-bell" type="checkbox" name="visited" value="bell" checked>
-            <label class="check__label" for="visited-bell">Гора-Колокол</label>
-          </div>
-          <div class="visited__check check">
-            <input class="check__input" id="visited-slide" type="checkbox" name="visited" value="slide" checked>
-            <label class="check__label" for="visited-slide">Слайд-парк</label>
-          </div>
-          <div class="visited__check check">
-            <input class="check__input" id="visited-red" type="checkbox" name="visited" value="red">
-            <label class="check__label" for="visited-red">Красные скалы</label>
+          <div class="visited__out-wrap">
+            <div class="visited__check check">
+              <input class="check__input" id="visited-devil" type="checkbox" name="visited" value="devil" checked>
+              <label class="check__label" for="visited-devil">Мост Дьявола</label>
+            </div>
+            <div class="visited__check check">
+              <input class="check__input" id="visited-bell" type="checkbox" name="visited" value="bell" checked>
+              <label class="check__label" for="visited-bell">Гора-Колокол</label>
+            </div>
+            <div class="visited__check check">
+              <input class="check__input" id="visited-slide" type="checkbox" name="visited" value="slide" checked>
+              <label class="check__label" for="visited-slide">Слайд-парк</label>
+            </div>
+            <div class="visited__check check">
+              <input class="check__input" id="visited-red" type="checkbox" name="visited" value="red">
+              <label class="check__label" for="visited-red">Красные скалы</label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="feedback__emotions emotions">

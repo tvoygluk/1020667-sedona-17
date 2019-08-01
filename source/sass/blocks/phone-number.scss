@@ -17,3 +17,16 @@
     color: $black;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .phone-number {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .phone-number {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,11 @@
+@media (min-width: $tablet-width) {
+  .map_photo {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map_photo {
+    width: 1200px;
+  }
+}

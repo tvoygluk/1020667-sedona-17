@@ -6,40 +6,50 @@
 .features__item {
   margin: 0;
   padding: 0;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
   text-align: center;
   background-color: $gray;
 
-  .features__title {
-    margin: 0 auto;
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.44;
-    color: $black;
-  }
-
-  .features__number,
-  .features__text {
-    margin: 0 auto;
-    padding: 0;
-    width: 248px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14px;
-    color: $gray--darkest;
-  }
-
-  &--color-main {
-    background-color: $color-main;
+  &:nth-child(1),
+  &:nth-child(2) {
+    .features__wrap-typograph {
+      background-color: $color-main;
+    }
 
     .features__title,
     .features__number,
     .features__text {
-      width: 265px;
       color: $white;
     }
   }
+
+  &:nth-child(1) {
+    .features__photo {
+      background-image: url("../../img/main-city-mobile@1x.jpg");
+    }
+  }
+
+  &:nth-child(2) {
+    .features__photo {
+      background-image: url("../../img/photo-bridge-mobile@1x.jpg");
+    }
+  }
+}
+
+.features__title {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+}
+
+.features__number,
+.features__text {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  color: $gray--darkest;
 }
 
 .features__photo {
@@ -48,18 +58,63 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  &--first {
-    background-image: url("../../img/main-city-mobile@1x.jpg");
-  }
-
-  &--second {
-    background-image: url("../../img/photo-bridge-mobile@1x.jpg");
-  }
 }
 
 .features__sub-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .features__item {
+    &:nth-child(1),
+    &:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &:nth-child(2) {
+      .features__wrap-typograph {
+        order: 2;
+      }
+    }
+  }
+
+  .features__wrap-flex-element {
+    display: flex;
+  }
+
+  .features__wrap-typograph,
+  .features__item:nth-child(3),
+  .features__item:nth-child(4),
+  .features__item:nth-child(5) {
+    width: 256px;
+  }
+
+  .features__photo {
+    width: 512px;
+  }
+
+  .features__item:nth-child(3),
+  .features__item:nth-child(4),
+  .features__item:nth-child(5) {
+    display: inline-flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-right: -4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__wrap-typograph,
+  .features__item:nth-child(3),
+  .features__item:nth-child(4),
+  .features__item:nth-child(5) {
+    width: 400px;
+  }
+
+  .features__photo {
+    width: 800px;
+  }
 }

@@ -8,3 +8,20 @@
   color: $black;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .visited__out-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .visited__check {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .visited__check {
+    width: 25%;
+  }
+}

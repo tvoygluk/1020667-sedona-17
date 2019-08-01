@@ -9,10 +9,22 @@ html {
 }
 
 body {
-  padding: 0 10px;
   margin: 0 auto;
   width: 320px;
   font-family: "PT Sans Bold", "Arial", sans-serif;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: $desktop-width;
+    padding: 0 40px;
+  }
 }
 
 a {

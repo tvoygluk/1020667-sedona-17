@@ -15,4 +15,28 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 26.111px solid $white;
+  border-right: $mobile-width/2 solid transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: $mobile-width/2;
+    width: 0;
+    height: 0;
+    border-bottom: 26.111px solid $white;
+    border-left: $mobile-width/2 solid transparent;
+  }
+}
+
+.logo__text {
+  // position: absolute;
+  // top: 0px;
+  display: block;
+  width: 281px;
+  margin: 0 auto;
+  padding-top: 46px;
 }

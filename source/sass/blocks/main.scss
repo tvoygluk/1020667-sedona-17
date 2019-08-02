@@ -4,11 +4,8 @@
 }
 
 .main__title {
-  // width: 255px;
-  margin: 0 auto;
-  margin-bottom: 31px;
-  margin-top: 40px;
-  padding: 0;
+  margin: 40px auto 28px auto;
+  padding: 0 25px;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -17,8 +14,8 @@
 }
 
 .main__discription {
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 auto 27px auto;
+  padding: 0 25px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -38,7 +35,7 @@
 
 .main__features-list {
   position: relative;
-  margin-top: 10px;
+  // margin-top: 10px;
 }
 
 .main__photo-card {
@@ -47,8 +44,13 @@
 
 .main__decorations-triangle {
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 0;
+  width: 0;
+  height: 0;
+  border-left: $mobile-width/2 solid transparent;
+  border-right: $mobile-width/2 solid transparent;
+  border-top: 18px solid $white;
 }
 
 @media (min-width: $tablet-width) {

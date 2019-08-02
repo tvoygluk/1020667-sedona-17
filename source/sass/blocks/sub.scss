@@ -4,7 +4,7 @@
 
 .sub__title {
   margin: 0;
-  padding: 0;
+  padding: 35px 0 15px 70px;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -14,13 +14,29 @@
 
 .sub__text {
   margin: 0;
-  padding: 0;
+  padding: 0 10px 0 70px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: $gray--darkest;
   text-align: left;
   text-transform: uppercase;
+}
+
+.sub__souvenirs {
+  .sub__title {
+    padding-top: 28px;
+  }
+}
+
+.sub__food {
+  .sub__title {
+    padding-top: 28px;
+  }
+
+  .sub__text {
+    padding: 0 25px 38px 70px;
+  }
 }
 
 @media (min-width: $tablet-width) {

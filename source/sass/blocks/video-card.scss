@@ -1,22 +1,26 @@
 .video-card__title {
+  margin: 0 auto 27px auto;
+  padding: 12px 0 0 0;
   font-size: 18px;
   line-height: 26px;
   color: $black;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .video-card__discription {
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 auto 34px auto;
+  padding: 0 26px 0 27px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: $gray--darkest;
   text-align: center;
   text-transform: uppercase;
+}
+
+.video-card__the-video {
+  margin: 0 0 104px 0;
 }
 
 @media (min-width: $tablet-width) {

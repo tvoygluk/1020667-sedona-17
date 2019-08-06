@@ -1,12 +1,10 @@
 .photo-card__the-photo {
   display: block;
-  width: 100%;
   margin: 0 auto;
 }
 
 .photo-card__title,
 .photo-card__like-count {
-  margin: 0;
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -15,13 +13,23 @@
   color: $black;
 }
 
+.photo-card__title {
+  margin: 15px 0 0 20px;
+}
+
+.photo-card__like-count {
+  display: block;
+  margin: -10px 0 40px 57px;
+}
+
 .photo-card__author {
+  margin: 0 0 0 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: $gray--darkest;
   text-align: left;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 @media (min-width: $tablet-width) {

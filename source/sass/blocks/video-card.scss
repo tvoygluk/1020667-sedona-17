@@ -23,6 +23,10 @@
   margin: 0 0 104px 0;
 }
 
+.video-card__controls {
+  margin: -151px auto 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .video-card__the-video {
     display: block;

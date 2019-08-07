@@ -22,15 +22,11 @@
   color: $gray--darkest;
   text-align: center;
   text-transform: uppercase;
-  // width: 255px;
 
-  // &--photo {
-  //   width: 271px;
-  // }
-
-  // &--form {
-  //   width: 277px;
-  // }
+  &--form {
+    padding: 0;
+    margin: 0 0 36px 0;
+  }
 }
 
 .main__features-list {

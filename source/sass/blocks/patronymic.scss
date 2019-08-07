@@ -1,4 +1,5 @@
 .patronymic__label {
+  margin: 0 13px 0 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -8,6 +9,8 @@
 }
 
 .patronymic__input {
+  padding: 20px;
+  width: 192px;
   background-color: $gray;
   border-width: 0;
 

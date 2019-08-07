@@ -3,8 +3,13 @@
 }
 
 .full-name__title {
+  margin: 0 0 21px 0;
   font-size: 18px;
   line-height: 26px;
   color: $black;
   text-align: center;
+}
+
+.full-name__wrap {
+  margin: 0 0 20px 17px;
 }

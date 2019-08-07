@@ -14,6 +14,10 @@ body {
   font-family: "PT Sans Bold", "Arial", sans-serif;
 }
 
+fieldset {
+  padding: 0;
+}
+
 @media (min-width: $tablet-width) {
   body {
     width: $tablet-width;

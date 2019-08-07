@@ -3,10 +3,15 @@
 }
 
 .contact-info__title {
+  margin: 0 0 20px 0;
   font-size: 18px;
   line-height: 26px;
   color: $black;
   text-align: center;
+}
+
+.contact-info__out-wrap {
+  margin: 0 0 0 38px;
 }
 
 @media (min-width: $tablet-width) {

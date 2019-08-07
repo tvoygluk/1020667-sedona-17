@@ -1,4 +1,6 @@
 .e-mail__label {
+  display: block;
+  margin: 0 15px 7px 3px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   text-align: left;
@@ -8,6 +10,9 @@
 }
 
 .e-mail__input {
+  margin: 0 0 23px -18px;
+  padding: 20px;
+  width: 100%;
   background-color: $gray;
   border-width: 0;
 

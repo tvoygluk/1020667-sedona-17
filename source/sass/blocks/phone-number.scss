@@ -1,4 +1,6 @@
 .phone-number__label {
+  display: block;
+  margin: 0 15px 8px 3px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -8,6 +10,9 @@
 }
 
 .phone-number__input {
+  margin: 0 0 12px -18px;
+  padding: 20px;
+  width: 100%;
   background-color: $gray;
   border-width: 0;
 

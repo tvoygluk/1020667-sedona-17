@@ -1,3 +1,18 @@
+.phone-number {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 34px;
+    right: 18px;
+    width: 58px;
+    height: 58px;
+    background-color: $gray--dark;
+  }
+}
+
 .phone-number__label {
   display: block;
   margin: 0 15px 8px 3px;

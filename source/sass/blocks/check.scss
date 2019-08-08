@@ -27,14 +27,14 @@
   }
 }
 
-.check__input:disabled ~ .check__label {
-  opacity: 0.6;
-}
+// .check__input:disabled ~ .check__label {
+//   opacity: 0.6;
+// }
 
-.check__input:focus ~ .check__label::before,
-.check__input:not(:disabled) ~ .check__label:hover::before {
-  border-color: #63d1bb;
-}
+// .check__input:focus ~ .check__label::before,
+// .check__input:not(:disabled) ~ .check__label:hover::before {
+//   border-color: #63d1bb;
+// }
 
 .check__input:checked ~ .check__label::after {
   content: "";

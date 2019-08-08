@@ -1,15 +1,23 @@
 .feedback__full-name,
 .feedback__contact-info,
 .feedback__impression,
-.feedback__visited,
-.feedback__emotions {
+.feedback__visited {
   margin-top: 24px;
 }
 
+
 .feedback__button {
-  margin: 0 auto;
+  margin: 0 auto 72px auto;
   padding: 16px 50px 16px 46px;
   order: 6;
+}
+
+.feedback__visited {
+  margin-bottom: 6px;
+}
+
+.feedback__emotions {
+  margin-bottom: 48px;
 }
 
 @media (min-width: $tablet-width) {

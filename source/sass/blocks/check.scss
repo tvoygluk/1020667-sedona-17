@@ -1,6 +1,51 @@
+.check__input {
+  appearance: none;
+  position: absolute;
+}
+
 .check__label {
+  position: relative;
+  display: block;
+  padding-left: 81px;
+  margin: 32px 0 54px 17px;
   font-size: 18px;
   line-height: 26px;
   color: $black;
   text-transform: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: $gray;
+  }
+}
+
+.check__input:disabled ~ .check__label {
+  opacity: 0.6;
+}
+
+.check__input:focus ~ .check__label::before,
+.check__input:not(:disabled) ~ .check__label:hover::before {
+  border-color: #63d1bb;
+}
+
+.check__input:checked ~ .check__label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 18px;
+  display: block;
+  width: 22px;
+  height: 13px;
+  border-width: 0 0 3px 3px;
+  border-color: $black;
+  border-style: solid;
+  transform: rotate(-45deg);
 }

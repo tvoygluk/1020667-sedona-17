@@ -1,9 +1,15 @@
 .feedback-sent {
+  display: none;
+  position: absolute;
+  top: 1876px;
+  width: $mobile-width;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: $white;
+  z-index: 10;
 }
 
 .feedback-sent__title {
+  margin: 43px 0 26px 0;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -12,6 +18,7 @@
 }
 
 .feedback-sent__discription {
+  margin: 0 39px 34px 44px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -27,6 +34,7 @@
 }
 
 .feedback-sent__button-wrap {
+  margin: 0 0 0 0;
   display: flex;
   flex-direction: column;
   align-content: center;

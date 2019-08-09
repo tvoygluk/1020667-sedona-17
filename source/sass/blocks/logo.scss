@@ -40,3 +40,44 @@
   margin: 0 auto;
   padding-top: 46px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    height: 518px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: top;
+  }
+
+  .logo__mask {
+    left: 33px;
+    border-bottom-width: 57px;
+    border-right-width: 354px;
+
+    &::after {
+      left: 354px;
+      border-bottom-width: 57px;
+      border-left-width: 347px;
+    }
+  }
+
+  .logo__mask-helper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 36px solid $white;
+    border-right: $tablet-width/2 solid transparent;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: $tablet-width/2;
+      width: 0;
+      height: 0;
+      border-bottom: 36px solid $white;
+      border-left: $tablet-width/2 solid transparent;
+    }
+  }
+}

@@ -121,7 +121,7 @@
       flex-direction: column;
     }
 
-    &:nth-child(2) {
+    &:nth-of-type(2) {
       .features__wrap-typograph {
         order: 2;
       }

@@ -56,6 +56,21 @@
     width: 648px;
     margin: 0 auto;
   }
+
+  .main__decorations-triangle {
+    display: none;
+  }
+
+  .main__title {
+    margin-top: 49px;
+    margin-bottom: 28px;
+    padding: 0 100px;
+    font-size: 21px;
+  }
+
+  .main__discription {
+    margin-bottom: 53px;
+  }
 }
 
 @media (min-width: $desktop-width) {

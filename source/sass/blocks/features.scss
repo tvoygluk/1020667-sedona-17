@@ -115,15 +115,69 @@
 
 @media (min-width: $tablet-width) {
   .features__item {
-    &:nth-child(1),
-    &:nth-child(2) {
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
       display: flex;
       flex-direction: column;
+
+      .features__title {
+        font-size: 21px;
+      }
+    }
+
+    &:nth-of-type(1) {
+      .features__photo {
+        background-image: url("../../img/main-city-tablet@1x.jpg");
+      }
     }
 
     &:nth-of-type(2) {
       .features__wrap-typograph {
         order: 2;
+      }
+
+      .features__photo {
+        background-image: url("../../img/photo-bridge-tablet@1x.jpg");
+      }
+    }
+
+    &:nth-of-type(3),
+    &:nth-of-type(4),
+    &:nth-of-type(5) {
+      display: inline-flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      margin-right: -4px;
+      width: 256px;
+
+      .features__title {
+        padding: 44px 53px 4px 53px;
+      }
+
+      .features__number {
+        margin-bottom: 24px;
+      }
+
+      .features__text {
+        margin-bottom: 44px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .features__text {
+        padding: 0 41px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      .features__text {
+        padding: 0 55px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      .features__text {
+        padding: 0 50px;
       }
     }
   }
@@ -132,10 +186,7 @@
     display: flex;
   }
 
-  .features__wrap-typograph,
-  .features__item:nth-child(3),
-  .features__item:nth-child(4),
-  .features__item:nth-child(5) {
+  .features__wrap-typograph {
     width: 256px;
   }
 
@@ -143,21 +194,16 @@
     width: 512px;
   }
 
-  .features__item:nth-child(3),
-  .features__item:nth-child(4),
-  .features__item:nth-child(5) {
-    display: inline-flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    margin-right: -4px;
+  .features__title {
+    font-size: 21px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .features__wrap-typograph,
-  .features__item:nth-child(3),
-  .features__item:nth-child(4),
-  .features__item:nth-child(5) {
+  .features__item:nth-of-type(3),
+  .features__item:nth-of-type(4),
+  .features__item:nth-of-type(5) {
     width: 400px;
   }
 

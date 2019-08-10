@@ -22,3 +22,21 @@
   margin: 0 auto 51px auto;
   padding: 16px 48px 16px 46px;
 }
+
+@media (min-width: $tablet-width) {
+  .hotel__title {
+    font-size: 30px;
+    margin: 54px 0 32px 0;
+    padding: 0;
+  }
+
+  .hotel__notice {
+    margin: 0 0 41px 0;
+    padding: 0;
+  }
+
+  .hotel__button {
+    margin: 0 auto 57px auto;
+    padding: 16px 137px 16px 135px;
+  }
+}

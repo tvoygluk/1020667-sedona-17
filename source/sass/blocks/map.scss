@@ -1,6 +1,14 @@
+.map_photo {
+  background-image: url("../../img/bg-map-mobile@1x.jpg");
+  width: 320px;
+  height: 350px;
+}
+
 @media (min-width: $tablet-width) {
   .map_photo {
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
     width: 768px;
+    height: 350px;
   }
 }
 

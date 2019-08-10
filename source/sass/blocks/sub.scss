@@ -23,20 +23,16 @@
   text-transform: uppercase;
 }
 
-.sub__souvenirs {
-  .sub__title {
-    padding-top: 28px;
-  }
+.sub__title--souvenirs {
+  padding: 28px 0 15px 70px;
 }
 
-.sub__food {
-  .sub__title {
-    padding-top: 28px;
-  }
+.sub__title--food {
+  padding: 28px 0 15px 70px;
+}
 
-  .sub__text {
-    padding: 0 25px 38px 70px;
-  }
+.sub__text--food {
+  padding: 0 25px 38px 70px;
 }
 
 @media (min-width: $tablet-width) {
@@ -47,7 +43,29 @@
   .sub__housing,
   .sub__souvenirs,
   .sub__food {
+    display: flex;
+    flex-direction: column;
     width: 256px;
+  }
+
+  .sub__food {
+    order: 2;
+  }
+
+  .sub__souvenirs {
+    order: 3;
+  }
+
+  .sub__title {
+    font-size: 21px;
+    margin: 158px auto 21px auto;
+    padding: 0 0 0 0;
+  }
+
+  .sub__text {
+    margin: 0 auto 61px auto;
+    padding: 0 48px 0 45px;
+    text-align: center;
   }
 }
 

@@ -21,6 +21,10 @@
   .footer {
     display: flex;
     margin: 36px 0;
+
+    &--photo {
+      margin-top: 78px;
+    }
   }
 
   .footer__hashtag {

@@ -10,6 +10,14 @@
   color: $black;
   text-align: left;
   text-transform: uppercase;
+
+  &--souvenirs {
+    padding: 28px 0 15px 70px;
+  }
+
+  &--food {
+    padding: 28px 0 15px 70px;
+  }
 }
 
 .sub__text {
@@ -21,18 +29,10 @@
   color: $gray--darkest;
   text-align: left;
   text-transform: uppercase;
-}
 
-.sub__title--souvenirs {
-  padding: 28px 0 15px 70px;
-}
-
-.sub__title--food {
-  padding: 28px 0 15px 70px;
-}
-
-.sub__text--food {
-  padding: 0 25px 38px 70px;
+  &--food {
+    padding: 0 25px 38px 70px;
+  }
 }
 
 @media (min-width: $tablet-width) {

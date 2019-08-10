@@ -1,6 +1,38 @@
+.photo-card {
+  &:nth-of-type(1) {
+    .photo-card__the-photo {
+      background-image: url("../../img/photo-sunset-mobile@1x.jpg");
+    }
+  }
+
+  &:nth-of-type(2) {
+    .photo-card__the-photo {
+      background-image: url("../../img/photo-cactus-mobile@1x.jpg");
+    }
+  }
+
+  &:nth-of-type(3) {
+    .photo-card__the-photo {
+      background-image: url("../../img/photo-roads-mobile@1x.jpg");
+    }
+  }
+
+  &:nth-of-type(4) {
+    .photo-card__the-photo {
+      background-image: url("../../img/photo-bridge-mobile@1x.jpg");
+    }
+  }
+}
+
 .photo-card__the-photo {
   display: block;
   margin: 0 auto;
+  width: 280px;
+  height: 280px;
+  background-color: $gray--darken;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .photo-card__title,
@@ -34,16 +66,56 @@
 
 @media (min-width: $tablet-width) {
   .photo-card {
-    width: 324px;
-    margin: 0;
-
-    &:nth-child(1) {
-      width: 648px;
-
+    &:nth-of-type(1) {
       .photo-card__the-photo {
-        width: 100%;
+        width: 648px;
+        height: 400px;
+        background-image: url("../../img/photo-sunset-tablet@1x.jpg");
       }
     }
+
+    &:nth-of-type(2) {
+      .photo-card__the-photo {
+        background-image: url("../../img/photo-cactus-tablet@1x.jpg");
+      }
+    }
+
+    &:nth-of-type(3) {
+      .photo-card__the-photo {
+        background-image: url("../../img/photo-roads-tablet@1x.jpg");
+      }
+
+      .photo-card__text {
+        background-color: $gray--dark;
+      }
+    }
+
+    &:nth-of-type(4) {
+      margin: 0;
+
+      .photo-card__the-photo {
+        background-image: url("../../img/photo-bridge-tablet@1x.jpg");
+      }
+    }
+  }
+
+  .photo-card__the-photo {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo-card__text {
+    display: flex;
+    padding-bottom: 17px;
+    background-color: $gray;
+  }
+
+  .photo-card__wrap-count {
+    margin: 0 28px 0 auto;
+  }
+
+  .photo-card__like-count {
+    margin: 8px 0 0 0;
   }
 }
 
@@ -51,7 +123,7 @@
   .photo-card {
     width: 400px;
 
-    &:nth-child(1) {
+    &:nth-of-type(1) {
       width: 1200px;
     }
   }

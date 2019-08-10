@@ -57,3 +57,44 @@
     border-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .controls {
+    position: relative;
+  }
+
+  .controls__track {
+    width: 648px;
+    height: 93px;
+
+    &::before {
+      top: 46px;
+      left: 94px;
+      width: 390px;
+    }
+
+    &::after {
+      top: 43px;
+      left: 206px;
+      width: 9px;
+      height: 9px;
+    }
+  }
+
+  .controls__buttons {
+    height: 0;
+  }
+
+  .controls__replay {
+    position: absolute;
+    bottom: 12px;
+    left: 11px;
+    border-color: $white;
+    border-left-color: transparent;
+
+    &::after {
+      border-color: transparent;
+      border-left-color: $white;
+    }
+  }
+}

@@ -65,10 +65,27 @@
     margin-bottom: 28px;
     padding: 0 100px;
     font-size: 21px;
+
+    &--photo {
+      margin: 74px 0 31px 0;
+      padding: 0 0 0 0;
+      font-size: 30px;
+    }
+
+    &--form {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      font-size: 30px;
+    }
   }
 
   .main__discription {
     margin-bottom: 53px;
+
+    &--photo {
+      margin: 0 165px 68px 165px;
+      padding: 0;
+    }
   }
 }
 

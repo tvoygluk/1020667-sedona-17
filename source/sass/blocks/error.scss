@@ -36,6 +36,25 @@
 
 @media (min-width: $tablet-width) {
   .error {
-    width: 640px;
+    top: 1406px;
+    left: 187px;
+    width: 400px;
+  }
+
+  .error__title {
+    padding-top: 55px;
+    margin: 0 88px 22px 74px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .error__discription {
+    margin-bottom: 33px;
+  }
+
+  .error__button {
+    margin: 0 auto 49px auto;
+    padding: 16px 122px;
+    font-size: 21px;
   }
 }

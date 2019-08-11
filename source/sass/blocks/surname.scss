@@ -20,3 +20,9 @@
     color: $black;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .surname__input {
+    width: 178px;
+  }
+}

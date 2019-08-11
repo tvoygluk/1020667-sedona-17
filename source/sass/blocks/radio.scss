@@ -47,3 +47,10 @@
   border-radius: 50%;
   background-color: $gray--darkest;
 }
+
+@media (min-width: $tablet-width) {
+  .radio__label {
+    margin: 10px 0 52px 58px;
+    padding: 0 0 0 75px;
+  }
+}

@@ -42,6 +42,15 @@
   .e-mail {
     display: flex;
     flex-direction: column;
+
+    &::after {
+      right: 55px;
+    }
+  }
+
+  .e-mail__input {
+    width: 648px;
+    margin-bottom: 17px;
   }
 }
 

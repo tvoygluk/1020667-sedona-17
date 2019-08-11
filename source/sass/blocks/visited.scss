@@ -18,6 +18,12 @@
   .visited__check {
     width: 50%;
   }
+
+  .visited__title {
+    font-size: 21px;
+    margin: 0 179px 23px 179px;
+    padding: 0 0 0 0;
+  }
 }
 
 @media (min-width: $desktop-width) {

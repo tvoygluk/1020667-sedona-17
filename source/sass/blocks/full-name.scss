@@ -13,3 +13,15 @@
 .full-name__wrap {
   margin: 0 0 20px 17px;
 }
+
+@media (min-width: $tablet-width) {
+  .full-name__title {
+    margin: 0 0 32px 0;
+    padding: 0 165px 0 0;
+    font-size: 21px;
+  }
+
+  .full-name__wrap {
+    margin: 0 0 20px 0;
+  }
+}

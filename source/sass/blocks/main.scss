@@ -73,8 +73,8 @@
     }
 
     &--form {
-      margin: 0 0 0 0;
-      padding: 0 0 0 0;
+      margin: 74px 0 34px 0;
+      padding: 0;
       font-size: 30px;
     }
   }
@@ -85,6 +85,28 @@
     &--photo {
       margin: 0 165px 68px 165px;
       padding: 0;
+    }
+
+    &--form {
+      margin: 0 161px 50px 161px;
+      padding: 0;
+    }
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .main__form {
+    margin-bottom: 99px;
+
+    &::after {
+      position: absolute;
+      bottom: 18px;
+      right: 57px;
+      content: "* — обязательные поля";
+      font-family: "PT Sans", "Arial", sans-serif;
+      font-size: 14px;
     }
   }
 }

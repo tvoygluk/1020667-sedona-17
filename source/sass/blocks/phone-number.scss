@@ -42,6 +42,14 @@
   .phone-number {
     display: flex;
     flex-direction: column;
+
+    &::after {
+      right: 55px;
+    }
+  }
+
+  .phone-number__input {
+    width: 648px;
   }
 }
 

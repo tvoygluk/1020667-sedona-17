@@ -24,3 +24,17 @@
     color: $black;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .emotions__title {
+    margin: 0 0 58px 0;
+    padding: 0 0 0 0;
+    font-size: 21px;
+  }
+
+  .emotions__letter {
+    width: 648px;
+    margin: 0 0 0 58px;
+    padding: 15px 10px 73px 22px;
+  }
+}

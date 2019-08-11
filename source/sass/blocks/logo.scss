@@ -86,3 +86,32 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+  }
+
+  .logo__mask {
+    left: 251px;
+    border-bottom-width: 54px;
+    border-right-width: 364px;
+
+    &::after {
+      left: 352px;
+      border-bottom-width: 54px;
+      border-left-width: 347px;
+    }
+  }
+
+  .logo__mask-helper {
+    border-bottom-width: 61px;
+    border-right-width: 600px;
+
+    &::after {
+      left: $desktop-width/2;
+      border-bottom-width: 61px;
+      border-left-width: 600px;
+    }
+  }
+}

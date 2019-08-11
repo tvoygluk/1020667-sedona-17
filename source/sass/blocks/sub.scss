@@ -35,6 +35,10 @@
   }
 }
 
+.sub__desktop-br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .sub {
     display: flex;
@@ -74,5 +78,16 @@
   .sub__souvenirs,
   .sub__food {
     width: 800px;
+  }
+
+  .sub__souvenirs {
+    .sub__text {
+      margin: 0 auto 61px auto;
+      padding: 0 48px 0 45px;
+    }
+  }
+
+  .sub__desktop-br {
+    display: block;
   }
 }

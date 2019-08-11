@@ -136,3 +136,27 @@
     left: 333px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .navigation__item {
+    margin-top: 3px;
+  }
+
+  .navigation__item:nth-child(1) {
+    margin-left: 92px;
+  }
+
+  .navigation__item:nth-child(2) {
+    margin-left: 159px;
+  }
+
+  .navigation__item:nth-child(3) {
+    margin-left: auto;
+  }
+
+  .navigation__item:nth-child(4) {
+    margin-right: 68px;
+    margin-left: 136px;
+  }
+}
+

@@ -222,4 +222,76 @@
   .features__photo {
     width: 800px;
   }
+
+  .features__item {
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      .features__title {
+        margin: 48px 124px 14px 125px;
+        padding: 0;
+      }
+
+      .features__number {
+        margin-bottom: 23px;
+      }
+    }
+
+    &:nth-of-type(1) {
+      .features__photo {
+        background-image: url("../../img/main-city-desktop@1x.jpg");
+      }
+
+      .features__text {
+        margin: 0 64px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      .features__photo {
+        background-image: url("../../img/photo-bridge-desktop@1x.jpg");
+      }
+
+      .features__text {
+        margin: 0 87px 0 92px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      .features__title {
+        margin: 25px 100px 12px 95px;
+        padding: 0;
+      }
+    }
+
+    &:nth-of-type(4) {
+      .features__title {
+        margin: 25px 116px 12px 112px;
+        padding: 0;
+      }
+
+      .features__text {
+        margin-right: 14px;
+        margin-left: 8px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      .features__title {
+        margin: 25px 135px 12px 133px;
+        padding: 0;
+      }
+    }
+
+    &:nth-of-type(3),
+    &:nth-of-type(4),
+    &:nth-of-type(5) {
+      .features__text {
+        margin-bottom: 64px;
+      }
+    }
+  }
+
+  .features__sub-list {
+    padding-bottom: 23px;
+  }
 }

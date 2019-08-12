@@ -1,5 +1,7 @@
 .e-mail {
   position: relative;
+  display: flex;
+  flex-direction: column-reverse;
 
   &::after {
     content: "";
@@ -41,7 +43,7 @@
 @media (min-width: $tablet-width) {
   .e-mail {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 
     &::after {
       right: 55px;
@@ -56,7 +58,7 @@
 
 @media (min-width: $desktop-width) {
   .e-mail {
-    flex-direction: row;
+    flex-direction: row-reverse;
 
     &::after {
       top: -2px;

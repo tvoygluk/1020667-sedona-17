@@ -54,3 +54,7 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
   width: 1px;
 }
+
+input:required ~ label::after {
+  content: "*";
+}

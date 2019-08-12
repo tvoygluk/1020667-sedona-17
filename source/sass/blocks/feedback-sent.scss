@@ -59,3 +59,10 @@
     font-size: 21px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedback-sent {
+    top: 934px;
+    left: 319px;
+  }
+}

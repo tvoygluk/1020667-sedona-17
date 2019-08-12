@@ -1,5 +1,10 @@
+.patronymic {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .patronymic__label {
-  margin: 0 13px 0 0;
+  margin: 19px 19px 0 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;

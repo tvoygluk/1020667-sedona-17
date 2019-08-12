@@ -1,5 +1,10 @@
+.name {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .name__label {
-  margin: 0 15px 0 0;
+  margin: 18px 15px 0 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;

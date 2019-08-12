@@ -58,3 +58,10 @@
     font-size: 21px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .error {
+    top: 1387px;
+    left: 443px;
+  }
+}

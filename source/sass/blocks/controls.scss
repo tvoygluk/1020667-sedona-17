@@ -98,3 +98,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .controls__track {
+    width: 800px;
+
+    &::before {
+      width: 540px;
+    }
+  }
+}

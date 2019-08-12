@@ -54,13 +54,26 @@
   }
 
   .video-card__discription {
-    margin: 0 auto 71px auto;
-    padding: 0 170px;
+    margin: 0 170px 71px 170px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .video-card__the-video {
     width: 800px;
+    background-image: url("../../img/video-desktop@1x.jpg");
+  }
+
+  .video-card__discription {
+    margin: 0 382px 71px 384px;
+    padding: 0;
+  }
+
+  .video-card__controls {
+    margin: -93px 0 0 200px;
+  }
+
+  .video-card {
+    margin-bottom: 120px;
   }
 }

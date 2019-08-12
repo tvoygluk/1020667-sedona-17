@@ -53,3 +53,22 @@
     padding: 16px 75px 16px 66px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedback__impression {
+    margin: 0;
+  }
+
+  .feedback__full-name {
+    margin: 0 0 0 0;
+  }
+
+  .feedback__contact-info {
+    margin: 32px 0 45px 0;
+  }
+
+  .feedback__button {
+    margin: 4px 0 0 118px;
+    padding: 16px 151px 16px 147px;
+  }
+}

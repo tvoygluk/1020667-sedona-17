@@ -56,5 +56,25 @@
 @media (min-width: $desktop-width) {
   .phone-number {
     flex-direction: row;
+
+    &::after {
+      top: -2px;
+      right: 0;
+    }
+  }
+
+  .phone-number__hide-desktop {
+    display: none;
+  }
+
+  .phone-number__label {
+    margin: 15px 20px 0 40px;
+    padding: 0 0 0 0;
+  }
+
+  .phone-number__input {
+    width: 315px;
+    padding: 0 0 0 21px;
+    margin: -2px 0 -15px 0;
   }
 }

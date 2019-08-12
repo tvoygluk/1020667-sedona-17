@@ -26,3 +26,9 @@
     width: 178px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .surname__input {
+    width: 312px;
+  }
+}

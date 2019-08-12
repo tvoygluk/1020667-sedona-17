@@ -16,3 +16,10 @@
     font-size: 21px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .impression__title {
+    margin: 0 0 63px 402px;
+    padding: 0;
+  }
+}

@@ -26,3 +26,9 @@
     width: 216px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .name__input {
+    width: 350px;
+  }
+}

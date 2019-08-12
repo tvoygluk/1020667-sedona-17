@@ -38,3 +38,10 @@
     padding: 15px 10px 73px 22px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .emotions__letter {
+    width: 960px;
+    margin: 0 0 0 116px;
+  }
+}

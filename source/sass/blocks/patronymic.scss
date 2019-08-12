@@ -26,3 +26,9 @@
     width: 180px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .patronymic__input {
+    width: 314px;
+  }
+}

@@ -54,3 +54,10 @@
     padding: 0 0 0 75px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .radio__label {
+    margin: 10px 0 52px 124px;
+    padding: 0 0 0 75px;
+  }
+}

@@ -118,16 +118,30 @@
 
   .main__title {
     margin: 51px 300px 28px 300px;
-    padding: 0 0 0 0;
+    padding: 0;
 
     &--photo {
       margin: 113px 0 31px 0;
+    }
+
+    &--form {
+      margin: 120px 0 30px 0;
     }
   }
 
   .main__discription {
     &--photo {
       margin: 0 385px 68px 383px;
+    }
+
+    &--form {
+      margin: 0 360px 61px 360px;
+    }
+  }
+
+  .main__form {
+    &::after {
+      right: 122px;
     }
   }
 }

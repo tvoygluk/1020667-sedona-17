@@ -35,6 +35,19 @@
 @media (min-width: $desktop-width) {
   .contact-info__out-wrap {
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
+  }
+
+  .contact-info__title {
+    margin: 0 0 74px 0;
+    padding: 0 0 0 0;
+  }
+
+  .contact-info__wrap {
+    margin: 0 76px 0 0;
+  }
+
+  .contact-info__wrap--e-mail {
+    margin: 0 0 0 -34px;
   }
 }

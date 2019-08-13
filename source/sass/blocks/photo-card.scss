@@ -1,35 +1,35 @@
-.photo-card {
-  &:nth-of-type(1) {
-    .photo-card__the-photo {
-      // background-image: url("../../img/photo-sunset-mobile@1x.jpg");
-    }
-  }
+// .photo-card {
+//   &:nth-of-type(1) {
+//     .photo-card__the-photo {
+//       background-image: url("../../img/photo-sunset-mobile@1x.jpg");
+//     }
+//   }
 
-  &:nth-of-type(2) {
-    .photo-card__the-photo {
-      background-image: url("../../img/photo-cactus-mobile@1x.jpg");
-    }
-  }
+//   &:nth-of-type(2) {
+//     .photo-card__the-photo {
+//       background-image: url("../../img/photo-cactus-mobile@1x.jpg");
+//     }
+//   }
 
-  &:nth-of-type(3) {
-    .photo-card__the-photo {
-      background-image: url("../../img/photo-roads-mobile@1x.jpg");
-    }
-  }
+//   &:nth-of-type(3) {
+//     .photo-card__the-photo {
+//       background-image: url("../../img/photo-roads-mobile@1x.jpg");
+//     }
+//   }
 
-  &:nth-of-type(4) {
-    .photo-card__the-photo {
-      background-image: url("../../img/photo-bridge-mobile@1x.jpg");
-    }
-  }
-}
+//   &:nth-of-type(4) {
+//     .photo-card__the-photo {
+//       background-image: url("../../img/photo-bridge-mobile@1x.jpg");
+//     }
+//   }
+// }
 
 .photo-card__the-photo {
   display: block;
   margin: 0 auto;
   width: 280px;
   // height: 280px;
-  height: auto;  //заработает, когда все картинки будут сделаны через picture
+  height: auto;
   background-color: $gray--darken;
   background-repeat: no-repeat;
   background-position: center;
@@ -70,35 +70,31 @@
     &:nth-of-type(1) {
       .photo-card__the-photo {
         width: 648px;
-        // height: 400px;
         height: auto;
+        // height: 400px;
         // background-image: url("../../img/photo-sunset-tablet@1x.jpg");
       }
     }
 
-    &:nth-of-type(2) {
-      .photo-card__the-photo {
-        background-image: url("../../img/photo-cactus-tablet@1x.jpg");
-      }
-    }
+    // &:nth-of-type(2) {
+    //   .photo-card__the-photo {
+    //     background-image: url("../../img/photo-cactus-tablet@1x.jpg");
+    //   }
+    // }
 
-    &:nth-of-type(3) {
-      .photo-card__the-photo {
-        background-image: url("../../img/photo-roads-tablet@1x.jpg");
-      }
-    }
+    // &:nth-of-type(3) {
+    //   .photo-card__the-photo {
+    //     background-image: url("../../img/photo-roads-tablet@1x.jpg");
+    //   }
+    // }
 
     &:nth-of-type(4) {
       margin: 0;
 
-      .photo-card__the-photo {
-        background-image: url("../../img/photo-bridge-tablet@1x.jpg");
-      }
+      // .photo-card__the-photo {
+      //   background-image: url("../../img/photo-bridge-tablet@1x.jpg");
+      // }
     }
-  }
-
-  .photo-card__text--another-color {
-    background-color: $gray--dark;
   }
 
   .photo-card__the-photo {
@@ -110,6 +106,10 @@
     display: flex;
     padding-bottom: 17px;
     background-color: $gray;
+  }
+
+  .photo-card__text--another-color {
+    background-color: $gray--dark;
   }
 
   .photo-card__wrap-count {
@@ -127,6 +127,7 @@
   }
 
   .photo-card__text {
+    position: relative;
     margin-top: -80px;
     background-color: $black--alfa-30;
   }
@@ -150,22 +151,22 @@
       }
     }
 
-    &:nth-of-type(2) {
-      .photo-card__the-photo {
-        background-image: url("../../img/photo-cactus-desktop@1x.jpg");
-      }
-    }
+    // &:nth-of-type(2) {
+    //   .photo-card__the-photo {
+    //     background-image: url("../../img/photo-cactus-desktop@1x.jpg");
+    //   }
+    // }
 
-    &:nth-of-type(3) {
-      .photo-card__the-photo {
-        background-image: url("../../img/photo-roads-desktop@1x.jpg");
-      }
-    }
+    // &:nth-of-type(3) {
+    //   .photo-card__the-photo {
+    //     background-image: url("../../img/photo-roads-desktop@1x.jpg");
+    //   }
+    // }
 
-    &:nth-of-type(4) {
-      .photo-card__the-photo {
-        background-image: url("../../img/photo-bridge-desktop@1x.jpg");
-      }
-    }
+    // &:nth-of-type(4) {
+    //   .photo-card__the-photo {
+    //     background-image: url("../../img/photo-bridge-desktop@1x.jpg");
+    //   }
+    // }
   }
 }

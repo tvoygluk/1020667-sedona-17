@@ -272,7 +272,17 @@
               <p class="features__number">— №2 —</p>
               <p class="features__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="features__photo"></div>
+            <!-- <div class="features__photo"></div> -->
+            <picture>
+                <source media="(min-width: 1280px)" srcset="img/main-bridge-desktop@1x.jpg 1x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x">
+                <img class="features__photo" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="мост дьявола">
+            </picture>
+            <!-- <picture>
+                <source media="(min-width: 1280px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                <img class="features__photo" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="мост дьявола">
+            </picture> -->
           </div>
         </li>
         <li class="features__item">
@@ -300,8 +310,17 @@
       <section class="map">
         <h2 class="visually-hidden">Карта Седоны</h2>
         <a class="map_link" href="https://goo.gl/maps/hHBDAF8D5ND1WQHG8" aria-label="ссылка на google-карту Седоны">
-          <!-- <img class="map_photo" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="фото google-карты Седоны"> -->
-          <div class="map_photo"></div>
+          <picture>
+              <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.jpg 1x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x">
+              <img class="map_photo" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="фото google-карты Седоны">
+          </picture>
+          <!-- <div class="map_photo"></div> -->
+          <!-- <picture>
+              <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+              <img class="map_photo" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="350" alt="фото google-карты Седоны">
+          </picture> -->
         </a>
       </section>
     </main>

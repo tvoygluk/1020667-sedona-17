@@ -115,7 +115,7 @@
 }
 
 .features__sub-list {
-  margin: 0;
+  margin: 0 0 38px 0;
   padding: 0;
   list-style: none;
 }
@@ -220,6 +220,10 @@
   .features__title {
     font-size: 21px;
   }
+
+  .features__sub-list {
+    margin-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -304,9 +308,5 @@
         margin-bottom: 64px;
       }
     }
-  }
-
-  .features__sub-list {
-    padding-bottom: 23px;
   }
 }

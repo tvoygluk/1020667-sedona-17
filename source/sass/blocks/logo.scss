@@ -23,7 +23,7 @@
   left: 0;
   width: 0;
   height: 0;
-  border-bottom: 26.111px solid $white;
+  border-bottom: 26px solid $white;
   border-right: $mobile-width/2 solid transparent;
 
   &::after {
@@ -33,7 +33,7 @@
     left: $mobile-width/2;
     width: 0;
     height: 0;
-    border-bottom: 26.111px solid $white;
+    border-bottom: 26px solid $white;
     border-left: $mobile-width/2 solid transparent;
   }
 }
@@ -79,6 +79,29 @@
       height: 290px;
       background-position: 50% 100%;
     }
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 36px solid $white;
+      border-right: $tablet-width/2 solid transparent;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: $tablet-width/2;
+      width: 0;
+      height: 0;
+      border-bottom: 36px solid $white;
+      border-left: $tablet-width/2 solid transparent;
+    }
   }
 
   .logo__mask {
@@ -90,27 +113,6 @@
       left: 354px;
       border-bottom-width: 57px;
       border-left-width: 347px;
-    }
-  }
-
-  .logo__mask-helper {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 36px solid $white;
-    border-right: $tablet-width/2 solid transparent;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: $tablet-width/2;
-      width: 0;
-      height: 0;
-      border-bottom: 36px solid $white;
-      border-left: $tablet-width/2 solid transparent;
     }
   }
 
@@ -142,6 +144,17 @@
     // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     //   background-image: url("../../img/bg-back-desktop@2x.jpg")
     // }
+
+    &::before {
+      border-bottom-width: 61px;
+      border-right-width: 600px;
+    }
+
+    &::after {
+      left: $desktop-width/2;
+      border-bottom-width: 61px;
+      border-left-width: 600px;
+    }
   }
 
   .logo__mask {
@@ -153,17 +166,6 @@
       left: 352px;
       border-bottom-width: 54px;
       border-left-width: 347px;
-    }
-  }
-
-  .logo__mask-helper {
-    border-bottom-width: 61px;
-    border-right-width: 600px;
-
-    &::after {
-      left: $desktop-width/2;
-      border-bottom-width: 61px;
-      border-left-width: 600px;
     }
   }
 

@@ -1,38 +1,35 @@
 .sub {
+  padding-top: 36px;
   background-color: $white;
 }
 
+.sub__item {
+  margin: 0 41px 28px 69px;
+}
+
 .sub__title {
-  margin: 0;
-  padding: 35px 0 15px 70px;
+  margin: 0 0 13px 0;
+  padding: 0;
   font-size: 18px;
   line-height: 26px;
   color: $black;
   text-align: left;
   text-transform: uppercase;
-
-  &--souvenirs {
-    padding: 28px 0 15px 70px;
-  }
-
-  &--food {
-    padding: 28px 0 15px 70px;
-  }
 }
 
 .sub__text {
   margin: 0;
-  padding: 0 10px 0 70px;
+  padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: $gray--darkest;
   text-align: left;
   text-transform: uppercase;
+}
 
-  &--food {
-    padding: 0 25px 38px 70px;
-  }
+.sub__tablet-br {
+  display: none;
 }
 
 .sub__desktop-br {
@@ -42,49 +39,49 @@
 @media (min-width: $tablet-width) {
   .sub {
     display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    padding-top: 0;
   }
 
-  .sub__housing,
-  .sub__souvenirs,
-  .sub__food {
+  .sub__item {
     display: flex;
     flex-direction: column;
     width: 256px;
+    margin: 0;
   }
 
-  .sub__food {
+  .sub__item:nth-of-type(3) {
     order: 2;
   }
 
-  .sub__souvenirs {
+  .sub__item:nth-of-type(2) {
     order: 3;
   }
 
   .sub__title {
+    margin-bottom: 21px;
     font-size: 21px;
-    margin: 158px auto 21px auto;
-    padding: 0 0 0 0;
+    text-align: center;
   }
 
   .sub__text {
-    margin: 0 auto 61px auto;
-    padding: 0 48px 0 45px;
+    margin: 0 45px 60px 45px;
     text-align: center;
+  }
+
+  .sub__tablet-br {
+    display: block;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .sub__housing,
-  .sub__souvenirs,
-  .sub__food {
-    width: 800px;
+  .sub__item {
+    width: 33.33%;
   }
 
-  .sub__souvenirs {
-    .sub__text {
-      margin: 0 auto 61px auto;
-      padding: 0 48px 0 45px;
-    }
+  .sub__text {
+    margin-bottom: 81px;
   }
 
   .sub__desktop-br {

@@ -1,11 +1,12 @@
 .main {
   background-color: $white;
   text-transform: uppercase;
+  padding-top: 40px;
 }
 
 .main__title {
-  margin: 40px auto 25px auto;
-  padding: 0 25px;
+  margin-top: 0;
+  margin-bottom: 25px;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -14,19 +15,14 @@
 }
 
 .main__discription {
-  margin: 0 auto 27px auto;
-  padding: 0 25px;
+  margin-top: 0;
+  margin-bottom: 27px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: $gray--darkest;
   text-align: center;
   text-transform: uppercase;
-
-  &--form {
-    padding: 0;
-    margin: 0 0 36px 0;
-  }
 }
 
 .main__features-list {
@@ -60,41 +56,26 @@
     display: none;
   }
 
+  .main {
+    position: relative;
+    // padding-bottom: 49px;
+  }
+
   .main__title {
-    margin-top: 49px;
     margin-bottom: 28px;
-    padding: 0 100px;
     font-size: 21px;
 
     &--photo {
-      margin: 74px 0 31px 0;
-      padding: 0 0 0 0;
       font-size: 30px;
     }
 
     &--form {
-      margin: 74px 0 34px 0;
-      padding: 0;
       font-size: 30px;
     }
   }
 
   .main__discription {
     margin-bottom: 53px;
-
-    &--photo {
-      margin: 0 165px 68px 165px;
-      padding: 0;
-    }
-
-    &--form {
-      margin: 0 161px 50px 161px;
-      padding: 0;
-    }
-  }
-
-  .main {
-    position: relative;
   }
 
   .main__form {
@@ -117,26 +98,7 @@
   }
 
   .main__title {
-    margin: 51px 300px 28px 300px;
     padding: 0;
-
-    &--photo {
-      margin: 113px 0 31px 0;
-    }
-
-    &--form {
-      margin: 120px 0 30px 0;
-    }
-  }
-
-  .main__discription {
-    &--photo {
-      margin: 0 385px 68px 383px;
-    }
-
-    &--form {
-      margin: 0 360px 61px 360px;
-    }
   }
 
   .main__form {

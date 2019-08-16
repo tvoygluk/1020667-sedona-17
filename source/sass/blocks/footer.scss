@@ -1,6 +1,11 @@
+.footer {
+  padding: 33px 10px 35px;
+}
+
 .footer__hashtag {
-  margin: 33px 0 36px 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 36px;
+  // padding: 0;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -9,8 +14,9 @@
 }
 
 .footer__socials {
-  margin: 0 0 43px 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 43px;
+  // padding: 0;
 }
 
 .footer__copyright {
@@ -20,35 +26,23 @@
 @media (min-width: $tablet-width) {
   .footer {
     display: flex;
-    margin: 36px 0;
-
-    &--photo {
-      margin-top: 78px;
-    }
+    padding: 36px 0;
+    justify-content: space-around;
   }
 
-  .footer__hashtag {
-    margin: 10px 110px 0 60px;
-    padding: 0;
-  }
-
-  .footer__socials {
-    margin: 0 117px 0 0;
-    padding: 0;
-  }
-
+  .footer__hashtag,
+  .footer__socials,
   .footer__copyright {
-    margin: 10px 0 0 0;
-    padding: 0;
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .footer__hashtag {
-    margin: 10px 268px 0 119px;
-  }
+  // .footer__hashtag {
+  //   margin: 10px 268px 0 119px;
+  // }
 
-  .footer__socials {
-    margin: 0 272px 0 0;
-  }
+  // .footer__socials {
+  //   margin: 0 272px 0 0;
+  // }
 }

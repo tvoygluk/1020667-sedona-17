@@ -1,34 +1,7 @@
-// .photo-card {
-//   &:nth-of-type(1) {
-//     .photo-card__the-photo {
-//       background-image: url("../../img/photo-sunset-mobile@1x.jpg");
-//     }
-//   }
-
-//   &:nth-of-type(2) {
-//     .photo-card__the-photo {
-//       background-image: url("../../img/photo-cactus-mobile@1x.jpg");
-//     }
-//   }
-
-//   &:nth-of-type(3) {
-//     .photo-card__the-photo {
-//       background-image: url("../../img/photo-roads-mobile@1x.jpg");
-//     }
-//   }
-
-//   &:nth-of-type(4) {
-//     .photo-card__the-photo {
-//       background-image: url("../../img/photo-bridge-mobile@1x.jpg");
-//     }
-//   }
-// }
-
 .photo-card__the-photo {
   display: block;
   margin: 0 auto;
   width: 280px;
-  // height: 280px;
   height: auto;
   background-color: $gray--darken;
   background-repeat: no-repeat;
@@ -46,17 +19,24 @@
   color: $black;
 }
 
+.photo-card__wrap-text {
+  padding: 15px 10px 0 20px;
+}
+
+.photo-card__text {
+  padding-bottom: 40px;
+}
+
 .photo-card__title {
-  margin: 15px 0 0 20px;
+  margin: 0;
 }
 
 .photo-card__like-count {
   display: block;
-  margin: -10px 0 40px 57px;
+  margin: -10px 0 0 57px;
 }
 
 .photo-card__author {
-  margin: 0 0 0 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -71,29 +51,11 @@
       .photo-card__the-photo {
         width: 648px;
         height: auto;
-        // height: 400px;
-        // background-image: url("../../img/photo-sunset-tablet@1x.jpg");
       }
     }
 
-    // &:nth-of-type(2) {
-    //   .photo-card__the-photo {
-    //     background-image: url("../../img/photo-cactus-tablet@1x.jpg");
-    //   }
-    // }
-
-    // &:nth-of-type(3) {
-    //   .photo-card__the-photo {
-    //     background-image: url("../../img/photo-roads-tablet@1x.jpg");
-    //   }
-    // }
-
     &:nth-of-type(4) {
       margin: 0;
-
-      // .photo-card__the-photo {
-      //   background-image: url("../../img/photo-bridge-tablet@1x.jpg");
-      // }
     }
   }
 
@@ -147,26 +109,7 @@
 
       .photo-card__the-photo {
         width: 1200px;
-        // background-image: url("../../img/photo-sunset-desktop@1x.jpg");
       }
     }
-
-    // &:nth-of-type(2) {
-    //   .photo-card__the-photo {
-    //     background-image: url("../../img/photo-cactus-desktop@1x.jpg");
-    //   }
-    // }
-
-    // &:nth-of-type(3) {
-    //   .photo-card__the-photo {
-    //     background-image: url("../../img/photo-roads-desktop@1x.jpg");
-    //   }
-    // }
-
-    // &:nth-of-type(4) {
-    //   .photo-card__the-photo {
-    //     background-image: url("../../img/photo-bridge-desktop@1x.jpg");
-    //   }
-    // }
   }
 }

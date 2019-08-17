@@ -1,4 +1,4 @@
-.phone-number {
+.contact {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
@@ -8,16 +8,22 @@
     position: absolute;
     display: block;
     top: 34px;
-    right: 18px;
+    right: 0;
     width: 58px;
     height: 58px;
     background-color: $gray--dark;
   }
+
+  &:last-child {
+    .contact__input {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.phone-number__label {
-  display: block;
-  margin: 0 15px 8px 3px;
+.contact__label {
+  // display: block;
+  margin: 0 0 8px 22px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -26,10 +32,12 @@
   text-transform: uppercase;
 }
 
-.phone-number__input {
-  margin: 0 0 12px -18px;
-  padding: 20px;
-  width: 100%;
+.contact__input {
+  // margin: 0 0 12px -18px;
+  margin-bottom: 12px;
+  padding: 20px 70px 20px 20px;
+  // width: 100%;
+  flex-grow: 1;
   background-color: $gray;
   border-width: 0;
 
@@ -41,7 +49,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .phone-number {
+  .contact {
     display: flex;
     flex-direction: column-reverse;
 
@@ -50,13 +58,13 @@
     }
   }
 
-  .phone-number__input {
+  .contact__input {
     width: 648px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .phone-number {
+  .contact {
     flex-direction: row-reverse;
 
     &::after {
@@ -65,16 +73,16 @@
     }
   }
 
-  .phone-number__hide-desktop {
+  .contact__hide-desktop {
     display: none;
   }
 
-  .phone-number__label {
+  .contact__label {
     margin: 15px 20px 0 40px;
     padding: 0 0 0 0;
   }
 
-  .phone-number__input {
+  .contact__input {
     width: 315px;
     padding: 0 0 0 21px;
     margin: -2px 0 -15px 0;

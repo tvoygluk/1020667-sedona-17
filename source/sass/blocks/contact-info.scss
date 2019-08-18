@@ -16,10 +16,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contact-info {
+    padding: 0 60px;
+  }
+
   .contact-info__out-wrap {
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 79px;
+    // margin: 0 0 0 79px;
   }
 
   .contact-info__title {
@@ -34,9 +38,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contact-info {
+    padding: 0;
+  }
+
   .contact-info__out-wrap {
     flex-direction: row;
     // justify-content: space-between;
+    // align-items: flex-start;
+    // justify-content: flex-start;
   }
 
   .contact-info__title {
@@ -45,10 +55,11 @@
   }
 
   .contact-info__wrap {
-    margin: 0 76px 0 0;
+    margin: 0;
+    width: 50%;
   }
 
   .contact-info__wrap--e-mail {
-    margin: 0 0 0 -34px;
+    // margin: 0 0 0 -34px;
   }
 }

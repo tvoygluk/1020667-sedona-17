@@ -53,23 +53,39 @@
     display: flex;
     flex-direction: column-reverse;
 
-    &::after {
-      right: 55px;
-    }
+    // &::after {
+    //   right: 0;
+    // }
   }
 
   .contact__input {
-    width: 648px;
+    // width: 648px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contact {
     flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
 
     &::after {
-      top: -2px;
-      right: 0;
+      top: 0;
+      // right: 0;
+    }
+
+    &:nth-of-type(1) {
+      padding-left: 126px;
+
+      &::after {
+        right: 74px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      &::after {
+        right: 123px;
+      }
     }
   }
 
@@ -78,13 +94,14 @@
   }
 
   .contact__label {
-    margin: 15px 20px 0 40px;
-    padding: 0 0 0 0;
+    margin: 0 16px 0 0;
+    // padding: 0 0 0 0;
   }
 
   .contact__input {
     width: 315px;
-    padding: 0 0 0 21px;
-    margin: -2px 0 -15px 0;
+    // padding: 0 0 0 21px;
+    margin: 0;
+    flex-grow: 0;
   }
 }

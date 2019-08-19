@@ -58,23 +58,26 @@
   position: absolute;
   top: 0;
   left: 110px;
+
   z-index: 5;
 }
 
 .navigation__close {
-  position: absolute;
-  top: 25px;
-  right: 21px;
-  height: 14px;
-  width: 21px;
+  position: relative;
+  top: 34px;
+  right: -277px;
+  height: 24px;
+  width: 24px;
   z-index: 11;
+  border-width: 0;
+  background-color: $color-main;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: -5px;
+    top: 8px;
+    right: -3px;
     width: 28px;
     height: 4px;
     background-color: $white;

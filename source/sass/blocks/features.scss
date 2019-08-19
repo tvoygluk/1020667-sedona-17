@@ -40,25 +40,10 @@
       line-height: 21px;
     }
   }
-
-  &:nth-of-type(1) {
-    .features__photo {
-      background-image: url("../../img/main-city-mobile@1x.jpg");
-      background-size: 320px 260px;
-      height: 260px;
-
-      // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      //   background-image: url("../../img/main-city-mobile@2x.jpg")
-      // }
-    }
-  }
 }
 
 .features__photo {
   background-color: $gray--darken;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .features__title {
@@ -105,26 +90,13 @@
       }
     }
 
-    &:nth-of-type(1) {
-      .features__photo {
-        height: 256px;
-        background-image: url("../../img/main-city-tablet@1x.jpg");
-        background-size: 512px auto;
-        // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        //   background-image: url("../../img/main-city-tablet@2x.jpg")
-        // }
-      }
-    }
-
     &:nth-of-type(2) {
       .features__wrap-typograph {
         order: 2;
       }
     }
 
-    &:nth-of-type(3),
-    &:nth-of-type(4),
-    &:nth-of-type(5) {
+    &:nth-of-type(n+3) {
       display: inline-flex;
       flex-direction: column;
       margin-right: -4px;
@@ -134,7 +106,8 @@
 
   .features__wrap-flex-element {
     display: flex;
-    height: 256px;
+    align-items: flex-start;
+    // height: 256px;
   }
 
   .features__wrap-typograph {
@@ -156,14 +129,13 @@
 
 @media (min-width: $desktop-width) {
   .features__wrap-typograph,
-  .features__item:nth-of-type(3),
-  .features__item:nth-of-type(4),
-  .features__item:nth-of-type(5) {
+  .features__item:nth-of-type(n+3) {
     width: 400px;
   }
 
   .features__photo {
     width: 800px;
+    height: 256px;
   }
 
   .features__item {
@@ -177,16 +149,6 @@
 
       .features__number {
         margin-bottom: 23px;
-      }
-    }
-
-    &:nth-of-type(1) {
-      .features__photo {
-        background-image: url("../../img/main-city-desktop@1x.jpg");
-        background-size: 800px auto;
-        // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        //   background-image: url("../../img/main-city-desktop@2x.jpg")
-        // }
       }
     }
   }

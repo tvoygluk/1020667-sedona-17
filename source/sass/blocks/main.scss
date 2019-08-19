@@ -11,7 +11,6 @@
   line-height: 26px;
   color: $black;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .main__discription {
@@ -22,26 +21,26 @@
   line-height: 24px;
   color: $gray--darkest;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .main__features-list {
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: $mobile-width/2 solid transparent;
+    border-right: $mobile-width/2 solid transparent;
+    border-top: 18px solid $white;
+  }
 }
 
 .main__photo-card {
   margin: 0 auto;
-}
-
-.main__decorations-triangle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: $mobile-width/2 solid transparent;
-  border-right: $mobile-width/2 solid transparent;
-  border-top: 18px solid $white;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,11 +63,7 @@
     margin-bottom: 28px;
     font-size: 21px;
 
-    &--photo {
-      font-size: 30px;
-    }
-
-    &--form {
+    &--bigger {
       font-size: 30px;
     }
   }
@@ -79,15 +74,6 @@
 
   .main__form {
     margin-bottom: 99px;
-
-    &::after {
-      position: absolute;
-      bottom: 18px;
-      right: 57px;
-      content: "* — обязательные поля";
-      font-family: "PT Sans", "Arial", sans-serif;
-      font-size: 14px;
-    }
   }
 }
 
@@ -98,11 +84,5 @@
 
   .main__title {
     padding: 0;
-  }
-
-  .main__form {
-    &::after {
-      right: 122px;
-    }
   }
 }

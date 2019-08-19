@@ -45,13 +45,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .contact {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .contact {
     flex-direction: row-reverse;

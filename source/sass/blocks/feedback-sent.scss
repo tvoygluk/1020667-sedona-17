@@ -1,7 +1,7 @@
 .feedback-sent {
   display: none;
-  position: absolute;
-  top: 1876px;
+  position: fixed;
+  top: calc(50% - 100px);
   width: $mobile-width;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: $white;
@@ -34,7 +34,7 @@
 }
 
 .feedback-sent__button-wrap {
-  margin: 0 0 0 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -43,8 +43,8 @@
 
 @media (min-width: $tablet-width) {
   .feedback-sent {
-    top: 984px;
-    left: 65px;
+    top: calc(50% - 200px);
+    left: calc(50% - 320px);
     width: 640px;
   }
 
@@ -57,12 +57,5 @@
     margin: 43px auto;
     padding: 18px 155px 16px 155px;
     font-size: 21px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .feedback-sent {
-    top: 934px;
-    left: 319px;
   }
 }

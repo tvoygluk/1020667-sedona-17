@@ -26,6 +26,15 @@
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    &::after {
+      position: absolute;
+      bottom: 18px;
+      right: 57px;
+      content: "* — обязательные поля";
+      font-family: "PT Sans", "Arial", sans-serif;
+      font-size: 14px;
+    }
   }
 
   .feedback__impression {
@@ -54,12 +63,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .feedback {
+    &::after {
+      right: 122px;
+    }
+  }
+
   .feedback__impression {
     margin: 0;
   }
 
   .feedback__full-name {
-    margin: 0 0 0 0;
+    margin: 0;
   }
 
   .feedback__visited {

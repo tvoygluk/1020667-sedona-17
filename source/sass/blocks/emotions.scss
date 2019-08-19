@@ -15,8 +15,6 @@
 }
 
 .emotions__letter {
-  display: inline-flex;
-  // margin: 0 0 0 17px;
   padding: 15px 10px 73px 22px;
   width: 279px;
   border-width: 0;
@@ -32,7 +30,7 @@
 @media (min-width: $tablet-width) {
   .emotions__title {
     margin: 0 0 58px 0;
-    padding: 0 0 0 0;
+    padding: 0;
     font-size: 21px;
   }
 
@@ -51,6 +49,6 @@
   }
 
   .emotions__letter-label {
-    padding: 0 0;
+    padding: 0;
   }
 }

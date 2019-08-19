@@ -1,8 +1,9 @@
 .error {
   display: none;
-  position: absolute;
+  position: fixed;
   width: $mobile-width;
-  top: 1550px;
+  top: 50%;
+
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: $white;
   z-index: 10;
@@ -36,8 +37,8 @@
 
 @media (min-width: $tablet-width) {
   .error {
-    top: 1406px;
-    left: 187px;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
     width: 400px;
   }
 
@@ -56,12 +57,5 @@
     margin: 0 auto 49px auto;
     padding: 16px 122px;
     font-size: 21px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .error {
-    top: 1387px;
-    left: 443px;
   }
 }

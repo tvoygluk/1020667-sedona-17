@@ -30,10 +30,6 @@
   width: 321px;
   height: 201px;
   background-color: $gray--darken;
-  // background-image: url("../../img/video-mobile@1x.jpg");
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
 }
 
 .video-card__controls {
@@ -48,7 +44,6 @@
     width: 648px;
     height: 499px;
     margin: 0 auto;
-    // background-image: url("../../img/video-tablet@1x.jpg");
   }
 
   .video-card__controls {
@@ -74,7 +69,6 @@
 @media (min-width: $desktop-width) {
   .video-card__the-video {
     width: 800px;
-    // background-image: url("../../img/video-desktop@1x.jpg");
   }
 
   .video-card__controls {

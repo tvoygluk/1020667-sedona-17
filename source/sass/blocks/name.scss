@@ -16,7 +16,6 @@
 
 .name__input {
   padding: 20px;
-  // width: 230px;
   background-color: $gray;
   border-width: 0;
   flex-grow: 1;
@@ -37,6 +36,5 @@
 @media (min-width: $desktop-width) {
   .name__input {
     width: 350px;
-    // flex-grow: 0;
   }
 }

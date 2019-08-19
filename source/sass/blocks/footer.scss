@@ -5,7 +5,6 @@
 .footer__hashtag {
   margin-top: 0;
   margin-bottom: 36px;
-  // padding: 0;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -16,7 +15,6 @@
 .footer__socials {
   margin-top: 0;
   margin-bottom: 43px;
-  // padding: 0;
 }
 
 .footer__copyright {
@@ -35,14 +33,4 @@
   .footer__copyright {
     margin: 0;
   }
-}
-
-@media (min-width: $desktop-width) {
-  // .footer__hashtag {
-  //   margin: 10px 268px 0 119px;
-  // }
-
-  // .footer__socials {
-  //   margin: 0 272px 0 0;
-  // }
 }

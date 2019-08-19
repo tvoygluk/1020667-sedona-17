@@ -7,7 +7,7 @@
   position: relative;
   display: block;
   padding-left: 81px;
-  margin: 32px 0 54px 17px;
+  margin: 0 0 54px 0;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -27,6 +27,15 @@
   }
 }
 
+.check {
+  padding: 0 0 0 17px;
+
+  &:last-of-type {
+    .check__label {
+      margin-bottom: 0;
+    }
+  }
+}
 // .check__input:disabled ~ .check__label {
 //   opacity: 0.6;
 // }
@@ -52,31 +61,28 @@
 
 @media (min-width: $tablet-width) {
   .check {
-    &:nth-of-type(1) {
+    padding: 0;
+
+    &:nth-of-type(2n-1) {
+      padding-left: 10px;
+
       .check__label {
-        margin: 32px 0 62px 154px;
-        padding: 0 0 0 79px;
+        margin: 0 0 54px 0;
       }
     }
 
-    &:nth-of-type(2) {
+    &:nth-of-type(2n) {
+      padding-left: 10px;
+
       .check__label {
-        margin: 32px 0 62px 30px;
-        padding: 0 0 0 81px;
+        margin: 0 0 54px 0;
       }
     }
 
-    &:nth-of-type(3) {
+    &:nth-last-of-type(1),
+    &:nth-last-of-type(2) {
       .check__label {
-        margin: 0 0 0 154px;
-        padding: 0 0 0 79px;
-      }
-    }
-
-    &:nth-of-type(4) {
-      .check__label {
-        margin: 0 0 0 30px;
-        padding: 0 0 0 81px;
+        margin-bottom: 0;
       }
     }
   }
@@ -84,31 +90,12 @@
 
 @media (min-width: $desktop-width) {
   .check {
-    &:nth-of-type(1) {
-      .check__label {
-        margin: 56px -12px 0 116px;
-        padding: 0 0 0 80px;
-      }
-    }
+    &:nth-of-type(n) {
+      padding: 0;
 
-    &:nth-of-type(2) {
       .check__label {
-        margin: 56px 0 0 75px;
+        margin: 0 0 54px 0;
         padding: 0 0 0 82px;
-      }
-    }
-
-    &:nth-of-type(3) {
-      .check__label {
-        margin: 56px 0 0 34px;
-        padding: 0 0 0 82px;
-      }
-    }
-
-    &:nth-of-type(4) {
-      .check__label {
-        margin: 56px 0 0 -26px;
-        padding: 0 0 0 81px;
       }
     }
   }

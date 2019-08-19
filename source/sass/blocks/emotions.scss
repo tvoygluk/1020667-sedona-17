@@ -10,9 +10,13 @@
   text-align: center;
 }
 
+.emotions__letter-label {
+  padding-left: 17px;
+}
+
 .emotions__letter {
   display: inline-flex;
-  margin: 0 0 0 17px;
+  // margin: 0 0 0 17px;
   padding: 15px 10px 73px 22px;
   width: 279px;
   border-width: 0;
@@ -42,6 +46,11 @@
 @media (min-width: $desktop-width) {
   .emotions__letter {
     width: 960px;
-    margin: 0 0 0 116px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .emotions__letter-label {
+    padding: 0 0;
   }
 }

@@ -3,6 +3,7 @@
 }
 
 .visited__title {
+  margin: 0 0 32px 0;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -21,18 +22,12 @@
 
   .visited__title {
     font-size: 21px;
-    margin: 0 179px 23px 179px;
-    padding: 0 0 0 0;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .visited__check {
     width: 25%;
-  }
-
-  .visited__title {
-    margin: 0 400px 0 400px;
-    padding: 0 0;
   }
 }

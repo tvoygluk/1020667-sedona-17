@@ -23,7 +23,6 @@
   .contact-info__out-wrap {
     display: flex;
     flex-direction: column;
-    // margin: 0 0 0 79px;
   }
 
   .contact-info__title {
@@ -44,9 +43,6 @@
 
   .contact-info__out-wrap {
     flex-direction: row;
-    // justify-content: space-between;
-    // align-items: flex-start;
-    // justify-content: flex-start;
   }
 
   .contact-info__title {
@@ -57,9 +53,5 @@
   .contact-info__wrap {
     margin: 0;
     width: 50%;
-  }
-
-  .contact-info__wrap--e-mail {
-    // margin: 0 0 0 -34px;
   }
 }

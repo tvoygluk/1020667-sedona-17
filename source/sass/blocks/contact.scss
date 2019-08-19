@@ -22,7 +22,6 @@
 }
 
 .contact__label {
-  // display: block;
   margin: 0 0 8px 22px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -33,10 +32,8 @@
 }
 
 .contact__input {
-  // margin: 0 0 12px -18px;
   margin-bottom: 12px;
   padding: 20px 70px 20px 20px;
-  // width: 100%;
   flex-grow: 1;
   background-color: $gray;
   border-width: 0;
@@ -52,14 +49,6 @@
   .contact {
     display: flex;
     flex-direction: column-reverse;
-
-    // &::after {
-    //   right: 0;
-    // }
-  }
-
-  .contact__input {
-    // width: 648px;
   }
 }
 
@@ -71,7 +60,6 @@
 
     &::after {
       top: 0;
-      // right: 0;
     }
 
     &:nth-of-type(1) {
@@ -95,12 +83,10 @@
 
   .contact__label {
     margin: 0 16px 0 0;
-    // padding: 0 0 0 0;
   }
 
   .contact__input {
     width: 315px;
-    // padding: 0 0 0 21px;
     margin: 0;
     flex-grow: 0;
   }

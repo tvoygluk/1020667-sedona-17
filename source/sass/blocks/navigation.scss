@@ -54,14 +54,6 @@
   }
 }
 
-.navigation__logo-triangle {
-  position: absolute;
-  top: 0;
-  left: 110px;
-
-  z-index: 5;
-}
-
 .navigation__close {
   position: relative;
   top: 34px;
@@ -123,11 +115,6 @@
   .navigation__close,
   .navigation__menu-btn {
     display: none;
-  }
-
-  .navigation__logo-triangle {
-    top: -56px;
-    left: 333px;
   }
 }
 

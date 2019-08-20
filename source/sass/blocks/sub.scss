@@ -70,7 +70,7 @@
     padding: 0;
   }
 
-  .sub__item{
+  .sub__item {
     &:nth-of-type(n) {
       display: flex;
       flex-direction: column;

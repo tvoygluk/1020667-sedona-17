@@ -58,6 +58,11 @@
   }
 }
 
+.controls__сlosed-captions,
+.controls__scale {
+  fill: $gray-blueish;
+}
+
 @media (min-width: $tablet-width) {
   .controls {
     position: relative;

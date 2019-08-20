@@ -42,6 +42,16 @@
   text-transform: none;
 }
 
+.photo-card__like-btn {
+  border-width: 0;
+  background-color: inherit;
+}
+
+.photo-card__like-icon {
+  fill: $black--alfa-30;
+  z-index: 10;
+}
+
 @media (min-width: $tablet-width) {
   .photo-card {
     &:nth-of-type(1) {

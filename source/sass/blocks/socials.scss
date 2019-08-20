@@ -10,8 +10,29 @@
 }
 
 .socials__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
   background-color: $color-main;
+}
+
+.socials__logo {
+  fill: $white;
+
+  &--twitter {
+    width: 18px;
+    height: 14px;
+  }
+
+  &--facebook {
+    width: 9px;
+    height: 18px;
+  }
+
+  &--youtube {
+    width: 20px;
+    height: 14px;
+  }
 }

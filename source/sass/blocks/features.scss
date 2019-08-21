@@ -106,8 +106,6 @@
 
   .features__wrap-flex-element {
     display: flex;
-    align-items: flex-start;
-    // height: 256px;
   }
 
   .features__wrap-typograph {
@@ -115,6 +113,7 @@
   }
 
   .features__photo {
+    display: block;
     width: 512px;
   }
 

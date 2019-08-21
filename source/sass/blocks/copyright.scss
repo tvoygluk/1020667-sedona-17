@@ -1,9 +1,11 @@
 .copyright {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .copyright__text {
-  margin: 0 auto;
+  margin-right: 9px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   text-align: center;

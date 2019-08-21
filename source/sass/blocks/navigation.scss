@@ -95,11 +95,14 @@
   }
 
   .navigation__item {
+    position: relative;
     width: calc((100% - 156px) / 4);
     padding: 0 10px;
     border: none;
     background-color: $white;
     box-shadow: none;
+    z-index: 15;
+    cursor: pointer;
   }
 
   .navigation__item:nth-child(3n) {
@@ -107,11 +110,34 @@
   }
 
   .navigation__link {
+    position: relative;
     padding: 0;
     font-size: 14px;
     line-height: 26px;
     text-align: center;
     color: $black;
+    z-index: 15;
+    cursor: pointer;
+  }
+
+  // .navigation__item:hover,
+  // .navigation__item:focus {
+  //   + .active {
+  //     color: $brown;
+  //   }
+  // }
+
+  .active.navigation__link {
+    color: $brown--light;
+  }
+
+  .active.navigation__link:hover,
+  .active.navigation__link:focus {
+    color: $brown;
+  }
+
+  .active.navigation__link:visited {
+    color: $brown--lighten-alfa-30;
   }
 
   .navigation__close,

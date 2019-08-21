@@ -31,13 +31,15 @@
 
 .controls__buttons {
   display: flex;
+  align-items: center;
+  padding: 0 23px 0 25px;
   height: 66px;
   background-color: $gray;
 }
 
 .controls__replay {
   position: relative;
-  margin: 25px 25px;
+  margin: 0;
   padding: 0;
   width: 17px;
   height: 16px;
@@ -56,6 +58,11 @@
     border-left-color: $gray-blueish;
     border-bottom: 0;
   }
+}
+
+.controls__сlosed-captions {
+  margin-left: auto;
+  margin-right: 31px;
 }
 
 .controls__сlosed-captions,
@@ -88,13 +95,16 @@
   }
 
   .controls__buttons {
-    height: 0;
+    position: absolute;
+    bottom: 0;
+    height: 93px;
+    width: 648px;
+    padding: 0 41px 0 35px;
+    background-color: inherit;
+    z-index: 10;
   }
 
   .controls__replay {
-    position: absolute;
-    bottom: 12px;
-    left: 11px;
     border-color: $white;
     border-left-color: transparent;
 
@@ -102,6 +112,11 @@
       border-color: transparent;
       border-left-color: $white;
     }
+  }
+
+  .controls__сlosed-captions,
+  .controls__scale {
+    fill: $white;
   }
 }
 
@@ -112,5 +127,9 @@
     &::before {
       width: 540px;
     }
+  }
+
+  .controls__buttons {
+    width: 800px;
   }
 }

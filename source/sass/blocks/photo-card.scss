@@ -1,6 +1,9 @@
+.photo-card {
+  padding: 22px 20px 21px;
+}
+
 .photo-card__img-photo {
-  display: block;
-  margin: 0 auto;
+  margin-bottom: 12px;
   width: 280px;
   height: auto;
   background-color: $gray--darken;
@@ -16,21 +19,16 @@
   color: $black;
 }
 
-.photo-card__wrap-text {
-  padding: 15px 10px 0 20px;
+.photo-card__wrap-count {
+  display: flex;
 }
 
-.photo-card__text {
-  padding-bottom: 40px;
+.photo-card__wrap-text {
+  margin-bottom: 8px;
 }
 
 .photo-card__title {
   margin: 0;
-}
-
-.photo-card__like-count {
-  display: block;
-  margin: -10px 0 0 57px;
 }
 
 .photo-card__author {
@@ -43,6 +41,8 @@
 }
 
 .photo-card__like-btn {
+  margin-right: 14px;
+  padding: 0;
   border-width: 0;
   background-color: inherit;
 }
@@ -54,10 +54,21 @@
 
 @media (min-width: $tablet-width) {
   .photo-card {
+    padding: 0;
+
     &:nth-of-type(1) {
       .photo-card__img-photo {
+        margin: 0;
         width: 648px;
         height: auto;
+      }
+
+      .photo-card__text {
+        padding: 14px 20px 18px 21px;
+      }
+
+      .photo-card__wrap-text {
+        width: 544px;
       }
     }
 
@@ -66,14 +77,22 @@
     }
   }
 
+  .photo-card__wrap-text {
+    width: 219px;
+    margin-bottom: 0;
+  }
+
   .photo-card__img-photo {
+    display: block;
+    margin: 0;
     width: 324px;
     height: 267px;
   }
 
   .photo-card__text {
     display: flex;
-    padding-bottom: 17px;
+    align-items: center;
+    padding: 15px 21px 17px 21px;
     background-color: $gray;
   }
 
@@ -82,11 +101,11 @@
   }
 
   .photo-card__wrap-count {
-    margin: 0 28px 0 auto;
+    align-items: flex-start;
   }
 
-  .photo-card__like-count {
-    margin: 8px 0 0 0;
+  .photo-card__like-btn {
+    margin-right: 10px;
   }
 }
 
@@ -98,6 +117,7 @@
   .photo-card__text {
     position: relative;
     margin-top: -80px;
+    padding-right: 10px;
     background-color: $black--alfa-30;
   }
 
@@ -117,6 +137,18 @@
       .photo-card__img-photo {
         width: 1200px;
       }
+
+      .photo-card__wrap-text {
+        width: 1094px;
+      }
     }
+  }
+
+  .photo-card__wrap-text {
+    width: 294px;
+  }
+
+  .photo-card__like-icon {
+    fill: $white;
   }
 }

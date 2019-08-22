@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  z-index: 10;
 }
 
 .navigation__item {
@@ -27,6 +26,16 @@
   text-align: center;
   color: $white;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: $color-main--darken;
+  }
+
+  &:active {
+    background-color: $color-main--darkest;
+    color: $white--alfa-30;
+  }
 }
 
 .navigation__wrap-btn {
@@ -62,9 +71,9 @@
   right: -277px;
   height: 24px;
   width: 24px;
-  z-index: 11;
   border-width: 0;
-  background-color: $color-main;
+  background-color: transparent;
+  z-index: 2;
 
   &::before,
   &::after {
@@ -92,6 +101,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 15px 0;
+    z-index: 3;
   }
 
   .navigation__item {
@@ -101,43 +111,49 @@
     border: none;
     background-color: $white;
     box-shadow: none;
-    z-index: 15;
+
     cursor: pointer;
+
+    .navigation__link {
+      position: relative;
+      padding: 0;
+      font-size: 14px;
+      line-height: 26px;
+      text-align: center;
+      color: $black;
+      cursor: pointer;
+    }
   }
 
   .navigation__item:nth-child(3n) {
     margin-left: auto;
   }
 
-  .navigation__link {
-    position: relative;
-    padding: 0;
-    font-size: 14px;
-    line-height: 26px;
-    text-align: center;
-    color: $black;
-    z-index: 15;
-    cursor: pointer;
-  }
-
-  // .navigation__item:hover,
-  // .navigation__item:focus {
-  //   + .active {
-  //     color: $brown;
-  //   }
-  // }
-
-  .active.navigation__link {
+  .navigation__link.active {
     color: $brown--light;
+    background-color: $white;
+
+    &:hover,
+    &:focus {
+      color: $brown;
+    }
+
+    &:active {
+      color: $brown--lighten-alfa-30;
+    }
   }
 
-  .active.navigation__link:hover,
-  .active.navigation__link:focus {
-    color: $brown;
-  }
+  .navigation__link:not(.active) {
+    background-color: $white;
 
-  .active.navigation__link:visited {
-    color: $brown--lighten-alfa-30;
+    &:hover,
+    &:focus {
+      color: $color-main;
+    }
+
+    &:active {
+      color: $black--alfa-30;
+    }
   }
 
   .navigation__close,

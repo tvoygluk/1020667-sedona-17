@@ -16,6 +16,19 @@
   width: 46px;
   height: 48px;
   background-color: $color-main;
+
+  &:hover,
+  &:focus {
+    background-color: $color-main--darken;
+  }
+
+  &:active {
+    background-color: $color-main--darkest;
+
+    .socials__logo {
+      opacity: 0.3;
+    }
+  }
 }
 
 .socials__logo {

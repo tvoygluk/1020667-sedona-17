@@ -58,6 +58,28 @@
     border-left-color: $gray-blueish;
     border-bottom: 0;
   }
+
+  &:hover,
+  &:focus {
+    border-color: $gray--darkest;
+    border-left-color: transparent;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    border-color: transparent;
+    border-left-color: $gray--darkest;
+  }
+
+  &:active {
+    border-color: $gray--darkest-alfa-30;
+    border-left-color: transparent;
+  }
+
+  &:active::after {
+    border-color: transparent;
+    border-left-color: $gray--darkest-alfa-30;
+  }
 }
 
 .controls__сlosed-captions {
@@ -68,6 +90,15 @@
 .controls__сlosed-captions,
 .controls__scale {
   fill: $gray-blueish;
+
+  &:hover,
+  &:focus {
+    fill: $gray--darkest;
+  }
+
+  &:active {
+    fill: $gray--darkest-alfa-30;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -112,11 +143,44 @@
       border-color: transparent;
       border-left-color: $white;
     }
+
+    &:hover,
+    &:focus {
+      border-color: $white--alfa-60;
+      border-left-color: transparent;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      border-color: transparent;
+      border-left-color: $white--alfa-60;
+    }
+
+    &:active {
+      border-color: $white--alfa-30;
+      border-left-color: transparent;
+    }
+
+    &:active::after {
+      border-color: transparent;
+      border-left-color: $white--alfa-30;
+    }
   }
 
   .controls__сlosed-captions,
   .controls__scale {
+    position: relative;
     fill: $white;
+    z-index: 11;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $white--alfa-60;
+  }
+
+  &:active {
+    fill: $white--alfa-30;
   }
 }
 

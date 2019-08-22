@@ -16,13 +16,13 @@
 }
 
 .name__input {
-  padding: 20px;
+  padding: 16px;
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: $black;
   background-color: $gray;
-  border-width: 0;
+  border: 4px $gray solid;
   flex-grow: 1;
 
   &::placeholder {
@@ -30,6 +30,16 @@
     line-height: 26px;
     color: $black;
     opacity: 1;
+  }
+
+  &:hover {
+    background-color: $gray--dark;
+    border-color: $gray--dark;
+  }
+
+  &:focus {
+    background-color: $white;
+    border-color: $gray--dark;
   }
 }
 

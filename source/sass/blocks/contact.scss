@@ -57,16 +57,27 @@
 
 .contact__input {
   margin-bottom: 12px;
-  padding: 20px 70px 20px 20px;
+  margin-right: 58px;
+  padding: 16px;
   flex-grow: 1;
   background-color: $gray;
-  border-width: 0;
+  border: 4px $gray solid;
 
   &::placeholder {
     font-size: 18px;
     line-height: 26px;
     color: $black;
     opacity: 1;
+  }
+
+  &:hover {
+    background-color: $gray--dark;
+    border-color: $gray--dark;
+  }
+
+  &:focus {
+    background-color: $white;
+    border-color: $gray--dark;
   }
 }
 

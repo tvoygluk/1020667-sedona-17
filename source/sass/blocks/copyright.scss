@@ -1,9 +1,33 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &:hover,
+  &:focus {
+    .copyright__academy-logo {
+      fill: $color-main;
+    }
+  }
+
+  &:active {
+    .copyright__academy-logo {
+      fill: $black--alfa-30;
+    }
+  }
+}
+
 .copyright__text {
-  display: block;
+  margin-right: 9px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
   line-height: 26px;
   color: $black;
+}
+
+.copyright__academy-logo {
+  fill: $black;
 }

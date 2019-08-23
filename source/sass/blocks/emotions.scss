@@ -3,20 +3,65 @@
 }
 
 .emotions__title {
+  margin-bottom: 16px;
   font-size: 18px;
   line-height: 26px;
   color: $black;
   text-align: center;
 }
 
+.emotions__letter-label {
+  padding-left: 17px;
+}
+
 .emotions__letter {
-  width: 100%;
+  padding: 11px 6px 69px 18px;
+  width: 279px;
   border-width: 0;
   background-color: $gray;
+  border: 4px $gray solid;
+
 
   &::placeholder {
     font-size: 18px;
     line-height: 26px;
     color: $black;
+    opacity: 1;
+  }
+
+  &:hover {
+    background-color: $gray--dark;
+    border-color: $gray--dark;
+  }
+
+  &:focus {
+    background-color: $white;
+    border-color: $gray--dark;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .emotions__title {
+    margin: 0 0 58px 0;
+    padding: 0;
+    font-size: 21px;
+  }
+
+  .emotions__letter {
+    width: 648px;
+    margin: 0 0 0 58px;
+    // padding: 15px 10px 73px 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .emotions__letter {
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .emotions__letter-label {
+    padding: 0;
   }
 }

@@ -1,4 +1,12 @@
+.name {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 280px;
+}
+
 .name__label {
+  margin-right: 15px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -8,12 +16,41 @@
 }
 
 .name__input {
+  padding: 16px;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: $black;
   background-color: $gray;
-  border-width: 0;
+  border: 4px $gray solid;
+  flex-grow: 1;
 
   &::placeholder {
     font-size: 18px;
     line-height: 26px;
     color: $black;
+    opacity: 1;
+  }
+
+  &:hover {
+    background-color: $gray--dark;
+    border-color: $gray--dark;
+  }
+
+  &:focus {
+    background-color: $white;
+    border-color: $gray--dark;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .name__input {
+    width: 216px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .name__input {
+    width: 350px;
   }
 }

@@ -1,4 +1,10 @@
+.hotel {
+  padding-top: 28px;
+}
+
 .hotel__title {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-size: 21px;
   line-height: 26px;
   color: $black;
@@ -7,7 +13,8 @@
 }
 
 .hotel__notice {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 34px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -17,6 +24,26 @@
 }
 
 .hotel__button {
-  margin: 0 auto;
+  margin: 0 auto 51px auto;
   padding: 16px 48px 16px 46px;
+}
+
+@media (min-width: $tablet-width) {
+  .hotel {
+    padding-top: 54px;
+  }
+
+  .hotel__title {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .hotel__notice {
+    margin-bottom: 41px;
+  }
+
+  .hotel__button {
+    margin: 0 auto 57px auto;
+    padding: 16px 137px 16px 135px;
+  }
 }

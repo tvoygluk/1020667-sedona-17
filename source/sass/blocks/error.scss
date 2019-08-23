@@ -1,9 +1,17 @@
 .error {
+  display: none;
+  position: fixed;
+  width: $mobile-width;
+  top: 50%;
+
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: $white;
+  z-index: 10;
 }
 
 .error__title {
+  padding-top: 40px;
+  margin: 0 0 25px 0;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -12,6 +20,7 @@
 }
 
 .error__discription {
+  margin: 0 48px 23px 46px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -21,13 +30,32 @@
 }
 
 .error__button {
-  margin: 0 auto;
+  margin: 0 auto 37px auto;
   padding: 17px 78px;
   font-size: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .error {
-    width: 640px;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    width: 400px;
+  }
+
+  .error__title {
+    padding-top: 55px;
+    margin: 0 88px 22px 74px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .error__discription {
+    margin-bottom: 33px;
+  }
+
+  .error__button {
+    margin: 0 auto 49px auto;
+    padding: 16px 122px;
+    font-size: 21px;
   }
 }

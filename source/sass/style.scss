@@ -4,6 +4,7 @@
 @import "grid.scss";
 @import "colors.scss";
 @import "mixins.scss";
+@import "blocks/header.scss";
 @import "blocks/navigation.scss";
 @import "blocks/logo.scss";
 @import "blocks/main.scss";
@@ -13,8 +14,10 @@
 @import "blocks/hotel.scss";
 @import "blocks/map.scss";
 @import "blocks/footer.scss";
+@import "blocks/socials.scss";
 @import "blocks/copyright.scss";
 @import "blocks/video-card.scss";
+@import "blocks/controls.scss";
 @import "blocks/photo-card.scss";
 @import "blocks/feedback.scss";
 @import "blocks/full-name.scss";
@@ -23,10 +26,7 @@
 @import "blocks/visited.scss";
 @import "blocks/emotions.scss";
 @import "blocks/name.scss";
-@import "blocks/surname.scss";
-@import "blocks/patronymic.scss";
-@import "blocks/phone-number.scss";
-@import "blocks/e-mail.scss";
+@import "blocks/contact.scss";
 @import "blocks/radio.scss";
 @import "blocks/check.scss";
 @import "blocks/error.scss";

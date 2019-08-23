@@ -1,9 +1,37 @@
+.footer {
+  padding: 33px 10px 35px;
+  background-color: $white;
+}
+
 .footer__hashtag {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 36px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   color: $black;
   text-transform: uppercase;
+}
+
+.footer__socials {
+  margin-top: 0;
+  margin-bottom: 43px;
+}
+
+.footer__copyright {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    padding: 36px 0;
+    justify-content: space-around;
+  }
+
+  .footer__hashtag,
+  .footer__socials,
+  .footer__copyright {
+    margin: 0;
+  }
 }

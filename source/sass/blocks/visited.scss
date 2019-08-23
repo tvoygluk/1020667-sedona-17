@@ -3,6 +3,7 @@
 }
 
 .visited__title {
+  margin: 0 0 32px 0;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -17,6 +18,11 @@
 
   .visited__check {
     width: 50%;
+  }
+
+  .visited__title {
+    font-size: 21px;
+    padding: 0;
   }
 }
 

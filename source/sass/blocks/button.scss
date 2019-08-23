@@ -7,4 +7,21 @@
   background-color: $color-main;
   border-width: 0;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-main--darken;
+  }
+
+  &:active {
+    color: $white--alfa-30;
+    background-color: $color-main--darkest;
+  }
+
+  &.disabled {
+    color: $white;
+    background-color: $gray--dark;
+    cursor: auto;
+  }
 }

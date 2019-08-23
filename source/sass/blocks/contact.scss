@@ -1,0 +1,144 @@
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 34px;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: $gray--dark;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 53px;
+    right: 19px;
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+
+  &:first-child::before {
+    width: 18px;
+    height: 18px;
+    background-image: url("../../img/icon-phone.svg");
+    background-size: 18px 18px;
+  }
+
+  &:last-child::before {
+    width: 23px;
+    height: 22px;
+    background-image: url("../../img/icon-mail.svg");
+    background-size: 26px 14px;
+  }
+
+  &:last-child {
+    .contact__input {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contact__label {
+  margin: 0 0 8px 22px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: left;
+  color: $gray--darkest;
+  text-transform: uppercase;
+}
+
+.contact__input {
+  margin-bottom: 12px;
+  margin-right: 58px;
+  padding: 16px;
+  flex-grow: 1;
+  background-color: $gray;
+  border: 4px $gray solid;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+    opacity: 1;
+  }
+
+  &:hover {
+    background-color: $gray--dark;
+    border-color: $gray--dark;
+  }
+
+  &:focus {
+    background-color: $white;
+    border-color: $gray--dark;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+
+    &::after {
+      top: 0;
+    }
+
+    &:nth-of-type(1) {
+      padding-left: 126px;
+
+      &::after {
+        right: 74px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      &::after {
+        right: 123px;
+      }
+    }
+
+    &:first-child::before {
+      top: 21px;
+      right: 91px;
+    }
+
+    &:last-child::before {
+      top: 22px;
+      right: 140px;
+    }
+  }
+
+  .contact__hide-desktop {
+    display: none;
+  }
+
+  .contact__label {
+    margin: 0 16px 0 0;
+  }
+
+  .contact__input {
+    width: 315px;
+    margin: 0;
+    flex-grow: 0;
+  }
+
+  .contact__icon {
+    &--phone {
+      top: 20px;
+      right: 92px;
+    }
+
+    &--e-mail {
+      top: 21px;
+      right: 141px;
+    }
+  }
+}

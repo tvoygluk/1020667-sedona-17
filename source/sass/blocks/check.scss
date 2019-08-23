@@ -1,6 +1,102 @@
+.check__input {
+  appearance: none;
+  position: absolute;
+}
+
 .check__label {
+  position: relative;
+  display: block;
+  padding-left: 81px;
+  margin: 0 0 54px 0;
   font-size: 18px;
   line-height: 26px;
   color: $black;
   text-transform: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: $gray;
+  }
+}
+
+.check {
+  padding: 0 0 0 17px;
+
+  &:last-of-type {
+    .check__label {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    .check__input:not(:disabled) ~ .check__label::before {
+      background-color: $gray--dark;
+    }
+  }
+}
+
+.check__input:disabled ~ .check__label {
+  &::before {
+    background-color: $gray--darken;
+  }
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.check__input:checked ~ .check__label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 18px;
+  display: block;
+  width: 22px;
+  height: 13px;
+  border-width: 0 0 3px 3px;
+  border-color: $black;
+  border-style: solid;
+  transform: rotate(-45deg);
+}
+
+@media (min-width: $tablet-width) {
+  .check {
+    padding: 0;
+    margin: 0 0 54px 0;
+
+    &:nth-of-type(n) {
+      padding-left: 10px;
+
+      .check__label {
+        margin: 0;
+      }
+    }
+
+    &:nth-last-of-type(1),
+    &:nth-last-of-type(2) {
+      .check__label {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .check {
+    &:nth-of-type(n) {
+      padding: 0;
+
+      .check__label {
+        padding: 0 0 0 82px;
+      }
+    }
+  }
 }

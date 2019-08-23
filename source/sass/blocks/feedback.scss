@@ -1,15 +1,22 @@
 .feedback__full-name,
 .feedback__contact-info,
 .feedback__impression,
-.feedback__visited,
-.feedback__emotions {
-  margin-top: 24px;
+.feedback__visited {
+  margin: 0 0 24px 0;
 }
 
 .feedback__button {
-  margin: 0 auto;
+  margin: 0 auto 72px auto;
   padding: 16px 50px 16px 46px;
   order: 6;
+}
+
+.feedback__visited {
+  margin-bottom: 36px;
+}
+
+.feedback__emotions {
+  margin: 0 0 48px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,6 +26,15 @@
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    &::after {
+      position: absolute;
+      bottom: 18px;
+      right: 57px;
+      content: "* — обязательные поля";
+      font-family: "PT Sans", "Arial", sans-serif;
+      font-size: 14px;
+    }
   }
 
   .feedback__impression {
@@ -34,5 +50,39 @@
   .feedback__emotions {
     width: 100%;
     order: 1;
+  }
+
+  .feedback__visited {
+    margin-bottom: 83px;
+  }
+
+  .feedback__button {
+    margin: 4px 0 0 60px;
+    padding: 16px 75px 16px 66px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    &::after {
+      right: 122px;
+    }
+  }
+
+  .feedback__impression {
+    margin: 0;
+  }
+
+  .feedback__full-name {
+    margin: 0;
+  }
+
+  .feedback__visited {
+    margin-bottom: 36px;
+  }
+
+  .feedback__button {
+    margin: 0 0 0 118px;
+    padding: 16px 151px 16px 147px;
   }
 }

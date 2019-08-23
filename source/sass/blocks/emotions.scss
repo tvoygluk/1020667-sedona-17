@@ -15,16 +15,28 @@
 }
 
 .emotions__letter {
-  padding: 15px 10px 73px 22px;
+  padding: 11px 6px 69px 18px;
   width: 279px;
   border-width: 0;
   background-color: $gray;
+  border: 4px $gray solid;
+
 
   &::placeholder {
     font-size: 18px;
     line-height: 26px;
     color: $black;
     opacity: 1;
+  }
+
+  &:hover {
+    background-color: $gray--dark;
+    border-color: $gray--dark;
+  }
+
+  &:focus {
+    background-color: $white;
+    border-color: $gray--dark;
   }
 }
 
@@ -38,7 +50,7 @@
   .emotions__letter {
     width: 648px;
     margin: 0 0 0 58px;
-    padding: 15px 10px 73px 22px;
+    // padding: 15px 10px 73px 22px;
   }
 }
 

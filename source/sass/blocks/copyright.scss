@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  width: 125px;
 
   &:hover,
   &:focus {
@@ -30,4 +30,5 @@
 
 .copyright__academy-logo {
   fill: $black;
+  flex-shrink: 0;
 }

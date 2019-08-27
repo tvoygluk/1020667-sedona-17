@@ -103,7 +103,10 @@
   list-style: none;
 }
 
-.features__title-br,
+.features__title-br {
+  display: none;
+}
+
 .features__text-br {
   display: none;
 }
@@ -118,8 +121,6 @@
       flex-direction: column;
 
       .features__title {
-        padding-left: 8px;
-        padding-right: 9px;
         font-size: 21px;
       }
 
@@ -192,6 +193,10 @@
   .features__sub-list {
     margin-bottom: 0;
   }
+
+  .features__title-br {
+    display: inline;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -238,6 +243,6 @@
 
   .features__title-br,
   .features__text-br {
-    display: block;
+    display: inline;
   }
 }

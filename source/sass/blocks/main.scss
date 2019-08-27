@@ -45,6 +45,10 @@
   margin: 0 auto;
 }
 
+.main__photo-section {
+  margin-bottom: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .main__features-list {
     &::before {
@@ -74,12 +78,17 @@
     font-size: 21px;
 
     &--bigger {
+      margin-top: 23px;
       font-size: 30px;
     }
   }
 
   .main__discription {
     margin-bottom: 53px;
+
+    &--bigger {
+      margin-bottom: 70px;
+    }
   }
 
   .main__form {
@@ -94,5 +103,9 @@
 
   .main__title {
     padding: 0 300px;
+
+    &--bigger {
+      margin-top: 61px;
+    }
   }
 }

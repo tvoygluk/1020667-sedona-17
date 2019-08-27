@@ -103,14 +103,6 @@
   list-style: none;
 }
 
-.features__title-br {
-  display: none;
-}
-
-.features__text-br {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   .features__item {
     padding: 46px 48px;
@@ -193,10 +185,6 @@
   .features__sub-list {
     margin-bottom: 0;
   }
-
-  .features__title-br {
-    display: inline;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -239,10 +227,5 @@
       padding-top: 44px;
       padding-bottom: 63px;
     }
-  }
-
-  .features__title-br,
-  .features__text-br {
-    display: inline;
   }
 }

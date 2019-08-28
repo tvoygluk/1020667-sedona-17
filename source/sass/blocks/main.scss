@@ -7,6 +7,7 @@
 .main__title {
   margin-top: 0;
   margin-bottom: 25px;
+  padding: 0 21px;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -16,6 +17,7 @@
 .main__discription {
   margin-top: 0;
   margin-bottom: 27px;
+  padding: 0 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -43,6 +45,10 @@
   margin: 0 auto;
 }
 
+.main__photo-section {
+  margin-bottom: 30px;
+}
+
 @media (min-width: $tablet-width) {
   .main__features-list {
     &::before {
@@ -63,19 +69,26 @@
 
   .main {
     position: relative;
+    padding-top: 50px;
   }
 
   .main__title {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
+    padding: 0 100px;
     font-size: 21px;
 
     &--bigger {
+      margin-top: 23px;
       font-size: 30px;
     }
   }
 
   .main__discription {
     margin-bottom: 53px;
+
+    &--bigger {
+      margin-bottom: 70px;
+    }
   }
 
   .main__form {
@@ -89,6 +102,10 @@
   }
 
   .main__title {
-    padding: 0;
+    padding: 0 300px;
+
+    &--bigger {
+      margin-top: 61px;
+    }
   }
 }

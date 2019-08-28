@@ -66,9 +66,10 @@
 }
 
 .navigation__close {
-  position: relative;
-  top: 34px;
-  right: -277px;
+  display: none;
+  position: absolute;
+  top: 16px;
+  right: 22px;
   height: 24px;
   width: 24px;
   border-width: 0;
@@ -111,48 +112,49 @@
     border: none;
     background-color: $white;
     box-shadow: none;
-
     cursor: pointer;
 
-    .navigation__link {
-      position: relative;
-      padding: 0;
-      font-size: 14px;
-      line-height: 26px;
-      text-align: center;
-      color: $black;
-      cursor: pointer;
+    &:nth-child(3n) {
+      margin-left: auto;
     }
   }
 
-  .navigation__item:nth-child(3n) {
-    margin-left: auto;
-  }
+  .navigation__link {
+    position: relative;
+    padding: 0;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: $black;
+    cursor: pointer;
 
-  .navigation__link.active {
-    color: $brown--light;
-    background-color: $white;
+    &--active {
+      color: $brown--light;
+      background-color: $white;
 
-    &:hover,
-    &:focus {
-      color: $brown;
+      &:hover,
+      &:focus {
+        color: $brown;
+        background-color: $white;
+      }
+
+      &:active {
+        color: $brown--lighten-alfa-30;
+        background-color: $white;
+      }
     }
 
-    &:active {
-      color: $brown--lighten-alfa-30;
-    }
-  }
+    &:not(.navigation__link--active) {
+      background-color: $white;
 
-  .navigation__link:not(.active) {
-    background-color: $white;
+      &:hover,
+      &:focus {
+        color: $color-main;
+      }
 
-    &:hover,
-    &:focus {
-      color: $color-main;
-    }
-
-    &:active {
-      color: $black--alfa-30;
+      &:active {
+        color: $black--alfa-30;
+      }
     }
   }
 

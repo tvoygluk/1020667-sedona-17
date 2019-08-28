@@ -27,15 +27,21 @@
   &:first-child::before {
     width: 18px;
     height: 18px;
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     background-size: 18px 18px;
   }
 
   &:last-child::before {
     width: 23px;
     height: 22px;
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     background-size: 26px 14px;
+  }
+
+  &:first-child {
+    .contact__input {
+      margin-bottom: 12px;
+    }
   }
 
   &:last-child {
@@ -56,9 +62,9 @@
 }
 
 .contact__input {
-  margin-bottom: 12px;
   margin-right: 58px;
-  padding: 16px;
+  padding: 11px 16px;
+  height: 58px;
   flex-grow: 1;
   background-color: $gray;
   border: 4px $gray solid;
@@ -97,22 +103,30 @@
       &::after {
         right: 74px;
       }
+
+      &::before {
+        top: 21px;
+        right: 92px;
+      }
     }
 
     &:nth-of-type(2) {
       &::after {
         right: 123px;
       }
+
+      &::before {
+        top: 22px;
+        right: 141px;
+      }
     }
 
-    &:first-child::before {
-      top: 21px;
-      right: 91px;
-    }
-
-    &:last-child::before {
-      top: 22px;
-      right: 140px;
+    &:nth-of-type(n) {
+      .contact__input {
+        width: calc(315px - 58px);
+        margin-bottom: 12px;
+        flex-grow: 0;
+      }
     }
   }
 
@@ -122,12 +136,6 @@
 
   .contact__label {
     margin: 0 16px 0 0;
-  }
-
-  .contact__input {
-    width: 315px;
-    margin: 0;
-    flex-grow: 0;
   }
 
   .contact__icon {

@@ -18,7 +18,7 @@
 
 .footer__socials {
   margin-top: 0;
-  margin-bottom: 43px;
+  margin-bottom: 40px;
 }
 
 .footer__copyright {
@@ -33,9 +33,20 @@
     align-items: flex-start;
   }
 
-  .footer__hashtag,
   .footer__socials,
   .footer__copyright {
     margin: 0;
+  }
+
+  .footer__hashtag {
+    margin: 10px 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding-left: 119px;
+    padding-right: 125px;
+    justify-content: space-between;
   }
 }

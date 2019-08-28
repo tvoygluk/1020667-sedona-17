@@ -1,5 +1,8 @@
 .footer {
-  padding: 37px 10px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 33px 10px 35px;
   background-color: $white;
 }
 
@@ -19,14 +22,15 @@
 }
 
 .footer__copyright {
-  margin: 0;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .footer {
-    display: flex;
-    padding: 36px 7px;
+    flex-direction: row;
+    padding: 36px 0;
     justify-content: space-around;
+    align-items: flex-start;
   }
 
   .footer__socials,

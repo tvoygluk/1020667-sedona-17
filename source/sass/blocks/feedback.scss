@@ -1,3 +1,9 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
 .feedback__full-name,
 .feedback__contact-info,
 .feedback__impression,

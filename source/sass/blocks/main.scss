@@ -18,9 +18,14 @@
   margin-bottom: 27px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 26px;
   color: $gray--darkest;
   text-align: center;
+
+  &--other {
+    line-height: 24px;
+    margin-bottom: 36px;
+  }
 }
 
 .main__features-list {
@@ -44,6 +49,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main {
+    position: relative;
+  }
+
   .main__features-list {
     &::before {
       display: none;
@@ -59,10 +68,6 @@
 
   .main__decorations-triangle {
     display: none;
-  }
-
-  .main {
-    position: relative;
   }
 
   .main__title {

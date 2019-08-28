@@ -39,6 +39,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .video-card {
+    padding-top: 68px;
+    margin-bottom: 0;
+  }
+
   .video-card__img-video {
     display: block;
     width: 648px;
@@ -49,11 +54,6 @@
   .video-card__controls {
     bottom: 93px;
     left: 60px;
-  }
-
-  .video-card {
-    padding-top: 68px;
-    margin-bottom: 0;
   }
 
   .video-card__title {

@@ -48,6 +48,28 @@
   margin: 0 auto;
 }
 
+.main__photo-card,
+.main__video-card {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 1px;
+    background-color: $black;
+    opacity: 0.1;
+  }
+}
+
+.main__video-card {
+  &::before {
+    top: -22px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main {
     position: relative;
@@ -95,6 +117,13 @@
 
   .main__form {
     margin-bottom: 64px;
+  }
+
+  .main__photo-card,
+  .main__video-card {
+    &::before {
+      display: none;
+    }
   }
 }
 

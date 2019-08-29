@@ -18,6 +18,25 @@
   margin: 0 0 44px 0;
 }
 
+.feedback__visited,
+.feedback__impression,
+.feedback__emotions,
+.feedback__contact-info,
+.feedback__full-name {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: $black;
+    opacity: 0.1;
+  }
+}
+
 .feedback__button {
   margin: 0 auto 41px auto;
   padding: 16px 50px 16px 46px;
@@ -50,6 +69,22 @@
   .feedback__full-name {
     margin: 0 0 38px 0;
     order: 1;
+
+    &::before {
+      top: 7px;
+      left: 0;
+      width: 1px;
+      height: 292px;
+    }
+  }
+
+  .feedback__visited,
+  .feedback__impression,
+  .feedback__emotions,
+  .feedback__contact-info {
+    &::before {
+      display: none;
+    }
   }
 
   .feedback__contact-info,

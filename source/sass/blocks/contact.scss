@@ -58,8 +58,10 @@
 .contact__input {
   margin-bottom: 12px;
   margin-right: 58px;
+  width: 222px;
+  height: 58px;
   padding: 16px;
-  flex-grow: 1;
+  // flex-grow: 1;
   font-size: 18px;
   background-color: $gray;
   border: 4px $gray solid;

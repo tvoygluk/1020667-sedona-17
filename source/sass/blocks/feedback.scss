@@ -4,25 +4,24 @@
   padding: 0 20px;
 }
 
-.feedback__full-name,
-.feedback__contact-info,
-.feedback__impression,
-.feedback__visited {
-  margin: 0 0 24px 0;
-}
-
-.feedback__button {
-  margin: 0 auto 72px auto;
-  padding: 16px 50px 16px 46px;
-  order: 6;
-}
-
-.feedback__visited {
-  margin-bottom: 36px;
+.feedback__visited,
+.feedback__impression {
+  margin: 0 0 60px 0;
 }
 
 .feedback__emotions {
   margin: 0 0 48px 0;
+}
+
+.feedback__contact-info,
+.feedback__full-name {
+  margin: 0 0 44px 0;
+}
+
+.feedback__button {
+  margin: 0 auto 41px auto;
+  padding: 16px 50px 16px 46px;
+  order: 6;
 }
 
 @media (min-width: $tablet-width) {

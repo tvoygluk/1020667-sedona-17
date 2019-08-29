@@ -75,6 +75,8 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
+    padding: 0 120px;
+
     &::after {
       right: 122px;
     }
@@ -85,15 +87,19 @@
   }
 
   .feedback__full-name {
-    margin: 0;
+    margin: 0 0 48px 0;
+  }
+
+  .feedback__contact-info {
+    margin: 0 0 55px 0;
   }
 
   .feedback__visited {
-    margin-bottom: 36px;
+    margin-bottom: 81px;
   }
 
   .feedback__button {
-    margin: 0 0 0 118px;
+    margin: 0;
     padding: 16px 151px 16px 147px;
   }
 }

@@ -55,7 +55,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .name__input {
-    width: 350px;
+  .name {
+    width: 399px;
   }
+
+  // .name__input {
+  //   width: 350px;
+  // }
 }

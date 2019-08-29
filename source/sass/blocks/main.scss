@@ -99,11 +99,24 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main {
+    &--other {
+      padding-top: 114px;
+    }
+  }
+
   .main__photo-section {
     width: 1200px;
   }
 
   .main__title {
     padding: 0;
+  }
+
+  .main__discription {
+    &--other {
+      margin-bottom: 59px;
+      padding: 0 378px;
+    }
   }
 }

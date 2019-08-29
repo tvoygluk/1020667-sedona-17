@@ -28,7 +28,7 @@
 @media (min-width: $tablet-width) {
   .footer {
     flex-direction: row;
-    padding: 36px 0;
+    padding: 36px 0 36px 5px;
     justify-content: space-around;
   }
 
@@ -36,5 +36,12 @@
   .footer__socials,
   .footer__copyright {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 36px 117px;
+    justify-content: space-between;
   }
 }

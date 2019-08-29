@@ -19,6 +19,7 @@
 
   .visited__check {
     width: 50%;
+    margin: 0 0 61px 0;
   }
 
   .visited__title {
@@ -29,7 +30,20 @@
 }
 
 @media (min-width: $desktop-width) {
-  .visited__check {
-    width: 25%;
+  .visited__title {
+    margin: 0;
+    padding: 0 277px;
+  }
+
+  .visited__out-wrap {
+    padding: 0;
+    justify-content: space-between;
+
+    .visited__check {
+      &:nth-of-type(n) {
+        width: auto;
+        margin: 53px 0 0 0;
+      }
+    }
   }
 }

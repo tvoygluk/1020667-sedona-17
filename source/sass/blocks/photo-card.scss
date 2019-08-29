@@ -126,10 +126,6 @@
       .photo-card__img-photo {
         width: 100%;
       }
-
-      .photo-card__wrap-text {
-        // width: 1094px;
-      }
     }
   }
 
@@ -140,7 +136,6 @@
   .photo-card__text {
     position: relative;
     margin-top: -80px;
-    // padding-right: 10px;
     background-color: $black--alfa-30;
   }
 
@@ -149,10 +144,6 @@
   .photo-card__like-btn,
   .photo-card__like-count {
     color: $white;
-  }
-
-  .photo-card__wrap-text {
-    // width: 294px;
   }
 
   .photo-card__like-icon {

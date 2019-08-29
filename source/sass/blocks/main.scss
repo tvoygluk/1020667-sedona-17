@@ -51,6 +51,10 @@
 @media (min-width: $tablet-width) {
   .main {
     position: relative;
+
+    &--other {
+      padding-top: 74px;
+    }
   }
 
   .main__features-list {
@@ -75,16 +79,22 @@
     font-size: 21px;
 
     &--bigger {
+      margin-bottom: 31px;
       font-size: 30px;
     }
   }
 
   .main__discription {
     margin-bottom: 53px;
+
+    &--other {
+      margin-bottom: 73px;
+      padding: 0 162px;
+    }
   }
 
   .main__form {
-    margin-bottom: 99px;
+    margin-bottom: 64px;
   }
 }
 

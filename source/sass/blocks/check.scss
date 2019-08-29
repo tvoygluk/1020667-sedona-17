@@ -68,11 +68,9 @@
 @media (min-width: $tablet-width) {
   .check {
     padding: 0;
-    margin: 0 0 54px 0;
+    margin: 0 0 63px 0;
 
     &:nth-of-type(n) {
-      padding-left: 10px;
-
       .check__label {
         margin: 0;
       }
@@ -80,6 +78,8 @@
 
     &:nth-last-of-type(1),
     &:nth-last-of-type(2) {
+      margin: 0;
+
       .check__label {
         margin-bottom: 0;
       }

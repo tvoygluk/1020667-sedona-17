@@ -26,6 +26,7 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
+    padding: 0 60px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -47,6 +48,7 @@
   }
 
   .feedback__full-name {
+    margin: 0 0 38px 0;
     order: 1;
   }
 
@@ -57,12 +59,16 @@
     order: 1;
   }
 
+  .feedback__emotions {
+    margin-bottom: 53px;
+  }
+
   .feedback__visited {
     margin-bottom: 83px;
   }
 
   .feedback__button {
-    margin: 4px 0 0 60px;
+    margin: 0;
     padding: 16px 75px 16px 66px;
   }
 }

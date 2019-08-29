@@ -45,8 +45,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .name {
+    width: 267px;
+  }
+
   .name__input {
-    width: 216px;
+    min-width: 160px;
   }
 }
 

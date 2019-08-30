@@ -12,22 +12,58 @@ body {
   margin: 0 auto;
   width: 320px;
   font-family: "PT Sans Bold", "Arial", sans-serif;
+  background-color: #f2f2f2;
 }
 
 fieldset {
   padding: 0;
 }
 
+.mobile-br {
+  display: inline;
+}
+
+.tablet-br {
+  display: none;
+}
+
+.desktop-br {
+  display: none;
+}
+
+.page-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+}
+
 @media (min-width: $tablet-width) {
   body {
     width: $tablet-width;
+  }
+
+  .mobile-br {
+    display: none;
+  }
+
+  .tablet-br {
+    display: inline;
   }
 }
 
 @media (min-width: $desktop-width) {
   body {
     width: $desktop-width;
-    padding: 0 40px;
+
+  }
+
+  .tablet-br {
+    display: none;
+  }
+
+  .desktop-br {
+    display: inline;
   }
 }
 

@@ -1,5 +1,5 @@
 .hotel {
-  padding-top: 28px;
+  padding: 28px 20px 0;
 }
 
 .hotel__title {
@@ -23,6 +23,10 @@
   text-transform: uppercase;
 }
 
+.hotel__notice-br {
+  display: none;
+}
+
 .hotel__button {
   width: 280px;
   margin: 0 auto 51px auto;
@@ -31,7 +35,7 @@
 
 @media (min-width: $tablet-width) {
   .hotel {
-    padding-top: 54px;
+    padding: 54px 0 0;
   }
 
   .hotel__title {
@@ -43,9 +47,23 @@
     margin-bottom: 41px;
   }
 
+  .hotel__notice-br {
+    display: block;
+  }
+
   .hotel__button {
     width: 458px;
     margin: 0 auto 57px auto;
     padding: 16px 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel__notice {
+    margin-bottom: 45px;
+  }
+
+  .hotel__button {
+    margin-bottom: 67px;
   }
 }

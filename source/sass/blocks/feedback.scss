@@ -51,15 +51,15 @@
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
 
-    &::after {
-      position: absolute;
-      bottom: 18px;
-      right: 57px;
-      content: "* — обязательные поля";
-      font-family: "PT Sans", "Arial", sans-serif;
-      font-size: 14px;
-    }
+  .feedback__helper {
+    display: block;
+    position: absolute;
+    bottom: 18px;
+    right: 57px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
   }
 
   .feedback__impression {
@@ -115,6 +115,9 @@
     &::after {
       right: 122px;
     }
+
+  .feedback__helper {
+    right: 122px;
   }
 
   .feedback__impression {

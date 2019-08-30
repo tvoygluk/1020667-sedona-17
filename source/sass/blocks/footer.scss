@@ -32,10 +32,21 @@
     justify-content: space-around;
   }
 
-  .footer__hashtag,
   .footer__socials,
   .footer__copyright {
     margin: 0;
+  }
+
+  .footer__hashtag {
+    margin: 10px 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding-left: 119px;
+    padding-right: 125px;
+    justify-content: space-between;
   }
 }
 

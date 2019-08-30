@@ -32,18 +32,10 @@
   text-transform: uppercase;
 }
 
-.sub__tablet-br {
-  display: none;
-}
-
-.sub__desktop-br {
-  display: none;
-}
-
 .sub__icon {
   fill: $color-main;
   position: absolute;
-  left: -51px;
+  left: -49px;
   top: -10px;
 
   &--housing {
@@ -104,10 +96,6 @@
     text-align: center;
   }
 
-  .sub__tablet-br {
-    display: block;
-  }
-
   .sub__icon {
     position: static;
     margin: 0 auto 32px;
@@ -132,9 +120,5 @@
 @media (min-width: $desktop-width) {
   .sub__item:nth-of-type(n) {
     padding-bottom: 81px;
-  }
-
-  .sub__desktop-br {
-    display: block;
   }
 }

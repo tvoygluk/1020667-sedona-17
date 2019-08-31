@@ -1,24 +1,31 @@
 @media (min-width: $tablet-width) {
-  .title-decor:nth-of-type(n) {
+  .title-decor {
+    position: relative;
     width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    justify-content: space-between;
 
     &::before,
     &::after {
+      position: absolute;
       content: "";
+      top: 50%;
       width: 124px;
       height: 1px;
       background-color: $black;
       opacity: 0.1;
     }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .title-decor:nth-of-type(n) {
+  .title-decor {
     &::before,
     &::after {
       width: 278px;

@@ -7,6 +7,10 @@
 .feedback__visited,
 .feedback__impression {
   margin: 0 0 60px 0;
+
+  &::before {
+    bottom: -40px;
+  }
 }
 
 .feedback__emotions {
@@ -16,11 +20,14 @@
 .feedback__contact-info,
 .feedback__full-name {
   margin: 0 0 44px 0;
+
+  &::before {
+    bottom: -25px;
+  }
 }
 
 .feedback__visited,
 .feedback__impression,
-.feedback__emotions,
 .feedback__contact-info,
 .feedback__full-name {
   position: relative;
@@ -28,7 +35,6 @@
   &::before {
     content: "";
     position: absolute;
-    top: -20px;
     left: -20px;
     width: 320px;
     height: 1px;
@@ -66,10 +72,11 @@
     order: 1;
 
     &::before {
-      top: 7px;
-      left: 0;
-      width: 1px;
-      height: 292px;
+      display: none;
+      // top: 7px;
+      // left: 0;
+      // width: 1px;
+      // height: 292px;
     }
   }
 

@@ -31,6 +31,18 @@
 
   &--different {
     margin-bottom: 35px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 320px;
+      height: 1px;
+      background-color: $black;
+      opacity: 0.1;
+    }
   }
 }
 
@@ -124,10 +136,28 @@
       margin-bottom: 73px;
       padding: 0 162px;
     }
+
+    &--different {
+      &::before {
+        display: none;
+      }
+    }
   }
 
   .main__form {
+    position: relative;
     margin-bottom: 64px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 49.5%;
+      width: 1px;
+      height: 292px;
+      background-color: $black;
+      opacity: 0.1;
+    }
   }
 
   .main__photo-card,

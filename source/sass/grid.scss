@@ -19,18 +19,6 @@ fieldset {
   padding: 0;
 }
 
-.mobile-br {
-  display: inline;
-}
-
-.tablet-br {
-  display: none;
-}
-
-.desktop-br {
-  display: none;
-}
-
 .page-wrapper {
   width: 100%;
   margin: 0 auto;
@@ -42,28 +30,11 @@ fieldset {
   body {
     width: $tablet-width;
   }
-
-  .mobile-br {
-    display: none;
-  }
-
-  .tablet-br {
-    display: inline;
-  }
 }
 
 @media (min-width: $desktop-width) {
   body {
     width: $desktop-width;
-
-  }
-
-  .tablet-br {
-    display: none;
-  }
-
-  .desktop-br {
-    display: inline;
   }
 }
 

@@ -106,6 +106,10 @@
     }
 
     &:nth-of-type(1) {
+      .contact__input {
+        margin-bottom: 0;
+      }
+
       &::before {
         top: 21px;
         right: 100px;
@@ -114,11 +118,6 @@
       &::after {
         right: 80px;
       }
-
-      &::before {
-        top: 21px;
-        right: 92px;
-      }
     }
 
     &:nth-of-type(2) {
@@ -126,7 +125,7 @@
         top: 22px;
         right: 22px;
       }
-      
+
       &::after {
         right: 3px;
       }

@@ -1,0 +1,39 @@
+.br-block {
+  display: inline;
+
+  &--mobile {
+    display: inline;
+  }
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .br-block {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .br-block {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: inline;
+    }
+  }
+}

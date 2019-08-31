@@ -28,8 +28,9 @@
 }
 
 .hotel__button {
+  width: 280px;
   margin: 0 auto 51px auto;
-  padding: 16px 48px 16px 46px;
+  padding: 16px 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,8 +52,9 @@
   }
 
   .hotel__button {
+    width: 458px;
     margin: 0 auto 57px auto;
-    padding: 16px 137px 16px 135px;
+    padding: 16px 5px;
   }
 }
 

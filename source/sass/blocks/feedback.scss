@@ -1,30 +1,51 @@
-.feedback__full-name,
-.feedback__contact-info,
-.feedback__impression,
-.feedback__visited {
-  margin: 0 0 24px 0;
+.feedback {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
 }
 
-.feedback__button {
-  margin: 0 auto 72px auto;
-  padding: 16px 50px 16px 46px;
-  order: 6;
-}
-
-.feedback__visited {
-  margin-bottom: 36px;
+.feedback__visited,
+.feedback__impression {
+  margin: 0 0 60px 0;
 }
 
 .feedback__emotions {
   margin: 0 0 48px 0;
 }
 
-.feedback__helper {
-  display: none;
+.feedback__contact-info,
+.feedback__full-name {
+  margin: 0 0 44px 0;
+}
+
+.feedback__visited,
+.feedback__impression,
+.feedback__emotions,
+.feedback__contact-info,
+.feedback__full-name {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: $black;
+    opacity: 0.1;
+  }
+}
+
+.feedback__button {
+  margin: 0 auto 41px auto;
+  padding: 16px 50px 16px 46px;
+  order: 6;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
+    padding: 0 60px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -46,7 +67,24 @@
   }
 
   .feedback__full-name {
+    margin: 0 0 38px 0;
     order: 1;
+
+    &::before {
+      top: 7px;
+      left: 0;
+      width: 1px;
+      height: 292px;
+    }
+  }
+
+  .feedback__visited,
+  .feedback__impression,
+  .feedback__emotions,
+  .feedback__contact-info {
+    &::before {
+      display: none;
+    }
   }
 
   .feedback__contact-info,
@@ -56,17 +94,28 @@
     order: 1;
   }
 
+  .feedback__emotions {
+    margin-bottom: 53px;
+  }
+
   .feedback__visited {
     margin-bottom: 83px;
   }
 
   .feedback__button {
-    margin: 4px 0 0 60px;
+    margin: 0;
     padding: 16px 75px 16px 66px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .feedback {
+    padding: 0 120px;
+
+    &::after {
+      right: 122px;
+    }
+
   .feedback__helper {
     right: 122px;
   }
@@ -76,15 +125,19 @@
   }
 
   .feedback__full-name {
-    margin: 0;
+    margin: 0 0 48px 0;
+  }
+
+  .feedback__contact-info {
+    margin: 0 0 55px 0;
   }
 
   .feedback__visited {
-    margin-bottom: 36px;
+    margin-bottom: 81px;
   }
 
   .feedback__button {
-    margin: 0 0 0 118px;
+    margin: 0;
     padding: 16px 151px 16px 147px;
   }
 }

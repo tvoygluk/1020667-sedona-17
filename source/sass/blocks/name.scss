@@ -16,8 +16,8 @@
 }
 
 .name__input {
-  padding: 11px 16px;
-  height: 58px;
+  min-width: 190px;
+  padding: 13px 16px;
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -45,13 +45,17 @@
 }
 
 @media (min-width: $tablet-width) {
+  .name {
+    width: 267px;
+  }
+
   .name__input {
-    width: 216px;
+    min-width: 160px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .name__input {
-    width: 350px;
+  .name {
+    width: 399px;
   }
 }

@@ -10,17 +10,16 @@
   text-align: center;
 }
 
-.emotions__letter-label {
-  padding-left: 17px;
-}
-
 .emotions__letter {
   padding: 11px 6px 69px 18px;
   width: 279px;
+  height: 160px;
   border-width: 0;
+  font-size: 18px;
+  line-height: 26px;
   background-color: $gray;
   border: 4px $gray solid;
-
+  resize: none;
 
   &::placeholder {
     font-size: 18px;
@@ -49,8 +48,7 @@
 
   .emotions__letter {
     width: 648px;
-    margin: 0 0 0 58px;
-    // padding: 15px 10px 73px 22px;
+    // margin: 0 0 0 58px;
   }
 }
 

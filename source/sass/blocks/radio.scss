@@ -1,3 +1,19 @@
+.radio {
+  width: 278px;
+
+  &:last-child {
+    .radio__label {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover {
+    .radio__input:not(:disabled) ~ .radio__label::before {
+      background-color: $gray--dark;
+    }
+  }
+}
+
 .radio__input {
   appearance: none;
   position: absolute;
@@ -25,22 +41,6 @@
     height: 56px;
     border-radius: 50%;
     background-color: $gray;
-  }
-}
-
-.radio {
-  width: 278px;
-
-  &:last-child {
-    .radio__label {
-      margin-bottom: 0;
-    }
-  }
-
-  &:hover {
-    .radio__input:not(:disabled) ~ .radio__label::before {
-      background-color: $gray--dark;
-    }
   }
 }
 

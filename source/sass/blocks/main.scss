@@ -19,14 +19,31 @@
   margin-bottom: 27px;
   padding: 0 20px;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   color: $gray--darkest;
   text-align: center;
 
-  &--other {
+  &--big-mg {
     line-height: 24px;
-    margin-bottom: 36px;
+    margin-bottom: 28px;
+  }
+
+  &--hor-line {
+    margin-bottom: 35px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 320px;
+      height: 1px;
+      background-color: $black;
+      opacity: 0.1;
+    }
   }
 }
 
@@ -68,8 +85,9 @@
 
 .main__video-card {
   &::before {
-    top: -22px;
+    top: -36px;
   }
+}
 
 .main__photo-section {
   margin-bottom: 30px;
@@ -78,9 +96,10 @@
 @media (min-width: $tablet-width) {
   .main {
     position: relative;
+    padding-top: 50px;
 
-    &--other {
-      padding-top: 74px;
+    &--big-pd {
+      padding-top: 73px;
     }
   }
 
@@ -101,18 +120,12 @@
     display: none;
   }
 
-  .main {
-    position: relative;
-    padding-top: 50px;
-  }
-
   .main__title {
     margin-bottom: 30px;
     padding: 0 100px;
     font-size: 21px;
 
-    &--bigger {
-      margin-top: 23px;
+    &--big-font {
       font-size: 30px;
     }
   }
@@ -120,14 +133,32 @@
   .main__discription {
     margin-bottom: 53px;
 
-    &--other {
+    &--big-mg {
       margin-bottom: 73px;
       padding: 0 162px;
+    }
+
+    &--hor-line {
+      &::before {
+        display: none;
+      }
     }
   }
 
   .main__form {
+    position: relative;
     margin-bottom: 64px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 49.5%;
+      width: 1px;
+      height: 292px;
+      background-color: $black;
+      opacity: 0.1;
+    }
   }
 
   .main__photo-card,
@@ -140,27 +171,27 @@
 
 @media (min-width: $desktop-width) {
   .main {
-    &--other {
-      padding-top: 114px;
+    &--big-pd {
+      padding-top: 112px;
     }
   }
 
   .main__photo-section {
-    width: 1200px;
+    width: $desktop-width;
   }
 
   .main__title {
     padding: 0 300px;
-
-    &--bigger {
-      margin-top: 61px;
-    }
   }
 
   .main__discription {
-    &--other {
+    &--big-mg {
       margin-bottom: 59px;
       padding: 0 378px;
+    }
+
+    &--bigger-mg {
+      margin-bottom: 70px;
     }
   }
 }

@@ -11,24 +11,13 @@ html {
 body {
   margin: 0 auto;
   width: 320px;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   background-color: #f2f2f2;
 }
 
 fieldset {
   padding: 0;
-}
-
-.mobile-br {
-  display: inline;
-}
-
-.tablet-br {
-  display: none;
-}
-
-.desktop-br {
-  display: none;
 }
 
 .page-wrapper {
@@ -42,28 +31,11 @@ fieldset {
   body {
     width: $tablet-width;
   }
-
-  .mobile-br {
-    display: none;
-  }
-
-  .tablet-br {
-    display: inline;
-  }
 }
 
 @media (min-width: $desktop-width) {
   body {
     width: $desktop-width;
-
-  }
-
-  .tablet-br {
-    display: none;
-  }
-
-  .desktop-br {
-    display: inline;
   }
 }
 

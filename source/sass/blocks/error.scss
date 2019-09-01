@@ -1,12 +1,11 @@
 .error {
   display: none;
   position: fixed;
-  width: $mobile-width;
   top: 50%;
-
+  z-index: 10;
+  width: $mobile-width;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: $white;
-  z-index: 10;
 }
 
 .error__title {
@@ -22,6 +21,7 @@
 .error__discription {
   margin: 0 48px 23px 46px;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: $gray--darkest;

@@ -3,15 +3,16 @@
 }
 
 .photo-card__img-photo {
-  margin-bottom: 12px;
   width: 280px;
   height: auto;
+  margin-bottom: 12px;
   background-color: $gray--darken;
 }
 
 .photo-card__title,
 .photo-card__like-count {
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   font-size: 14px;
   line-height: 24px;
   color: $black;
@@ -31,6 +32,7 @@
 
 .photo-card__author {
   font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: $gray--darkest;
@@ -46,9 +48,9 @@
 }
 
 .photo-card__like-icon {
+  z-index: 10;
   fill: $black--alfa-30;
   background-color: transparent;
-  z-index: 10;
 }
 
 .photo-card__like-count {
@@ -74,7 +76,6 @@
 
       .photo-card__wrap-text {
         flex-flow: 1;
-        // width: 544px;
       }
     }
 
@@ -84,7 +85,6 @@
   }
 
   .photo-card__wrap-text {
-    // width: 219px;
     margin-bottom: 0;
     flex-grow: 1;
   }

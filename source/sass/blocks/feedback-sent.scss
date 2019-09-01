@@ -20,6 +20,7 @@
 .feedback-sent__discription {
   margin: 0 39px 34px 44px;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: $gray--darkest;
@@ -34,10 +35,10 @@
 }
 
 .feedback-sent__button-wrap {
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-content: center;
+  margin: 0;
   background-color: $gray;
 }
 

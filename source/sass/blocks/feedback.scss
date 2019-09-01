@@ -7,6 +7,10 @@
 .feedback__visited,
 .feedback__impression {
   margin: 0 0 60px 0;
+
+  &::before {
+    bottom: -40px;
+  }
 }
 
 .feedback__emotions {
@@ -16,11 +20,14 @@
 .feedback__contact-info,
 .feedback__full-name {
   margin: 0 0 44px 0;
+
+  &::before {
+    bottom: -25px;
+  }
 }
 
 .feedback__visited,
 .feedback__impression,
-.feedback__emotions,
 .feedback__contact-info,
 .feedback__full-name {
   position: relative;
@@ -28,7 +35,6 @@
   &::before {
     content: "";
     position: absolute;
-    top: -20px;
     left: -20px;
     width: 320px;
     height: 1px;
@@ -39,27 +45,23 @@
 
 .feedback__button {
   margin: 0 auto 41px auto;
-  padding: 16px 50px 16px 46px;
+  padding: 16px 10px;
+  width: 280px;
   order: 6;
+}
+
+.feedback__helper {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
-    padding: 0 60px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  .feedback__helper {
-    display: block;
-    position: absolute;
-    bottom: 18px;
-    right: 57px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14px;
+    padding: 0 60px;
   }
 
   .feedback__impression {
@@ -67,14 +69,11 @@
   }
 
   .feedback__full-name {
-    margin: 0 0 38px 0;
+    margin: 0 0 50px 0;
     order: 1;
 
     &::before {
-      top: 7px;
-      left: 0;
-      width: 1px;
-      height: 292px;
+      display: none;
     }
   }
 
@@ -104,7 +103,17 @@
 
   .feedback__button {
     margin: 0;
-    padding: 16px 75px 16px 66px;
+    width: 324px;
+  }
+
+  .feedback__helper {
+    position: absolute;
+    bottom: 4px;
+    right: 57px;
+    display: block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
   }
 }
 
@@ -115,6 +124,7 @@
     &::after {
       right: 122px;
     }
+  }
 
   .feedback__helper {
     right: 122px;
@@ -138,6 +148,10 @@
 
   .feedback__button {
     margin: 0;
-    padding: 16px 151px 16px 147px;
+    width: 480px;
+  }
+
+  .feedback__emotions {
+    margin-bottom: 60px;
   }
 }

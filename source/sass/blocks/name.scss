@@ -8,6 +8,7 @@
 .name__label {
   margin-right: 15px;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   text-align: left;
@@ -18,7 +19,8 @@
 .name__input {
   min-width: 190px;
   padding: 13px 16px;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   color: $black;

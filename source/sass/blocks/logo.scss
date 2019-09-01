@@ -10,7 +10,7 @@
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 
-  &--short {
+  &--short-pd {
     height: 158px;
     background-position: 50% 100%;
     background-size: 768px 389px;
@@ -52,7 +52,7 @@
   padding-top: 89px;
   padding-bottom: 85px;
 
-  &--short {
+  &--base {
     padding-top: 0;
     padding-bottom: 0;
 
@@ -83,7 +83,7 @@
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
 
-    &--short {
+    &--short-pd {
       height: 290px;
       background-position: 50% 100%;
       background-size: 768px 518px;
@@ -128,7 +128,7 @@
   .logo__text {
     padding-top: 77px;
 
-    &--short {
+    &--base {
       padding-top: 0;
       padding-bottom: 0;
 
@@ -165,7 +165,7 @@
       border-left-width: 592px;
     }
 
-    &--short {
+    &--short-pd {
       height: 300px;
       background-size: 1200px 518px;
     }
@@ -193,7 +193,7 @@
     padding-top: 77px;
     padding-bottom: 0;
 
-    &--short {
+    &--base {
       .logo__text-svg {
         margin-top: -113px;
       }

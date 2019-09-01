@@ -25,12 +25,12 @@
   color: $gray--darkest;
   text-align: center;
 
-  &--other {
+  &--big-mg {
     line-height: 24px;
     margin-bottom: 28px;
   }
 
-  &--different {
+  &--hor-line {
     margin-bottom: 35px;
     position: relative;
 
@@ -98,7 +98,7 @@
     position: relative;
     padding-top: 50px;
 
-    &--other {
+    &--big-pd {
       padding-top: 73px;
     }
   }
@@ -125,7 +125,7 @@
     padding: 0 100px;
     font-size: 21px;
 
-    &--bigger {
+    &--big-font {
       font-size: 30px;
     }
   }
@@ -133,12 +133,12 @@
   .main__discription {
     margin-bottom: 53px;
 
-    &--other {
+    &--big-mg {
       margin-bottom: 73px;
       padding: 0 162px;
     }
 
-    &--different {
+    &--hor-line {
       &::before {
         display: none;
       }
@@ -171,7 +171,7 @@
 
 @media (min-width: $desktop-width) {
   .main {
-    &--other {
+    &--big-pd {
       padding-top: 112px;
     }
   }
@@ -185,12 +185,12 @@
   }
 
   .main__discription {
-    &--other {
+    &--big-mg {
       margin-bottom: 59px;
       padding: 0 378px;
     }
 
-    &--other-bigger {
+    &--bigger-mg {
       margin-bottom: 70px;
     }
   }

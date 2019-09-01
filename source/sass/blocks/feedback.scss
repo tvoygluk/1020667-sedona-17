@@ -56,12 +56,12 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
-    padding: 0 60px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 60px;
   }
 
   .feedback__impression {
@@ -104,15 +104,15 @@
   .feedback__button {
     margin: 0;
     width: 324px;
-    // padding: 16px 75px 16px 66px;
   }
 
   .feedback__helper {
-    display: block;
     position: absolute;
     bottom: 4px;
     right: 57px;
+    display: block;
     font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: normal;
     font-size: 14px;
   }
 }
@@ -149,7 +149,6 @@
   .feedback__button {
     margin: 0;
     width: 480px;
-    // padding: 16px 151px 16px 147px;
   }
 
   .feedback__emotions {

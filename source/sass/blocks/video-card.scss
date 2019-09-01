@@ -9,9 +9,9 @@
   margin-bottom: 27px;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
   text-align: center;
   text-transform: uppercase;
+  color: $black;
 }
 
 .video-card__discription {
@@ -19,17 +19,18 @@
   margin-bottom: 34px;
   padding: 0 25px;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: $gray--darkest;
   text-align: center;
   text-transform: uppercase;
+  color: $gray--darkest;
 }
 
 .video-card__img-video {
-  margin: 0 0 104px 0;
   width: 321px;
   height: 201px;
+  margin: 0 0 104px 0;
   background-color: $gray--darken;
 }
 

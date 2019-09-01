@@ -14,7 +14,8 @@
   padding: 11px 6px 69px 18px;
   width: 279px;
   height: 160px;
-  border-width: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -49,7 +50,6 @@
 
   .emotions__letter {
     width: 648px;
-    // margin: 0 0 0 58px;
   }
 }
 

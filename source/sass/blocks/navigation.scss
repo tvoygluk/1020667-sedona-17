@@ -46,9 +46,9 @@
 
 .navigation__menu-btn {
   position: relative;
-  margin: 17px 20px 18px auto;
   width: 23px;
   height: 21px;
+  margin: 17px 20px 18px auto;
   padding: 0;
   background-color: $white;
   border: 0;
@@ -70,11 +70,11 @@
   position: absolute;
   top: 16px;
   right: 22px;
+  z-index: 2;
   height: 24px;
   width: 24px;
   border-width: 0;
   background-color: transparent;
-  z-index: 2;
 
   &::before,
   &::after {
@@ -99,10 +99,10 @@
 
 @media (min-width: $tablet-width) {
   .navigation__list {
+    z-index: 3;
     display: flex;
     flex-wrap: wrap;
     padding: 15px 0;
-    z-index: 3;
   }
 
   .navigation__item {

@@ -6,9 +6,9 @@
   &::after {
     content: "";
     position: absolute;
-    display: block;
     top: 34px;
     right: 0;
+    display: block;
     width: 58px;
     height: 58px;
     background-color: $gray--dark;
@@ -17,11 +17,11 @@
   &::before {
     content: "";
     position: absolute;
-    display: inline-block;
     top: 53px;
     right: 19px;
-    background-repeat: no-repeat;
     z-index: 10;
+    display: inline-block;
+    background-repeat: no-repeat;
   }
 
   &:first-child::before {
@@ -58,6 +58,7 @@
 .contact__label {
   margin: 0 0 8px 22px;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   text-align: left;
@@ -67,9 +68,11 @@
 
 .contact__input {
   margin-right: 58px;
+  padding: 12px 16px 16px;
   width: 222px;
   height: 58px;
-  padding: 12px 16px 16px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   color: $black;
   background-color: $gray;

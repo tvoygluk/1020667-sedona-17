@@ -15,9 +15,9 @@
 }
 
 .radio__input {
-  appearance: none;
   position: absolute;
   margin: 10px;
+  appearance: none;
 }
 
 .radio__label {
@@ -36,7 +36,6 @@
     top: -13px;
     left: 0;
     display: block;
-    box-sizing: border-box;
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -53,12 +52,6 @@
     opacity: 0.3;
   }
 }
-
-
-// .radio__input:focus ~ .radio__label::before,
-// .radio__input:not(:disabled) ~ .radio__label:hover::before {
-//   border-color: #63d1bb;
-// }
 
 .radio__input:checked ~ .radio__label::after {
   content: "";

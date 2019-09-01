@@ -19,6 +19,7 @@
   margin-bottom: 27px;
   padding: 0 20px;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   color: $gray--darkest;
@@ -176,7 +177,7 @@
   }
 
   .main__photo-section {
-    width: 1200px;
+    width: $desktop-width;
   }
 
   .main__title {

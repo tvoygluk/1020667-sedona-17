@@ -45,7 +45,8 @@
 
 .feedback__button {
   margin: 0 auto 41px auto;
-  padding: 16px 50px 16px 46px;
+  padding: 16px 10px;
+  width: 280px;
   order: 6;
 }
 
@@ -73,10 +74,6 @@
 
     &::before {
       display: none;
-      // top: 7px;
-      // left: 0;
-      // width: 1px;
-      // height: 292px;
     }
   }
 
@@ -106,7 +103,8 @@
 
   .feedback__button {
     margin: 0;
-    padding: 16px 75px 16px 66px;
+    width: 324px;
+    // padding: 16px 75px 16px 66px;
   }
 
   .feedback__helper {
@@ -150,7 +148,8 @@
 
   .feedback__button {
     margin: 0;
-    padding: 16px 151px 16px 147px;
+    width: 480px;
+    // padding: 16px 151px 16px 147px;
   }
 
   .feedback__emotions {

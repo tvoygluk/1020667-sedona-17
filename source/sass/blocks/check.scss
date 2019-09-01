@@ -1,4 +1,6 @@
 .check {
+  position: relative;
+
   &:last-of-type {
     .check__label {
       margin-bottom: 0;
@@ -15,6 +17,8 @@
 .check__input {
   appearance: none;
   position: absolute;
+  top: 10px;
+  left: 20px;
 }
 
 .check__label {

@@ -56,12 +56,12 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/sp-*.svg")
+  return gulp.src("source/img/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img/sprite-lib"));
 });
 
 gulp.task("html", function () {
@@ -82,7 +82,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/img/sp-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/img/**.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 

@@ -23,6 +23,7 @@
 
 .footer__copyright {
   margin: 0 auto;
+  padding: 0 0 0 8px;
 }
 
 @media (min-width: $tablet-width) {
@@ -35,6 +36,7 @@
   .footer__socials,
   .footer__copyright {
     margin: 0;
+    padding: 0;
   }
 
   .footer__hashtag {

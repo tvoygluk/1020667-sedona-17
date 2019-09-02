@@ -2,6 +2,10 @@
   padding: 22px 20px 21px;
 }
 
+.photo-card__link {
+  display: block;
+}
+
 .photo-card__img-photo {
   width: 280px;
   height: auto;
@@ -134,8 +138,9 @@
   }
 
   .photo-card__text {
-    position: relative;
-    margin-top: -80px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background-color: $black--alfa-30;
   }
 

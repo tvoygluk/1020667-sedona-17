@@ -55,6 +55,7 @@
 
   &::before {
     content: "";
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -102,20 +103,21 @@
     z-index: 3;
     display: flex;
     flex-wrap: wrap;
-    padding: 15px 0;
+    padding-top: 15px;
   }
 
   .navigation__item {
     position: relative;
     width: calc((100% - 156px) / 4);
+    margin-bottom: 15px;
     padding: 0 10px;
     border: none;
     background-color: $white;
     box-shadow: none;
     cursor: pointer;
 
-    &:nth-child(3n) {
-      margin-left: auto;
+    &:nth-child(4n-1) {
+      margin-left: 156px;
     }
   }
 
@@ -167,5 +169,9 @@
 @media (min-width: $desktop-width) {
   .navigation__item {
     width: calc((100% - 244px) / 4);
+
+    &:nth-child(4n-1) {
+      margin-left: 244px;
+    }
   }
 }

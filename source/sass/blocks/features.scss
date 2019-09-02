@@ -5,12 +5,12 @@
 }
 
 .features__wrap-typograph {
-  padding: 58px 20px 39px;
+  padding: 56px 20px 40px;
   background-color: $color-main;
 }
 
 .features__item {
-  padding: 23px 37px 32px;
+  padding: 27px 35px;
   text-align: center;
   background-color: $gray;
 
@@ -26,7 +26,7 @@
 
     .features__number {
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       line-height: 21px;
     }
 
@@ -48,7 +48,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 5px;
+      bottom: -1px;
       left: 20px;
       width: 280px;
       height: 1px;
@@ -57,18 +57,22 @@
     }
   }
 
-  &:nth-of-type(5) {
-    padding: 23px 32px 27px;
+  &:nth-of-type(n+3) {
+    .features__title {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
   }
 }
 
 .features__photo {
+  display: block;
   background-color: $gray--darken;
 }
 
 .features__title {
   margin-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 7px;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -99,7 +103,7 @@
 
 @media (min-width: $tablet-width) {
   .features__item {
-    padding: 46px 48px;
+    padding: 46px 48px 43px;
 
     &:nth-of-type(1),
     &:nth-of-type(2) {
@@ -107,6 +111,7 @@
       flex-direction: column;
 
       .features__title {
+        margin-bottom: 10px;
         font-size: 21px;
       }
 
@@ -115,7 +120,7 @@
       }
 
       .features__number {
-        margin-bottom: 25px;
+        margin-bottom: 22px;
       }
     }
 
@@ -132,7 +137,7 @@
       width: calc(100% / 3);
 
       .features__title {
-        margin-bottom: 13px;
+        margin-bottom: 12px;
       }
 
       .features__number {
@@ -140,23 +145,10 @@
       }
     }
 
-    &:nth-of-type(n+4) {
-      padding-left: 56px;
-      padding-right: 51px;
-    }
-
     &:nth-of-type(3),
     &:nth-of-type(4) {
       &::after {
         display: none;
-      }
-    }
-
-    &:nth-of-type(5) {
-      padding: 46px 48px;
-
-      .features__title {
-        padding: 0 20px;
       }
     }
   }
@@ -211,7 +203,7 @@
 
     &:nth-of-type(n+3) {
       padding-top: 44px;
-      padding-bottom: 63px;
+      padding-bottom: 64px;
       width: 400px;
     }
   }
@@ -223,5 +215,6 @@
   .features__photo {
     width: 800px;
     height: 256px;
+    object-fit: cover;
   }
 }

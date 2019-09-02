@@ -65,11 +65,12 @@
   }
 
   .feedback__impression {
+    margin-bottom: 30px;
     order: 0;
   }
 
   .feedback__full-name {
-    margin: 0 0 50px 0;
+    margin: 0 0 39px;
     order: 1;
 
     &::before {
@@ -128,10 +129,6 @@
 
   .feedback__helper {
     right: 122px;
-  }
-
-  .feedback__impression {
-    margin: 0;
   }
 
   .feedback__full-name {

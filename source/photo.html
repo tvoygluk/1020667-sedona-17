@@ -18,7 +18,7 @@
     <div class="page-wrapper">
       <header class="header">
         <nav class="header__nav navigation">
-          <button class="navigation__close close-btn" type="button" aria-label="Закрыть меню"></button>
+          <button class="navigation__close close-btn" type="button" aria-label="Закрыть меню" tabindex="-1"></button>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link" href="index.html">Главная</a>
@@ -34,11 +34,11 @@
             </li>
           </ul>
           <div class="navigation__wrap-btn">
-            <button class="navigation__menu-btn open-btn" type="button" aria-label="Открыть меню"></button>
+            <button class="navigation__menu-btn open-btn" type="button" aria-label="Открыть меню" tabindex="-1"></button>
           </div>
         </nav>
         <div class="header__logo logo logo--short-pd">
-          <a class="logo__link" href="index.html">
+          <a class="logo__link" href="index.html" tabindex="0">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -116,7 +116,7 @@
               <div class="photo-card__wrap-count">
                 <button class="photo-card__like-btn" aria-label="Нравится">
                   <svg class="photo-card__like-icon" width="22" height="20">
-                    <use xlink:href="img/sprite-self.svg#sp-icon-like"></use>
+                    <use xlink:href="img/sprite-lib/sprite-self.svg#sp-icon-like"></use>
                   </svg>
                 </button>
                 <span class="photo-card__like-count">1350</span>
@@ -142,7 +142,7 @@
               <div class="photo-card__wrap-count">
                 <button class="photo-card__like-btn" aria-label="Нравится">
                   <svg class="photo-card__like-icon" width="22" height="20">
-                    <use xlink:href="img/sprite-self.svg#sp-icon-like"></use>
+                    <use xlink:href="img/sprite-lib/sprite-self.svg#sp-icon-like"></use>
                   </svg>
                 </button>
                 <span class="photo-card__like-count">143</span>
@@ -168,7 +168,7 @@
               <div class="photo-card__wrap-count">
                 <button class="photo-card__like-btn" aria-label="Нравится">
                   <svg class="photo-card__like-icon" width="22" height="20">
-                    <use xlink:href="img/sprite-self.svg#sp-icon-like"></use>
+                    <use xlink:href="img/sprite-lib/sprite-self.svg#sp-icon-like"></use>
                   </svg>
                 </button>
                 <span class="photo-card__like-count">96</span>
@@ -194,7 +194,7 @@
               <div class="photo-card__wrap-count">
                 <button class="photo-card__like-btn" aria-label="Нравится">
                   <svg class="photo-card__like-icon" width="22" height="20">
-                    <use xlink:href="img/sprite-self.svg#sp-icon-like"></use>
+                    <use xlink:href="img/sprite-lib/sprite-self.svg#sp-icon-like"></use>
                   </svg>
                 </button>
                 <span class="photo-card__like-count">254</span>
@@ -220,8 +220,8 @@
               <div class="controls__replay-wrap">
                 <button class="controls__replay" type="button" aria-label="Повторить показ"></button>
               </div>
-              <div class="controls__сlosed-captions-wrap"><svg class="controls__сlosed-captions" width="32" height="20"><use xlink:href="img/sprite-self.svg#sp-icon-video-subtitles"></use></svg></div>
-              <div class="controls__scale-wrap"><svg class="controls__scale" width="20" height="20"><use xlink:href="img/sprite-self.svg#sp-icon-video-fullscreen"></use></svg></div>
+              <div class="controls__сlosed-captions-wrap"><svg class="controls__сlosed-captions" width="32" height="20"><use xlink:href="img/sprite-lib/sprite-self.svg#sp-icon-video-subtitles"></use></svg></div>
+              <div class="controls__scale-wrap"><svg class="controls__scale" width="20" height="20"><use xlink:href="img/sprite-lib/sprite-self.svg#sp-icon-video-fullscreen"></use></svg></div>
             </div>
           </div>
         </section>
@@ -230,7 +230,7 @@
         <p class="footer__hashtag">#visitSedona</p>
         <ul class="footer__socials socials">
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link" href="#" aria-label="Twitter">
               <svg class="socials__logo" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17" height="14" viewBox="0 0 17 14" enable-background="new 0 0 17 14" xml:space="preserve">
                 <g id="W6EeEF_1_">
                   <g>
@@ -241,14 +241,14 @@
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link" href="#" aria-label="Facebook">
               <svg class="socials__logo" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9" height="19" viewBox="0 0 9 19" enable-background="new 0 0 9 19" xml:space="preserve">
                 <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"></path>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link" href="#">
+            <a class="socials__link" href="#" aria-label="Youtube">
               <svg class="socials__logo" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="14" viewBox="0 0 20 14" enable-background="new 0 0 20 14" xml:space="preserve">
                 <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"></path>
               </svg>
@@ -258,7 +258,7 @@
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">Разработано</span>
           <svg class="copyright__academy-logo" width="41" height="44">
-            <use xlink:href="img/sprite-self.svg#sp-htmlacademy"></use>
+            <use xlink:href="img/sprite-lib/sprite-self.svg#sp-htmlacademy"></use>
           </svg>
         </a>
       </footer>

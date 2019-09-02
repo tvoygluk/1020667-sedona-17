@@ -203,7 +203,7 @@
 
     &:nth-of-type(n+3) {
       padding-top: 44px;
-      padding-bottom: 63px;
+      padding-bottom: 64px;
       width: 400px;
     }
   }
@@ -215,5 +215,6 @@
   .features__photo {
     width: 800px;
     height: 256px;
+    object-fit: cover;
   }
 }

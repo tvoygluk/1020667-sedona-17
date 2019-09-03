@@ -4,22 +4,29 @@
   padding: 0 20px;
 }
 
-.feedback__visited,
 .feedback__impression {
-  margin: 0 0 60px 0;
+  margin: 0 0 48px;
 
   &::before {
-    bottom: -40px;
+    bottom: -30px;
+  }
+}
+
+.feedback__visited {
+  margin: 0 0 46px;
+
+  &::before {
+    bottom: -30px;
   }
 }
 
 .feedback__emotions {
-  margin: 0 0 48px 0;
+  margin: 0 0 48px;
 }
 
 .feedback__contact-info,
 .feedback__full-name {
-  margin: 0 0 44px 0;
+  margin: 0 0 44px;
 
   &::before {
     bottom: -25px;
@@ -99,7 +106,7 @@
   }
 
   .feedback__visited {
-    margin-bottom: 83px;
+    margin-bottom: 69px;
   }
 
   .feedback__button {
@@ -132,15 +139,15 @@
   }
 
   .feedback__full-name {
-    margin: 0 0 48px 0;
+    margin: 0 0 48px;
   }
 
   .feedback__contact-info {
-    margin: 0 0 55px 0;
+    margin: 0 0 55px;
   }
 
   .feedback__visited {
-    margin-bottom: 81px;
+    margin-bottom: 37px;
   }
 
   .feedback__button {

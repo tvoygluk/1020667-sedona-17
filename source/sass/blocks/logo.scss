@@ -75,6 +75,7 @@
 
 @media (min-width: $tablet-width) {
   .logo {
+    position: static;
     height: 518px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: top;
@@ -113,6 +114,9 @@
     }
   }
 
+  .logo__triangle {
+    top: 0;
+  }
   .logo__mask {
     left: 33px;
     border-bottom-width: 57px;

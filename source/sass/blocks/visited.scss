@@ -4,7 +4,7 @@
 }
 
 .visited__title {
-  margin: 0 auto 32px;
+  margin: 0 auto 17px;
   font-size: 18px;
   line-height: 26px;
   color: $black;
@@ -20,11 +20,10 @@
 
   .visited__check {
     width: 50%;
-    margin: 0 0 61px 0;
   }
 
   .visited__title {
-    margin: 0 0 54px 0;
+    margin: 0 0 42px;
     padding: 0 130px;
     font-size: 21px;
   }
@@ -43,7 +42,7 @@
     .visited__check {
       &:nth-of-type(n) {
         width: auto;
-        margin: 53px 0 0 0;
+        margin: 43px 0 0;
       }
     }
   }

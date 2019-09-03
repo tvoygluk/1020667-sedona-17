@@ -17,12 +17,19 @@
   }
 }
 
-.logo__triangle {
+.logo__link {
   position: absolute;
   top: -56px;
   left: calc(50% - 51px);
   z-index: 3;
+  display: block;
+  width: 102px;
+  height: 85px;
   cursor: pointer;
+}
+
+.logo__triangle {
+  width: 100%;
 }
 
 .logo__mask {
@@ -114,7 +121,7 @@
     }
   }
 
-  .logo__triangle {
+  .logo__link {
     top: 0;
   }
   .logo__mask {
@@ -175,7 +182,7 @@
     }
   }
 
-  .logo__triangle {
+  .logo__link {
     left: calc(50% - 94px);
     width: 188px;
     height: 96px;

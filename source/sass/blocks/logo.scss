@@ -60,17 +60,12 @@
   padding-bottom: 85px;
 
   &--base {
-    padding-top: 0;
+    padding-top: 51px;
     padding-bottom: 0;
 
     .logo__text-svg {
-      width: 228px;
-      height: 214px;
-      margin-top: -36px;
-    }
-
-    .logo__text-promo {
-      display: none;
+      width: 230px;
+      height: 40px;
     }
   }
 }
@@ -124,6 +119,7 @@
   .logo__link {
     top: 0;
   }
+
   .logo__mask {
     left: 33px;
     border-bottom-width: 57px;
@@ -140,13 +136,11 @@
     padding-top: 77px;
 
     &--base {
-      padding-top: 0;
-      padding-bottom: 0;
+      padding-top: 95px;
 
       .logo__text-svg {
         width: 460px;
-        height: 350px;
-        margin-top: -43px;
+        height: 80px;
       }
     }
   }
@@ -205,9 +199,7 @@
     padding-bottom: 0;
 
     &--base {
-      .logo__text-svg {
-        margin-top: -113px;
-      }
+      padding-top: 101px;
     }
   }
 }

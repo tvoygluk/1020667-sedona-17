@@ -39,17 +39,17 @@
   width: 0;
   height: 0;
   border-bottom: 26px solid $white;
-  border-right: $mobile-width/2 solid transparent;
+  border-right: 50vw solid transparent;
 
   &::after {
     content: "";
     position: absolute;
     top: 0;
-    left: $mobile-width/2;
+    left: 50vw;
     width: 0;
     height: 0;
     border-bottom: 26px solid $white;
-    border-left: $mobile-width/2 solid transparent;
+    border-left: 50vw solid transparent;
   }
 }
 

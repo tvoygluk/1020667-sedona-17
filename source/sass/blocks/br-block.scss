@@ -5,12 +5,24 @@
     display: inline;
   }
 
+  &--tablet-three-table {
+    display: none;
+  }
+
   &--tablet {
     display: none;
   }
 
   &--desktop {
     display: none;
+  }
+}
+
+@media (min-width: $tablet-width--three-table) {
+  .br-block {
+    &--tablet-three-table {
+      display: inline;
+    }
   }
 }
 

@@ -101,18 +101,18 @@
       width: 0;
       height: 0;
       border-bottom: 36px solid $white;
-      border-right: $tablet-width/2 solid transparent;
+      border-right: 50vw solid transparent;
     }
 
     &::after {
       content: "";
       position: absolute;
       bottom: 0;
-      left: $tablet-width/2;
+      left: 50vw;
       width: 0;
       height: 0;
       border-bottom: 36px solid $white;
-      border-left: $tablet-width/2 solid transparent;
+      border-left: 50vw solid transparent;
     }
   }
 
@@ -123,12 +123,12 @@
   .logo__mask {
     left: 33px;
     border-bottom-width: 57px;
-    border-right-width: 354px;
+    border-right-width: calc(50vw - 33px);
 
     &::after {
-      left: 354px;
+      left: calc(50vw - 33px);
       border-bottom-width: 57px;
-      border-left-width: 347px;
+      border-left-width: calc(50vw - 33px);
     }
   }
 

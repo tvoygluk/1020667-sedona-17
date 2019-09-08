@@ -89,7 +89,7 @@
     &--short-pd {
       height: 290px;
       background-position: 50% 100%;
-      background-size: 768px 518px;
+      background-size: cover;
     }
 
 
@@ -121,14 +121,14 @@
   }
 
   .logo__mask {
-    left: 33px;
+    left: calc(50vw - 351px);
     border-bottom-width: 57px;
-    border-right-width: calc(50vw - 33px);
+    border-right-width: 351px;
 
     &::after {
-      left: calc(50vw - 33px);
+      left: 351px;
       border-bottom-width: 57px;
-      border-left-width: calc(50vw - 33px);
+      border-left-width: 351px;
     }
   }
 
@@ -159,20 +159,8 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
 
-    &::before {
-      border-bottom-width: 61px;
-      border-right-width: 600px;
-    }
-
-    &::after {
-      left: 608px;
-      border-bottom-width: 61px;
-      border-left-width: 592px;
-    }
-
     &--short-pd {
       height: 300px;
-      background-size: 1200px 518px;
     }
   }
 
@@ -183,14 +171,14 @@
   }
 
   .logo__mask {
-    left: 251px;
-    border-bottom-width: 54px;
-    border-right-width: 364px;
+    left: 249px;
+    border-bottom-width: 57px;
+    border-right-width: calc(50vw - 249px);
 
     &::after {
-      left: 352px;
-      border-bottom-width: 54px;
-      border-left-width: 347px;
+      left: calc(50vw - 249px);
+      border-bottom-width: 57px;
+      border-left-width: calc(50vw - 249px);
     }
   }
 

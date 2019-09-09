@@ -39,17 +39,17 @@
   width: 0;
   height: 0;
   border-bottom: 26px solid $white;
-  border-right: 50vw solid transparent;
+  border-right: 160px solid transparent;
 
   &::after {
     content: "";
     position: absolute;
     top: 0;
-    left: 50vw;
+    left: 160px;
     width: 0;
     height: 0;
     border-bottom: 26px solid $white;
-    border-left: 50vw solid transparent;
+    border-left: 160px solid transparent;
   }
 }
 
@@ -73,6 +73,17 @@
 .logo__text-svg {
   width: 281px;
   height: 214px;
+}
+
+@media (min-width: $mobile-width) {
+  .logo__mask {
+    border-right-width: 50vw;
+
+    &::after {
+      left: 50vw;
+      border-left-width: 50vw;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -188,6 +199,31 @@
 
     &--base {
       padding-top: 101px;
+    }
+  }
+}
+
+@media (min-width: $max-width) {
+  .logo {
+    &::before {
+      border-right-width: $max-width / 2;
+    }
+
+    &::after {
+      left: $max-width / 2;
+      border-left-width: $max-width / 2;
+    }
+  }
+
+  .logo__mask {
+    left: 249px;
+    border-bottom-width: 57px;
+    border-right-width: 501px;
+
+    &::after {
+      left: 501px;
+      border-bottom-width: 57px;
+      border-left-width: 501px;
     }
   }
 }

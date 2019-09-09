@@ -57,8 +57,8 @@
     left: 0;
     width: 0;
     height: 0;
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid transparent;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
     border-top: 18px solid $white;
   }
 }
@@ -91,6 +91,15 @@
 
 .main__photo-section {
   margin-bottom: 30px;
+}
+
+@media (min-width: $mobile-width) {
+  .main__features-list {
+    &::before {
+      border-left-width: 50vw;
+      border-right-width: 50vw;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

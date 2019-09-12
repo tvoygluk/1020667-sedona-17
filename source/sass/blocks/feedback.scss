@@ -43,7 +43,9 @@
     content: "";
     position: absolute;
     left: -20px;
-    width: 320px;
+    width: calc(100% + 40px);
+    // left: 0;
+    // width: 100vw;
     height: 1px;
     background-color: $black;
     opacity: 0.1;

@@ -159,7 +159,8 @@
 
   .main__form {
     position: relative;
-    margin-bottom: 64px;
+    margin: 0 auto 64px;
+    max-width: calc(960px + 120px);
 
     &::before {
       content: "";
@@ -206,5 +207,9 @@
     &--bigger-mg {
       margin-bottom: 70px;
     }
+  }
+
+  .main__form {
+    max-width: 1200px;
   }
 }

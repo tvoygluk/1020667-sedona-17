@@ -109,6 +109,8 @@
   .features {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    background-color: $gray;
   }
 
   .features__item {

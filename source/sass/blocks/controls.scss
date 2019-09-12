@@ -1,5 +1,6 @@
 .controls {
-  width: 280px;
+  // width: 280px;
+  width: calc(100% - 40px);
 }
 
 .controls__track {
@@ -12,7 +13,8 @@
     position: absolute;
     top: 22px;
     left: 22px;
-    width: 235px;
+    // width: 235px;
+    width: calc(100% - 45px);
     height: 3px;
     background-color: $white--alfa-20;
   }
@@ -123,16 +125,19 @@
   .controls {
     position: relative;
     margin-bottom: -93px;
+    width: 100%;
   }
 
   .controls__track {
-    width: 648px;
+    // width: 648px;
+    width: 100%;
     height: 93px;
 
     &::before {
       top: 46px;
       left: 94px;
-      width: 390px;
+      // width: 390px;
+      width: calc(100% - 259px);
     }
 
     &::after {
@@ -147,7 +152,8 @@
     position: absolute;
     bottom: 0;
     height: 93px;
-    width: 648px;
+    // width: 648px;
+    width: 100%;
     padding: 0 41px 0 35px;
     background-color: inherit;
     z-index: 10;
@@ -229,19 +235,5 @@
         fill: $white--alfa-30;
       }
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .controls__track {
-    width: 800px;
-
-    &::before {
-      width: 540px;
-    }
-  }
-
-  .controls__buttons {
-    width: 800px;
   }
 }

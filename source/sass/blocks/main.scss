@@ -76,7 +76,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 320px;
+    width: 100%;
     height: 1px;
     background-color: $black;
     opacity: 0.1;
@@ -121,8 +121,10 @@
   .main__photo-section {
     display: flex;
     flex-wrap: wrap;
-    width: 648px;
+    // width: 648px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 60px;
   }
 
   .main__decorations-triangle {
@@ -188,6 +190,7 @@
 
   .main__photo-section {
     width: $desktop-width;
+    padding: 0;
   }
 
   .main__title {

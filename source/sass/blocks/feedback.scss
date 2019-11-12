@@ -1,7 +1,7 @@
 .feedback {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  // padding: 0 20px;
 }
 
 .feedback__impression {
@@ -24,31 +24,30 @@
   margin: 0 0 48px;
 }
 
-.feedback__contact-info,
-.feedback__full-name {
-  margin: 0 0 44px;
-
-  &::before {
-    bottom: -25px;
-  }
-}
-
 .feedback__visited,
 .feedback__impression,
 .feedback__contact-info,
 .feedback__full-name {
   position: relative;
+  display: block;
 
   &::before {
     content: "";
+    display: block;
     position: absolute;
-    left: -20px;
-    width: calc(100% + 40px);
-    // left: 0;
-    // width: 100vw;
+    width: 100%;
     height: 1px;
     background-color: $black;
     opacity: 0.1;
+  }
+}
+
+.feedback__full-name,
+.feedback__contact-info {
+  margin: 0 0 44px;
+
+  &::before {
+    bottom: -25px;
   }
 }
 

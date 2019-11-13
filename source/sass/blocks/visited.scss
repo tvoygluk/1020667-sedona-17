@@ -12,14 +12,17 @@
 }
 
 .visited__out-wrap {
-  margin: 0 20px;
+  width: 278px;
+  margin: 0 auto;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 590px) {
   .visited__out-wrap {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     padding: 0 33px 0 95px;
+    margin: 0;
   }
 
   .visited__check {

@@ -1,6 +1,6 @@
 .radio {
-  // width: 278px;
-  margin: 0 20px;
+  width: 278px;
+  margin: 0 auto;
 
   &:last-child {
     .radio__label {
@@ -69,6 +69,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .radio {
+    margin: 0;
+  }
+
   .radio__label {
     margin: 0 0 20px;
     padding-left: 75px;

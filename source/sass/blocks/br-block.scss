@@ -5,6 +5,10 @@
     display: inline;
   }
 
+  &--text {
+    display: none;
+  }
+
   &--tablet-three-table {
     display: none;
   }
@@ -15,6 +19,14 @@
 
   &--desktop {
     display: none;
+  }
+}
+
+@media (min-width: $mobile-width--text) {
+  .br-block {
+    &--text {
+      display: inline;
+    }
   }
 }
 

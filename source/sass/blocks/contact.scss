@@ -104,6 +104,20 @@
   }
 }
 
+@media (min-width: $tablet-width--one-line) {
+  .contact__label {
+    margin: 0 0 8px;
+  }
+
+  .contact {
+    &:nth-of-type(1) {
+      .contact__input {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .contact {
     flex-direction: row-reverse;
@@ -115,9 +129,9 @@
     }
 
     &:nth-of-type(1) {
-      .contact__input {
-        margin-bottom: 0;
-      }
+      // .contact__input {
+      //   margin-bottom: 0;
+      // }
 
       &::before {
         top: 21px;
